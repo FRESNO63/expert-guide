@@ -2,65 +2,72 @@ const B = require("./build");
 
 function capitulo19() {
   return [
-    B.chapterHeading(19, "Reclamación extrajudicial: servicio de atención al cliente, Defensor del Asegurado y DGSFP"),
+    B.chapterHeading(19, "Infraseguro, sobreseguro y regla proporcional"),
 
     B.sumario([
-      "19.1. El deber de atención al reclamante: SAC y Defensor del Asegurado",
-      "19.2. La reclamación ante la Dirección General de Seguros y Fondos de Pensiones",
-      "19.3. Los medios adecuados de solución de controversias como requisito de procedibilidad",
-      "19.4. Los intereses del art. 20 LCS como palanca de negociación extrajudicial",
-      "19.5. Ficha para el profesional",
-      "19.6. Ficha para el asegurado",
-      "19.7. Checklist: itinerario extrajudicial antes de demandar",
+      "15.1. El principio indemnizatorio como fundamento de la regla proporcional",
+      "15.2. El infraseguro y la regla proporcional del art. 30 LCS",
+      "15.3. La exclusión pactada de la regla proporcional",
+      "15.4. El sobreseguro (art. 27 LCS)",
+      "15.5. Infraseguro y concurrencia de seguros: dos figuras que no deben confundirse",
+      "15.6. Partidas excluidas de la regla proporcional por pacto expreso",
+      "15.7. Ficha para el profesional",
+      "15.8. Ficha para el asegurado",
+      "15.9. Checklist: verificación de la suma asegurada",
     ]),
     B.spacer(160),
     B.abstractBlock(
-      "El capítulo abre la Parte IV con el estudio de la vía extrajudicial de reclamación en el seguro de hogar: el servicio de atención al cliente y el defensor del asegurado de la propia entidad, la reclamación ante el Servicio de Reclamaciones de la Dirección General de Seguros y Fondos de Pensiones, y la reciente incorporación de los medios adecuados de solución de controversias (MASC) como auténtico requisito de procedibilidad para el acceso a la jurisdicción civil, tras la reforma operada por la Ley Orgánica 1/2025.",
-      "servicio de atención al cliente, defensor del asegurado, DGSFP, MASC, requisito de procedibilidad, Ley Orgánica 1/2025",
-      "This chapter opens Part IV with the extrajudicial claims route in homeowners' insurance: the insurer's own customer service and ombudsman, the complaint before the Spanish insurance supervisor's Claims Service, and the recent introduction of adequate dispute resolution means as a genuine procedural admissibility requirement for access to the civil courts, following the reform enacted by Organic Act 1/2025.",
-      "customer service, insurance ombudsman, supervisory complaint, alternative dispute resolution, procedural requirement"
+      "El capítulo analiza la regla proporcional del art. 30 LCS, aplicable cuando la suma asegurada es inferior al valor real del interés asegurado en el momento del siniestro, y su reverso, el sobreseguro del art. 27 LCS. Se dedica especial atención a la distinción, frecuentemente confundida en la práctica y clarificada por la jurisprudencia, entre el infraseguro (defecto de suma asegurada en una única póliza) y la concurrencia de seguros (pluralidad de pólizas sobre un mismo interés), cuyos regímenes jurídicos, aunque inspirados en el mismo principio indemnizatorio, son sustancialmente distintos.",
+      "infraseguro, regla proporcional, art. 30 LCS, sobreseguro, concurrencia de seguros",
+      "This chapter examines the proportional rule of Article 30 of the Insurance Contract Act, applicable when the sum insured is lower than the actual value of the insured interest at the time of loss, and its counterpart, over-insurance under Article 27. Particular attention is paid to the distinction — frequently blurred in practice and clarified by case law — between under-insurance (an insufficient sum insured under a single policy) and concurrent insurance (multiple policies over the same interest), whose legal regimes, though both rooted in the indemnity principle, differ substantially.",
+      "under-insurance, proportional rule, over-insurance, concurrent insurance"
     ),
     B.spacer(200),
 
-    B.h2("19.1. El deber de atención al reclamante: SAC y Defensor del Asegurado"),
-    B.p(["La Ley 20/2015, de Ordenación, Supervisión y Solvencia de las Entidades Aseguradoras y Reaseguradoras (LOSSEAR), y su normativa de desarrollo imponen a toda aseguradora la obligación de disponer de un servicio de atención al cliente (SAC) y, en su caso, de un defensor del cliente, ante el que el asegurado debe formular su reclamación como paso previo e ineludible antes de acudir a la supervisión pública", B.fn("La articulación de un sistema de protección del cliente financiero en dos niveles —interno, a través del SAC/defensor de la propia entidad, y externo, a través del supervisor— sigue el modelo general de protección del cliente de servicios financieros en España, común a banca, seguros y valores; cfr. VEIGA COPO, A. B., Tratado del Contrato de Seguro, op. cit., tomo dedicado a la supervisión y protección del asegurado."), "."]),
-    B.p("La reclamación ante el SAC o el defensor del asegurado cumple una doble función que el profesional no debe subestimar: de un lado, ofrece una última oportunidad de resolución negociada antes de escalar el conflicto; de otro —y esto es lo más relevante en términos procesales—, constituye un presupuesto documental necesario para poder acceder posteriormente al Servicio de Reclamaciones de la DGSFP, que exige acreditar dicha reclamación previa como requisito de admisión."),
+    B.h2("15.1. El principio indemnizatorio como fundamento de la regla proporcional"),
+    B.p(["Como se anticipó en el capítulo 2, el seguro de daños está gobernado por el principio indemnizatorio del art. 26 LCS, que prohíbe el enriquecimiento del asegurado a través del seguro. La regla proporcional del infraseguro es una manifestación directa de este principio: si el asegurado ha declarado y asegurado un valor inferior al real del interés, pagando en consecuencia una prima también inferior a la que técnicamente correspondería al riesgo real, resultaría contrario a la mutualidad aseguradora que, producido un siniestro parcial, percibiera una indemnización íntegra sin haber soportado el coste actuarial correspondiente", B.fn("La regla proporcional del infraseguro traduce en el plano indemnizatorio el mismo principio de equivalencia entre prima y riesgo que informa el deber precontractual de declaración (art. 10 LCS) y la agravación del riesgo (art. 11 LCS), estudiados en el capítulo 4: en los tres casos, la ley ajusta la prestación del asegurador a la prima efectivamente cobrada en relación con la que correspondería al riesgo real; cfr. VEIGA COPO, A. B., Tratado del Contrato de Seguro, op. cit., tomo dedicado a la suma asegurada y sus vicisitudes."), "."]),
 
-    B.h2("19.2. La reclamación ante la Dirección General de Seguros y Fondos de Pensiones"),
-    B.p("Agotada o transcurrido el plazo de resolución de la reclamación interna, el asegurado puede acudir al Servicio de Reclamaciones de la DGSFP, órgano de supervisión que emite un informe motivado sobre el ajuste de la actuación de la aseguradora a la normativa de transparencia y protección de la clientela y a las buenas prácticas y usos financieros. Es fundamental que el profesional transmita con precisión al cliente el alcance real de esta vía: el informe de la DGSFP no tiene carácter vinculante ni ejecutivo, no puede imponer el pago de una indemnización ni sustituye a la vía judicial, pero constituye un elemento de prueba documental de notable valor persuasivo —tanto en una negociación posterior como, eventualmente, en el propio proceso judicial— cuando resulta favorable al reclamante, precisamente por proceder de un organismo técnico independiente y especializado."),
+    B.h2("15.2. El infraseguro y la regla proporcional del art. 30 LCS"),
+    B.legalBox("Art. 30 LCS", "Si en el momento de la producción del siniestro la suma asegurada es inferior al valor del interés, el asegurador indemnizará el daño causado en la misma proporción en la que aquélla cubre el interés asegurado. Las partes, de común acuerdo, podrán excluir en la póliza o con posterioridad a la celebración del contrato, la aplicación de la regla proporcional prevista en el párrafo anterior."),
+    B.p("La aplicación práctica de la regla se resume en una fórmula que todo profesional del ramo debe manejar con soltura: indemnización = daño × (suma asegurada / valor real del interés). Así, si una vivienda tiene un valor de reconstrucción de 300.000 euros y solo está asegurada por 200.000 euros, y sufre un daño parcial de 30.000 euros, la indemnización se reducirá a 20.000 euros (30.000 × 200.000/300.000), con independencia de que el daño concreto no agote la suma asegurada contratada. Esta consecuencia —contraintuitiva para el asegurado medio, que suele creer que basta con que el daño no supere la suma asegurada para obtener indemnización íntegra— exige una labor pedagógica constante del profesional al explicar el resultado de la liquidación."),
 
-    B.h2("19.3. Los medios adecuados de solución de controversias como requisito de procedibilidad"),
-    B.p(["La Ley Orgánica 1/2025, de 2 de enero, de medidas en materia de eficiencia del Servicio Público de Justicia, ha introducido una modificación de primer orden en la arquitectura procesal civil española, con impacto directo y sistemático en la litigación de seguros de hogar: la actividad negociadora previa a través de un medio adecuado de solución de controversias (MASC) pasa a configurarse, en los términos que la propia ley establece, como un auténtico requisito de procedibilidad para el acceso a la jurisdicción civil", B.fn("La introducción de los MASC como requisito de procedibilidad, inspirada en experiencias comparadas de justicia negociada, persigue reducir la litigiosidad civil ordinaria y fomentar la resolución temprana de conflictos patrimoniales de cuantía moderada, categoría en la que encaja la inmensa mayoría de los siniestros de seguro de hogar; cfr. la explicación del propio preámbulo de la LO 1/2025."), ":"]),
-    B.legalBox("Art. 264.4.º LEC (redacción LO 1/2025)", "Con la demanda o la contestación habrán de presentarse: [...] 4.º El documento que acredite haberse intentado la actividad negociadora previa a la vía judicial cuando la ley exija dicho intento como requisito de procedibilidad, o declaración responsable de la parte de la imposibilidad de llevar a cabo la actividad negociadora previa a la vía judicial por desconocer el domicilio de la parte demandada o el medio por el que puede ser requerido."),
-    B.legalBox("Art. 403.2 LEC (redacción LO 1/2025)", "No se admitirán las demandas cuando no se acompañen a ella los documentos que la ley expresamente exija para la admisión de aquellas, cuando no se hagan constar las circunstancias a las que se refiere el segundo párrafo del apartado 3 del artículo 399 en los casos en que se haya acudido a un medio adecuado de solución de controversias por exigirlo la ley como requisito de procedibilidad [...]."),
-    B.p("La consecuencia práctica para el profesional del seguro de hogar es inmediata: una demanda presentada sin acreditar el intento de negociación previa —o, en su caso, sin la declaración responsable sobre la imposibilidad de llevarla a cabo— corre el riesgo de inadmisión conforme al art. 403.2 LEC. La buena noticia es que, en la práctica del seguro de hogar, esta exigencia rara vez supone una carga añadida sustancial: la reclamación extrajudicial ante la propia aseguradora y, en su caso, ante el SAC, el defensor del asegurado o la DGSFP, estudiadas en los epígrafes anteriores, cumplen ya de forma natural la función de actividad negociadora previa, siempre que se documenten adecuadamente y se incorporen como anexo a la demanda."),
-    B.p("La recomendación práctica que se extrae de esta reforma es, por ello, doble: primera, nunca prescindir de la reclamación extrajudicial previa a la aseguradora (burofax de reclamación, reclamación ante el SAC), ni siquiera cuando el asegurado tenga prisa por litigar, precisamente porque ahora es también un presupuesto de admisibilidad de la demanda; segunda, conservar y aportar escrupulosamente la documentación acreditativa de ese intento negociador, con indicación de fechas, medios empleados y, en su caso, respuesta recibida."),
+    B.h2("15.3. La exclusión pactada de la regla proporcional"),
+    B.p("El segundo párrafo del art. 30 LCS permite a las partes excluir convencionalmente la regla proporcional, posibilidad que la práctica aseguradora ha convertido en habitual mediante las cláusulas de «seguro a primer riesgo», frecuentes en pólizas de hogar para determinadas partidas (por ejemplo, gastos de desescombro, honorarios de arquitecto, o incluso el contenido en su conjunto en determinados productos), en las que la aseguradora renuncia a aplicar la regla proporcional hasta el límite pactado, indemnizando el daño real hasta dicho límite con independencia de la relación entre suma asegurada y valor total del interés."),
 
-    B.h2("19.4. Los intereses del art. 20 LCS como palanca de negociación extrajudicial"),
-    B.p("Como se explicó en el capítulo 16, los intereses de demora del art. 20 LCS —de cuantía muy superior a la de los intereses legales ordinarios y con un suelo del 20 % anual a partir de los dos años desde el siniestro— constituyen, en la práctica, el principal incentivo económico para que una aseguradora acepte negociar y pagar tempranamente. El profesional debe, por ello, incorporar sistemáticamente a toda reclamación extrajudicial —burofax, reclamación ante el SAC, escrito de negociación MASC— una referencia expresa y cuantificada a estos intereses, no como mera fórmula de estilo, sino como argumento de negociación con peso económico real y creciente con el paso del tiempo."),
+    B.h2("15.4. El sobreseguro"),
+    B.legalBox("Art. 27 LCS", "La suma asegurada representa el límite máximo de la indemnización a pagar por el asegurador en cada siniestro."),
+    B.p("El reverso del infraseguro es el sobreseguro: la suma asegurada excede notablemente el valor real del interés. Puesto que el art. 27 LCS fija la suma asegurada como límite máximo —nunca como derecho a una indemnización automática por ese importe—, el sobreseguro no genera, por sí mismo, derecho a una indemnización superior al daño realmente sufrido; su efecto práctico principal es, más bien, el pago de una prima superior a la técnicamente necesaria, sin beneficio indemnizatorio correlativo, lo que aconseja al profesional revisar periódicamente la adecuación de la suma asegurada al valor real del inmueble, tanto para evitar el infraseguro como el sobreseguro."),
 
-    B.h2("19.5. Ficha para el profesional"),
-    B.fichaBox("Itinerario extrajudicial recomendado antes de demandar", B.AZUL, [
-      "Burofax de reclamación previa a la aseguradora, con cuantificación de la indemnización reclamada y de los intereses del art. 20 LCS (capítulo 16 y Anexo IV).",
-      "Reclamación ante el SAC o el defensor del asegurado de la entidad, conservando acuse de recibo y, en su caso, respuesta motivada.",
-      "En caso de persistir la discrepancia, valorar la reclamación ante la DGSFP, teniendo presente su carácter no vinculante pero su valor probatorio indirecto.",
-      "Documentar escrupulosamente todo el itinerario negociador para su incorporación a la demanda conforme al art. 264.4.º LEC, evitando el riesgo de inadmisión del art. 403.2 LEC.",
-      "Si el domicilio de la aseguradora es desconocido o resulta imposible el intento negociador por causas objetivas, preparar la declaración responsable alternativa prevista en el propio art. 264.4.º LEC.",
+    B.h2("15.5. Infraseguro y concurrencia de seguros: dos figuras que no deben confundirse"),
+    B.p(["La distinción entre infraseguro (defecto de suma asegurada dentro de una misma póliza) y concurrencia de seguros (pluralidad de pólizas sobre un mismo riesgo e interés, estudiada en el capítulo 8 a propósito del art. 32 LCS) es, pese a su aparente sencillez conceptual, fuente frecuente de confusión práctica, como ilustra una sentencia ya clásica de la Sala Primera dictada precisamente en un supuesto en que el asegurado pretendió, sin éxito, reconducir un problema de infraseguro a la figura de la concurrencia de seguros"]),
+    B.jurisBox("STS, Sala de lo Civil, de 14 de noviembre de 2002 (ROJ: STS 7531/2002; ECLI:ES:TS:2002:7531; MP: Marín Castán)", "«[La parte recurrente] vuelve a insistir aquí en mezclar el infraseguro con la concurrencia de seguros [...]. [No] es que a los gastos de desescombro no se les deba aplicar la regla proporcional como seguro a primer riesgo, sino la interpretación de las cláusulas de la póliza concretamente dedicadas a este punto estableciendo una suma porcentual, supuesto habitual en la práctica aseguradora que modifica esa pauta general de inaplicabilidad de la regla proporcional a este concepto.»"),
+    B.p("La sentencia ilustra dos ideas de utilidad práctica constante. Primera, la incomunicabilidad de pólizas distintas —aunque suscritas con el mismo tomador para centros o inmuebles diferentes— impide sumar sus respectivas sumas aseguradas para evitar la aplicación de la regla proporcional a una de ellas: cada póliza responde con su propia suma asegurada en relación con el interés que específicamente cubre. Segunda, determinadas partidas (como los gastos de desescombro) pueden quedar excluidas de la regla proporcional general no por la vía del art. 30, párrafo segundo, sino por la propia configuración de la cláusula que las regula como garantía a primer riesgo con un porcentaje o cuantía autónoma sobre la suma general."),
+
+    B.h2("15.6. Partidas excluidas de la regla proporcional por pacto expreso"),
+    B.p("En la práctica de las pólizas de hogar, es habitual encontrar excluidas de la regla proporcional general —mediante su configuración como garantías a primer riesgo— partidas como los gastos de desescombro y demolición, los honorarios técnicos de reconstrucción, los gastos de realojo provisional y, en ocasiones, la propia garantía de contenido hasta un determinado porcentaje de la suma de continente. La correcta identificación de estas partidas exige una lectura atenta de las condiciones particulares, pues su existencia puede alterar sustancialmente el resultado económico de una liquidación afectada por infraseguro en el resto de la póliza."),
+
+    B.h2("15.7. Ficha para el profesional"),
+    B.fichaBox("Puntos de control ante la aplicación de la regla proporcional", B.AZUL, [
+      "Verificar el valor real del interés asegurado en el momento del siniestro (normalmente, el valor de reconstrucción del continente o de reposición del contenido) frente a la suma asegurada contratada.",
+      "Comprobar si existe pacto expreso de exclusión de la regla proporcional, general o limitado a determinadas partidas (garantías a primer riesgo).",
+      "Distinguir con precisión el infraseguro de la concurrencia de seguros, conforme a la doctrina de la STS de 14 de noviembre de 2002 (ROJ: STS 7531/2002): pólizas distintas no se suman para evitar la regla proporcional.",
+      "Recalcular la fórmula de la regla proporcional (daño × suma asegurada / valor real) con precisión aritmética antes de aceptar o impugnar la liquidación de la aseguradora.",
     ]),
 
-    B.h2("19.6. Ficha para el asegurado"),
-    B.fichaBox("Qué esperar de cada vía de reclamación", "8A5A00", [
-      "El servicio de atención al cliente de su aseguradora debe responder a su reclamación en un plazo determinado; guarde siempre el justificante de presentación.",
-      "La Dirección General de Seguros y Fondos de Pensiones no puede obligar a su aseguradora a pagarle, pero su informe, si le da la razón, es un argumento de peso para negociar o, en su caso, para un futuro pleito.",
-      "Antes de demandar, su abogado deberá acreditar que intentó negociar con la aseguradora: no lo viva como un trámite burocrático, sino como una oportunidad real de resolver el conflicto sin ir a juicio.",
+    B.h2("15.8. Ficha para el asegurado"),
+    B.fichaBox("Cómo evitar el infraseguro en su vivienda", "8A5A00", [
+      "Revise periódicamente si la suma asegurada de su póliza (continente y contenido) sigue correspondiéndose con el valor real de su vivienda y sus enseres, especialmente tras reformas o revalorizaciones.",
+      "Recuerde que un daño parcial no se indemniza necesariamente en su totalidad si su vivienda está infraasegurada: la indemnización se reduce proporcionalmente aunque el daño no agote la suma asegurada.",
+      "Pregunte a su aseguradora si existen garantías contratadas «a primer riesgo» (sin regla proporcional) para gastos de desescombro, honorarios técnicos o realojo.",
     ]),
 
-    B.h2("19.7. Checklist: itinerario extrajudicial antes de demandar"),
-    B.bullet("1. ¿Se ha remitido burofax de reclamación previa con cuantificación de la indemnización e intereses?"),
-    B.bullet("2. ¿Se ha presentado reclamación ante el SAC o el defensor del asegurado? ¿Con qué resultado?"),
-    B.bullet("3. ¿Se ha acudido, en su caso, a la DGSFP? ¿Cuál es el contenido de su informe?"),
-    B.bullet("4. ¿Está documentado el conjunto del itinerario negociador para su incorporación a la demanda (art. 264.4.º LEC)?"),
-    B.bullet("5. ¿Existe riesgo de inadmisión de la demanda por falta de acreditación del intento negociador (art. 403.2 LEC)?"),
+    B.h2("15.9. Checklist: verificación de la suma asegurada"),
+    B.bullet("1. ¿Cuál es la suma asegurada de continente y de contenido, por separado?"),
+    B.bullet("2. ¿Cuál es el valor real del interés asegurado en el momento del siniestro?"),
+    B.bullet("3. ¿Existe infraseguro? En su caso, ¿cuál es la proporción aplicable?"),
+    B.bullet("4. ¿Existe pacto de exclusión de la regla proporcional, general o para partidas concretas?"),
+    B.bullet("5. ¿Existen otras pólizas sobre el mismo inmueble? ¿Se trata de infraseguro o de concurrencia de seguros?"),
+    B.bullet("6. ¿Es la suma asegurada manifiestamente superior al valor real (sobreseguro), con la consiguiente prima excesiva?"),
 
     B.h2("Bibliografía citada"),
     B.p("VEIGA COPO, A. B., Tratado del Contrato de Seguro, Civitas-Thomson Reuters, Cizur Menor."),

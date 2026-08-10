@@ -2,81 +2,65 @@ const B = require("./build");
 
 function capitulo12() {
   return [
-    B.chapterHeading(12, "Exclusiones generales y particulares"),
+    B.chapterHeading(12, "Daños estéticos, inhabitabilidad y pérdida de alquileres"),
 
     B.sumario([
-      "12.1. Sistemática de las exclusiones en el seguro de hogar",
-      "12.2. Exclusiones legales de orden público: dolo y mala fe (art. 19 LCS)",
-      "12.3. Exclusiones típicas de riesgos catastróficos y bélicos",
-      "12.4. Exclusiones por vicio propio, desgaste y falta de mantenimiento",
-      "12.5. Exclusiones por desocupación prolongada de la vivienda",
-      "12.6. El control de las exclusiones conforme al art. 3 LCS: síntesis metodológica",
-      "12.7. Ficha para el profesional",
-      "12.8. Ficha para el asegurado",
-      "12.9. Checklist: análisis de una exclusión invocada por la aseguradora",
+      "12.1. El daño estético como partida indemnizable autónoma",
+      "12.2. El criterio de reposición uniforme",
+      "12.3. Gastos de alojamiento provisional e inhabitabilidad",
+      "12.4. Pérdida de alquileres y rentas",
+      "12.5. Ficha para el profesional",
+      "12.6. Ficha para el asegurado",
+      "12.7. Checklist: partidas indemnizables más allá del daño material directo",
     ]),
     B.spacer(160),
     B.abstractBlock(
-      "El capítulo cierra la Parte II sistematizando el régimen de exclusiones del seguro de hogar, distinguiendo las exclusiones legales de orden público —inderogables por pacto— de las exclusiones convencionales, sujetas al régimen general de control del art. 3 LCS ya desarrollado en los capítulos 1 y 4. Se examinan las categorías de exclusión más frecuentes en la práctica: dolo y mala fe, riesgos catastróficos y bélicos, vicio propio y falta de mantenimiento, y desocupación prolongada de la vivienda.",
-      "exclusiones, art. 19 LCS, orden público, vicio propio, desocupación de la vivienda",
-      "This closing chapter of Part II systematises the exclusions applicable to homeowners' insurance, distinguishing mandatory statutory exclusions from contractual exclusions subject to the general control regime of Article 3 already developed in Chapters 1 and 4. It examines the most frequent exclusion categories in practice: wilful misconduct and bad faith, catastrophic and war risks, inherent defect and lack of maintenance, and prolonged vacancy of the dwelling.",
-      "policy exclusions, public order, inherent vice, prolonged vacancy"
+      "El capítulo estudia tres partidas indemnizables que trascienden el daño material directo y que con frecuencia se olvidan o se infravaloran en la práctica de la reclamación de siniestros de hogar: el daño estético derivado de la imposibilidad de encontrar materiales idénticos a los dañados, resuelto por la jurisprudencia menor mediante el criterio de la reposición uniforme; los gastos de alojamiento provisional cuando el siniestro deja la vivienda inhabitable; y la pérdida de rentas de alquiler cuando el inmueble siniestrado se encontraba arrendado.",
+      "daño estético, reposición uniforme, inhabitabilidad, gastos de alojamiento, pérdida de alquileres",
+      "This chapter examines three heads of loss that go beyond direct material damage and are frequently overlooked or undervalued in practice when claiming homeowners' insurance losses: aesthetic damage arising from the impossibility of sourcing materials identical to those damaged, addressed by appellate case law through the uniform-replacement criterion; temporary accommodation costs when a loss renders the home uninhabitable; and lost rental income when the damaged property was let to a tenant.",
+      "aesthetic damage, uniform replacement, uninhabitability, temporary accommodation costs, lost rental income"
     ),
     B.spacer(200),
 
-    B.h2("12.1. Sistemática de las exclusiones en el seguro de hogar"),
-    B.p(["Toda póliza de hogar combina dos tipos de exclusiones de naturaleza jurídica muy distinta, cuya confusión es fuente frecuente de error en la práctica profesional", B.fn("La distinción entre exclusiones legales imperativas y exclusiones convencionales sujetas al art. 3 LCS, aunque conceptualmente sencilla, exige un ejercicio constante de calificación en la práctica, dado que muchas condiciones generales reproducen o parafrasean exclusiones legales sin indicar su origen normativo; cfr. SÁNCHEZ CALERO, F. (dir.), op. cit., epígrafe introductorio al régimen de exclusiones del seguro de daños."), ":"]),
-    B.bullet([B.bold("Exclusiones legales de orden público: "), B.run("derivan directamente de la LCS (arts. 19 y 48, entre otros) y no pueden ser alteradas por pacto en perjuicio del asegurado; su fundamento no es contractual sino de orden público asegurador.")]),
-    B.bullet([B.bold("Exclusiones convencionales: "), B.run("son fruto de la libertad de pactos de las partes dentro de los límites de la LCS, y quedan sometidas íntegramente al régimen de control de incorporación, calificación e interpretación estudiado en los capítulos 1 y 4 (arts. 3 LCS, 5 y 7 LCGC, 1288 CC).")]),
+    B.h2("12.1. El daño estético como partida indemnizable autónoma"),
+    B.p(["Cuando un siniestro afecta solo a una parte de un conjunto homogéneo —los azulejos de un baño, el suelo de una estancia, la pintura de una pared—, la reparación limitada estrictamente a la zona dañada deja, con frecuencia, un resultado visualmente discordante que la jurisprudencia menor reconoce como daño estético autónomo, indemnizable con independencia y además del coste material de reparación en sentido estricto", B.fn("El reconocimiento del daño estético como partida autónoma en el ámbito de los daños materiales a inmuebles —a diferencia del daño estético en su acepción más conocida de responsabilidad civil por lesiones corporales— es una construcción jurisprudencial de raíz eminentemente práctica, fundada en la insatisfacción real del perjudicado que recibe una reparación materialmente correcta pero estéticamente desigual; cfr. la reseña de esta línea jurisprudencial en Revista Española de Seguros, op. cit."), "."]),
 
-    B.h2("12.2. Exclusiones legales de orden público: dolo y mala fe"),
-    B.p("La exclusión legal por excelencia en el seguro de daños es la del artículo 19 LCS, ya estudiada en su proyección general en el capítulo 1 y que se desarrolla con detalle en el capítulo 17 de esta obra:"),
-    B.legalBox("Art. 19 LCS", "El asegurador estará obligado al pago de la prestación, salvo en el supuesto de que el siniestro haya sido causado por mala fe del asegurado."),
-    B.p("Esta exclusión, a diferencia de las convencionales, no necesita figurar destacada en la póliza para desplegar sus efectos: opera ope legis como límite estructural de la propia institución aseguradora, pues un seguro que cubriera el siniestro provocado de mala fe por el propio asegurado dejaría de cumplir su función de traslación de un riesgo incierto y ajeno a la voluntad del asegurado."),
+    B.h2("12.2. El criterio de reposición uniforme"),
+    B.p("La Audiencia Provincial de Alicante ha sistematizado con particular claridad, en un supuesto de filtraciones de agua entre viviendas, el criterio que debe presidir la valoración de este tipo de daño:"),
+    B.jurisBox("SAP Alicante (Sección 5.ª), de 12 de mayo de 2020 (ROJ: SAP A 614/2020; ECLI:ES:APA:2020:614; MP: García Ruiz)", "«Debe valorarse [...] si el perjudicado queda plenamente resarcido del perjuicio sufrido con la indemnización recibida [...], siendo razonable considerar que no va a encontrar satisfacción total de su perjuicio si se le obliga a mantener un cuarto de baño con azulejos de diferente tonalidad [...]. Se evidencia que se sustituyeron más azulejos de los afectados al no existir azulejos iguales en el mercado, así mismo no sólo es necesario el pintar el trozo afectado por la filtración pues para dejar uniforme una pared es necesario la pintura de todo el espacio [...]. El perito también manifestó [...] que esa valoración se ajustaba al valor de reposición de los elementos dañados y a la íntegra sustitución de todos los azulejos del cuarto de baño pues actualmente no era posible adquirir azulejos de igual clase que los que ya estaban colocados.»"),
+    B.p("La propia resolución matiza, no obstante, que este criterio no ampara una extensión indiscriminada de la reparación: cuando la sustitución completa del conjunto resulta desproporcionada en relación con el daño real (por ejemplo, levantar la totalidad de un solado extenso para reparar una zona puntual y de escasa entidad visual, en un espacio de uso secundario como una cochera), los tribunales optan por una indemnización prudencial y específica por el concepto de daño estético, en lugar de la sustitución íntegra del elemento. La aplicación práctica de este criterio exige, en consecuencia, una valoración pericial que pondere tanto la imposibilidad real de encontrar materiales idénticos como la proporcionalidad de la solución propuesta en relación con la entidad del daño y la relevancia estética del espacio afectado."),
 
-    B.h2("12.3. Exclusiones típicas de riesgos catastróficos y bélicos"),
-    B.p("Las condiciones generales de las pólizas de hogar excluyen de forma prácticamente universal los daños derivados de conflictos armados, energía nuclear y, como se estudió en el capítulo 8, los acontecimientos calificados como «extraordinarios» conforme al RDL 7/2004, cuya cobertura corresponde al Consorcio de Compensación de Seguros y no a la aseguradora privada. Estas exclusiones, aunque formuladas contractualmente, responden a una lógica de distribución legal de riesgos entre el mercado privado y el sistema público de compensación, por lo que su control de incorporación e interpretación, sin dejar de aplicarse, opera con menor intensidad que respecto de exclusiones puramente convencionales sin ese correlato en la distribución legal de riesgos."),
+    B.h2("12.3. Gastos de alojamiento provisional e inhabitabilidad"),
+    B.p("Cuando el siniestro deja la vivienda objetivamente inhabitable —por ejemplo, tras un incendio de entidad o una inundación que afecte a instalaciones esenciales—, la práctica totalidad de las pólizas de hogar incorporan una garantía de gastos de alojamiento provisional, sujeta normalmente a un límite temporal (por ejemplo, mientras duren las obras de reparación, hasta un máximo de meses) y a un límite cuantitativo diario o mensual. La activación de esta garantía exige, en la práctica, acreditar la imposibilidad objetiva de habitar la vivienda —no la mera incomodidad de convivir con obras—, extremo que conviene documentar desde el primer momento con el informe pericial inicial y, en su caso, con un certificado técnico o municipal sobre las condiciones de habitabilidad del inmueble."),
 
-    B.h2("12.4. Exclusiones por vicio propio, desgaste y falta de mantenimiento"),
-    B.p("Como se estudió con detalle en el capítulo 6 a propósito de los daños por agua, la exclusión del vicio propio, el desgaste natural y la falta de mantenimiento es una de las más invocadas —y más litigiosas— en la práctica del seguro de hogar, por la dificultad de distinguir, en el plano técnico, entre el evento súbito y accidental (cubierto) y el proceso de deterioro progresivo (excluido). La metodología de análisis expuesta en el capítulo 6 —prueba pericial sobre la causa técnica del daño, carga de la prueba de la aseguradora que invoca la exclusión, y proyección de la regla contra proferentem ante la duda razonable— es plenamente aplicable a esta categoría de exclusión con independencia de la garantía concreta afectada (agua, incendio, estructura)."),
+    B.h2("12.4. Pérdida de alquileres y rentas"),
+    B.p("Cuando el inmueble siniestrado se encuentra arrendado, la inhabitabilidad temporal genera, además del perjuicio del ocupante (cubierto, en su caso, por su propia garantía de alojamiento si es el arrendatario quien la contrató), un perjuicio económico distinto para el propietario-arrendador: la pérdida de la renta que dejará de percibir mientras dure la reparación. Esta partida, de naturaleza análoga al lucro cesante, solo está cubierta si la póliza del propietario incorpora expresamente una garantía de pérdida de alquileres —de contratación relativamente frecuente en viviendas destinadas a arrendamiento, pero no universal en las pólizas de vivienda habitual—, cuya existencia y límites deben verificarse específicamente en cada caso, sin poder presumirse incluida dentro de la cobertura general de daños al continente."),
 
-    B.h2("12.5. Exclusiones por desocupación prolongada de la vivienda"),
-    B.p(["Es habitual que las condiciones generales excluyan, o limiten severamente, la cobertura de determinados riesgos (típicamente, robo y daños por agua) cuando la vivienda ha permanecido desocupada durante un período prolongado —normalmente entre treinta y noventa días consecutivos, según póliza—, por el incremento objetivo de riesgo que la desocupación comporta", B.fn("La exclusión por desocupación prolongada guarda una relación funcional con el deber de comunicación de la agravación del riesgo del art. 11 LCS estudiado en el capítulo 3, en la medida en que un cambio duradero en el patrón de ocupación de la vivienda puede constituir, en sí mismo, una circunstancia agravante sujeta a dicho deber si fue objeto de pregunta en el cuestionario inicial; cfr. capítulo 3, epígrafe 3.3.1."), ". Esta exclusión, formulada en términos objetivos de días de desocupación, se califica generalmente como delimitadora del riesgo si está formulada con claridad en las condiciones particulares, pero puede recalificarse como limitativa —y exigir, por tanto, el cumplimiento de los requisitos del art. 3 LCS— cuando su aplicación se extiende de forma sorpresiva a supuestos de desocupación ordinaria y previsible (vacaciones, segunda residencia de uso esporádico) no anunciados con claridad al contratar."]),
-
-    B.h2("12.6. El control de las exclusiones conforme al art. 3 LCS: síntesis metodológica"),
-    B.p("Cierra este capítulo, y con él la Parte II de la obra, una síntesis de la metodología de análisis de cualquier exclusión invocada por una aseguradora, que recoge y unifica los criterios desarrollados a lo largo de los capítulos 1, 4, 6 y 12:"),
-    B.bullet("1. Calificar la naturaleza de la exclusión: legal de orden público (inderogable) o convencional (sujeta al art. 3 LCS)."),
-    B.bullet("2. Si es convencional, verificar su incorporación efectiva al contrato (arts. 5 y 7 LCGC, capítulo 4)."),
-    B.bullet("3. Calificarla como delimitadora o limitativa conforme al test de la cláusula sorpresiva (capítulo 1)."),
-    B.bullet("4. Si es limitativa, verificar el cumplimiento de los requisitos formales del art. 3 LCS (destacado y aceptación específica)."),
-    B.bullet("5. Ante la persistencia de duda razonable sobre su alcance, proyectar la regla contra proferentem del art. 1288 CC (capítulo 4)."),
-    B.bullet("6. Si el tomador es consumidor, verificar adicionalmente su conformidad con el TRLGDCU y la LCGC (capítulo 21)."),
-
-    B.h2("12.7. Ficha para el profesional"),
-    B.fichaBox("Puntos de control ante cualquier exclusión invocada", B.AZUL, [
-      "Aplicar sistemáticamente la síntesis metodológica del epígrafe 12.6 antes de aceptar o impugnar una exclusión invocada por la aseguradora.",
-      "Distinguir siempre las exclusiones legales de orden público (dolo, mala fe) de las convencionales, porque su régimen de control es radicalmente distinto.",
-      "En exclusiones por vicio propio o desgaste, exigir prueba pericial cumplida de la causa técnica del daño, sin admitir afirmaciones genéricas de la aseguradora.",
-      "En exclusiones por desocupación, verificar si el período aplicado a la vivienda concreta constituye realmente un supuesto excepcional o una desocupación ordinaria y previsible.",
+    B.h2("12.5. Ficha para el profesional"),
+    B.fichaBox("Puntos de control sobre partidas indirectas", B.AZUL, [
+      "Reclamar expresamente el daño estético como partida autónoma cuando la reparación puntual deje un resultado visualmente discordante, con apoyo pericial sobre la imposibilidad de encontrar materiales idénticos (SAP Alicante 614/2020, ROJ: SAP A 614/2020).",
+      "Ponderar la proporcionalidad entre la sustitución completa de un elemento y la entidad real del daño, para evitar el riesgo de enriquecimiento injusto que limitaría la reclamación.",
+      "Verificar la existencia, límite temporal y cuantitativo de la garantía de gastos de alojamiento, y documentar la inhabitabilidad objetiva del inmueble desde el primer momento.",
+      "Comprobar expresamente si la póliza del propietario-arrendador incluye garantía de pérdida de alquileres antes de asumir que está cubierta.",
     ]),
 
-    B.h2("12.8. Ficha para el asegurado"),
-    B.fichaBox("Qué debe comprobar sobre las exclusiones de su póliza", "8A5A00", [
-      "Lea con atención el apartado de exclusiones de sus condiciones generales, no solo el de coberturas: le indicará qué situaciones quedan fuera de su protección.",
-      "Si va a dejar su vivienda desocupada por un período prolongado (obras, viaje largo, cambio de residencia), consulte a su aseguradora si esto afecta a su cobertura y, si es preciso, comunique la circunstancia.",
-      "Si le deniegan un siniestro invocando una exclusión, pida que se la citen literalmente y le expliquen por qué se aplica a su caso concreto.",
+    B.h2("12.6. Ficha para el asegurado"),
+    B.fichaBox("Qué partidas puede reclamar además de la reparación", "8A5A00", [
+      "Si tras un siniestro parcial (por ejemplo, en el baño o la cocina) no es posible encontrar azulejos o materiales idénticos, puede tener derecho a que se indemnice el desajuste estético, no solo la zona estrictamente dañada.",
+      "Si su vivienda queda inhabitable, revise si su póliza cubre gastos de alojamiento provisional y durante cuánto tiempo.",
+      "Si alquila su vivienda y esta queda inhabitable por el siniestro, compruebe si su póliza cubre la pérdida de la renta que dejará de percibir: no siempre está incluida por defecto.",
     ]),
 
-    B.h2("12.9. Checklist: análisis de una exclusión invocada por la aseguradora"),
-    B.bullet("1. ¿Es una exclusión legal de orden público o una exclusión convencional?"),
-    B.bullet("2. ¿Está la cláusula efectivamente incorporada al contrato (entrega y accesibilidad real)?"),
-    B.bullet("3. ¿Es delimitadora o limitativa conforme al test de la cláusula sorpresiva?"),
-    B.bullet("4. Si es limitativa, ¿cumple los requisitos formales del art. 3 LCS?"),
-    B.bullet("5. ¿Existe duda razonable sobre su alcance que deba resolverse a favor del asegurado (art. 1288 CC)?"),
-    B.bullet("6. ¿Aporta la aseguradora prueba pericial suficiente de los hechos en que basa la exclusión?"),
+    B.h2("12.7. Checklist: partidas indemnizables más allá del daño material directo"),
+    B.bullet("1. ¿Existe desajuste estético tras la reparación puntual del elemento dañado?"),
+    B.bullet("2. ¿Es posible encontrar en el mercado materiales idénticos a los dañados?"),
+    B.bullet("3. ¿Resulta proporcionada la sustitución completa del elemento en relación con la entidad del daño?"),
+    B.bullet("4. ¿Queda la vivienda objetivamente inhabitable? ¿Existe prueba técnica de ello?"),
+    B.bullet("5. ¿Cubre la póliza gastos de alojamiento provisional, con qué límite temporal y cuantitativo?"),
+    B.bullet("6. Si el inmueble está arrendado, ¿existe garantía específica de pérdida de alquileres?"),
 
     B.h2("Bibliografía citada"),
-    B.p("SÁNCHEZ CALERO, F. (dir.), Ley de Contrato de Seguro. Comentarios a la Ley 50/1980, de 8 de octubre, y a sus modificaciones, Aranzadi-Thomson Reuters, Cizur Menor."),
+    B.p("Revista Española de Seguros (RES), Sección Española de la Asociación Internacional de Derecho de Seguros (SEAIDA), Madrid."),
   ];
 }
 

@@ -2,76 +2,65 @@ const B = require("./build");
 
 function capitulo17() {
   return [
-    B.chapterHeading(17, "Dolo y culpa grave: causas de exoneración del asegurador"),
+    B.chapterHeading(17, "Declaración y comunicación del siniestro"),
 
     B.sumario([
-      "17.1. Sistemática general: dolo, mala fe y culpa grave en la LCS",
-      "17.2. El estándar probatorio: la carga de la prueba corresponde al asegurador",
-      "17.3. La exigencia de nexo causal entre el dolo y el siniestro",
-      "17.4. El umbral de la culpa grave frente a la negligencia simple",
-      "17.5. Proyección sobre las distintas coberturas del hogar",
-      "17.6. Ficha para el profesional",
-      "17.7. Ficha para el asegurado",
-      "17.8. Checklist: análisis de una imputación de dolo o culpa grave",
+      "13.1. El deber de comunicación del siniestro (art. 16 LCS)",
+      "13.2. Plazo y consecuencias del incumplimiento",
+      "13.3. El deber de información sobre las circunstancias del siniestro",
+      "13.4. La prueba del conocimiento del siniestro por otro medio",
+      "13.5. Ficha para el profesional",
+      "13.6. Ficha para el asegurado",
+      "13.7. Checklist: comunicación de un siniestro de hogar",
     ]),
     B.spacer(160),
     B.abstractBlock(
-      "El capítulo sistematiza el tratamiento del dolo y la culpa grave como causas de exoneración del asegurador a lo largo de la LCS —arts. 19, 48 y 52, entre otros—, con atención especial a dos reglas jurisprudenciales de aplicación transversal: la carga de la prueba del dolo o la culpa grave corresponde siempre a quien los invoca, es decir, al asegurador, y dicha prueba debe extenderse tanto a la conducta subjetivamente reprochable como a su nexo causal específico con el siniestro finalmente producido.",
-      "dolo, mala fe, culpa grave, art. 19 LCS, carga de la prueba, nexo causal",
-      "This chapter systematises the treatment of wilful misconduct and gross negligence as grounds for insurer exoneration throughout the Insurance Contract Act — Articles 19, 48 and 52, among others — focusing on two cross-cutting case-law rules: the burden of proving wilful misconduct or gross negligence always falls on the party invoking it, namely the insurer, and that proof must extend both to the subjectively reprehensible conduct and to its specific causal link with the loss that actually occurred.",
-      "wilful misconduct, bad faith, gross negligence, burden of proof, causation"
+      "El capítulo abre la Parte III, dedicada a la gestión del siniestro, con el estudio del deber de comunicación del art. 16 LCS: su plazo de siete días —dispositivo al alza pero no a la baja—, el régimen de consecuencias limitado a la indemnización de los daños y perjuicios efectivamente causados por el retraso (y no a la pérdida automática del derecho a la prestación), y el deber adicional de información sobre las circunstancias del siniestro, sometido a un estándar de dolo o culpa grave que lo diferencia sustancialmente del régimen del deber precontractual de declaración del riesgo estudiado en el capítulo 4.",
+      "comunicación del siniestro, art. 16 LCS, plazo de siete días, deber de información",
+      "This chapter opens Part III, devoted to claims handling, examining the notification duty under Article 16 of the Insurance Contract Act: its seven-day period —which may be extended but not shortened by policy terms—, the consequences regime limited to indemnifying the loss actually caused by the delay (rather than automatic forfeiture of the claim), and the further duty to inform the insurer of the circumstances of the loss, subject to a wilful misconduct or gross negligence standard distinct from the pre-contractual disclosure duty examined in Chapter 3.",
+      "claim notification, seven-day period, duty to inform, forfeiture"
     ),
     B.spacer(200),
 
-    B.h2("17.1. Sistemática general: dolo, mala fe y culpa grave en la LCS"),
-    B.p(["La LCS emplea, a lo largo de su articulado, una terminología que conviene sistematizar antes de entrar en el análisis probatorio: «mala fe» (art. 19 LCS, regla general del seguro de daños), «dolo o culpa grave» (arts. 10, 11, 12, 48 y 52 LCS, entre otros, en contextos más específicos), términos que la doctrina y la jurisprudencia consideran, en lo sustancial, equivalentes a efectos de exoneración del asegurador, aunque con matices de umbral según el precepto y la cobertura concreta de que se trate", B.fn("La aparente disparidad terminológica entre «mala fe» y «dolo» a lo largo de la LCS ha sido objeto de estudio doctrinal detenido, concluyéndose mayoritariamente que ambas expresiones designan, en el contexto del art. 19 LCS, la provocación consciente y deliberada del siniestro por el propio asegurado, sin que quepa identificar la «mala fe» del art. 19 con la mera falta de lealtad contractual de menor intensidad; cfr. SÁNCHEZ CALERO, F. (dir.), op. cit., ad art. 19; TIRADO SUÁREZ, F. J., en URÍA, MENÉNDEZ y OLIVENCIA (dirs.), op. cit., epígrafe sobre causas de exclusión del riesgo."), ":"]),
-    B.legalBox("Art. 19 LCS", "El asegurador estará obligado al pago de la prestación, salvo en el supuesto de que el siniestro haya sido causado por mala fe del asegurado."),
-    B.p("Se trata de la norma más severa de todo el sistema: exige la provocación intencionada del propio siniestro por el asegurado, sin que la negligencia, por grave que sea, baste por sí sola para exonerar al asegurador bajo este precepto general (a diferencia de lo que ocurre en el régimen específico del seguro de incendio y del seguro de robo, según se expone en el epígrafe 17.4)."),
+    B.h2("13.1. El deber de comunicación del siniestro"),
+    B.p(["Producido el siniestro, el primer deber que recae sobre el tomador, el asegurado o el beneficiario es el de comunicarlo al asegurador, deber que la LCS configura con un rigor sensiblemente menor que el deber precontractual de declaración del riesgo estudiado en el capítulo 4, como revela la comparación de sus respectivos regímenes de consecuencias", B.fn("El distinto rigor de ambos deberes —precontractual y de comunicación del siniestro— obedece a su distinta función: el primero protege la correcta tarificación del riesgo ex ante, mientras que el segundo persigue únicamente permitir al asegurador una gestión diligente del siniestro ya acaecido; cfr. SÁNCHEZ CALERO, F. (dir.), op. cit., ad art. 16."), ":"]),
+    B.legalBox("Art. 16 LCS", "El tomador del seguro o el asegurado o el beneficiario deberán comunicar al asegurador el acaecimiento del siniestro dentro del plazo máximo de siete días de haberlo conocido, salvo que se haya fijado en la póliza un plazo más amplio. En caso de incumplimiento, el asegurador podrá reclamar los daños y perjuicios causados por la falta de declaración. Este efecto no se producirá si se prueba que el asegurador ha tenido conocimiento del siniestro por otro medio. El tomador del seguro o el asegurado deberá, además, dar al asegurador toda clase de informaciones sobre las circunstancias y consecuencias del siniestro. En caso de violación de este deber, la pérdida del derecho a la indemnización sólo se producirá en el supuesto de que hubiese concurrido dolo o culpa grave."),
+    B.p("El plazo legal de siete días es, expresamente, un mínimo dispositivo al alza: la póliza puede ampliarlo (y así lo hacen, en la práctica, numerosas condiciones generales, que conceden plazos de hasta treinta días), pero nunca reducirlo por debajo del umbral legal, por tratarse de una previsión de carácter imperativo relativo a favor del asegurado, en línea con la regla general del art. 2 LCS estudiada en el capítulo 1."),
 
-    B.h2("17.2. El estándar probatorio: la carga de la prueba corresponde al asegurador"),
-    B.p(["La regla probatoria aplicable a toda invocación de dolo o culpa grave por la aseguradora es de una claridad meridiana en la jurisprudencia reciente, y constituye, junto con la doctrina sobre cláusulas limitativas del capítulo 1, uno de los pilares de protección del asegurado en todo el sistema de la LCS"]),
-    B.jurisBox("STS, Sala de lo Civil, de 17 de julio de 2012 (ROJ: STS 5990/2012; ECLI:ES:TS:2012:5990; MP: Arroyo Fiestas)", "«El propio art. 48 LCS [...] solo exime al asegurador de su obligación de indemnizar los daños cuando el incendio ‘se origine por dolo o culpa grave del asegurado’, lo que exige probar no solo el dolo o la culpa grave del asegurado sino también su relación causal con el origen del incendio, incumbiendo al asegurador, según la doctrina científica y la jurisprudencia, la carga de esta prueba. [...] Si no consta probado que el incendio haya sido provocado, directa ni indirectamente, por el asegurado no se da el supuesto contemplado en la norma [...], y huelga discurrir acerca del dolo o culpa grave del asegurado y del nexo causal.»"),
-    B.p("De esta doctrina se extrae una regla de aplicación general a cualquier cobertura del hogar: no basta con que existan indicios de que el siniestro pudo ser provocado —por ejemplo, la presencia de trazas de un acelerante en un incendio—; es necesario que la aseguradora acredite, con la certeza exigible en el proceso civil, tanto la conducta dolosa o gravemente negligente como su autoría por el asegurado. Indicios débiles, ambiguos o que «abren el campo más a las dudas y a las hipótesis» que a la certeza —en los términos empleados por la propia sentencia— no son suficientes para exonerar al asegurador de su obligación de indemnizar."),
+    B.h2("13.2. Plazo y consecuencias del incumplimiento"),
+    B.p("La consecuencia legal del incumplimiento del plazo de comunicación es, a diferencia de lo que erróneamente cree buena parte del público asegurado, no la pérdida automática del derecho a la indemnización, sino una acción de resarcimiento del asegurador limitada a los daños y perjuicios que la falta de declaración le haya efectivamente causado (por ejemplo, la imposibilidad de determinar con precisión la causa del siniestro por haberse alterado irreversiblemente el lugar de los hechos, o el agravamiento del daño por la demora en adoptar medidas de contención). En la práctica, esta consecuencia es de difícil aplicación efectiva, porque exige a la aseguradora acreditar tanto el daño concreto causado por el retraso como su cuantía, prueba que rara vez se aporta con el rigor exigible, lo que explica que la denegación total de cobertura por simple retraso en la comunicación —sin acreditación de un perjuicio concreto— carezca, en rigor, de cobertura legal en el art. 16 LCS."),
 
-    B.h2("17.3. La exigencia de nexo causal entre el dolo y el siniestro"),
-    B.p("Como se anticipó en el capítulo 9 a propósito de la STS 1544/2023 (ROJ: STS 1544/2023), la exigencia de nexo causal no se limita a la autoría material del hecho inicial, sino que debe extenderse específicamente al resultado dañoso finalmente producido. La distinción es sutil pero decisiva: un acto inicial voluntario o incluso doloso (por ejemplo, sustraer combustible) no determina automáticamente la calificación dolosa del siniestro final (el incendio subsiguiente) si este último no fue querido ni siquiera aceptado como consecuencia altamente probable de aquel. El profesional debe, por ello, descomponer analíticamente la cadena causal completa del siniestro antes de aceptar o rechazar una imputación de dolo formulada por la aseguradora."),
+    B.h2("13.3. El deber de información sobre las circunstancias del siniestro"),
+    B.p("El segundo párrafo del art. 16 LCS impone, además de la comunicación del acaecimiento del siniestro, un deber más amplio de suministrar «toda clase de informaciones sobre las circunstancias y consecuencias del siniestro» —lo que en la práctica incluye responder a los requerimientos del perito, facilitar el acceso a la vivienda para su inspección, y aportar la documentación acreditativa de los daños—, cuyo incumplimiento se somete a un estándar de imputación subjetiva mucho más exigente que el de la mera comunicación tardía: solo el dolo o la culpa grave del tomador o del asegurado en el incumplimiento de este deber de información determinan la pérdida del derecho a la indemnización, en un paralelismo estructural con el régimen del art. 10 LCS (deber precontractual) y del art. 48 LCS (seguro de incendio) ya estudiados."),
 
-    B.h2("17.4. El umbral de la culpa grave frente a la negligencia simple"),
-    B.p("Como se estudió en los capítulos 5 y 7, el umbral de imputación subjetiva varía según la cobertura y el precepto aplicable, lo que exige al profesional identificar con precisión cuál es el estándar exigible en cada caso concreto:"),
-    B.bullet([B.bold("Régimen general del art. 19 LCS: "), B.run("solo la mala fe (dolo) exonera; la negligencia, incluso grave, no exonera bajo este precepto en su formulación general.")]),
-    B.bullet([B.bold("Seguro de incendio (art. 48 LCS): "), B.run("el dolo o la culpa grave exoneran; la negligencia leve o simple, incluso propia del asegurado, está expresamente cubierta.")]),
-    B.bullet([B.bold("Seguro de robo (art. 52.1.ª LCS): "), B.run("la negligencia grave, no solo el dolo, exonera al asegurador, umbral más exigente para el asegurado que en el régimen del incendio.")]),
-    B.bullet([B.bold("Deber de declaración del riesgo (art. 10 LCS) y agravación (art. 11-12 LCS): "), B.run("el dolo o la culpa grave determinan la liberación total; la reserva o inexactitud sin dolo ni culpa grave da lugar únicamente a reducción proporcional (capítulo 3).")]),
-    B.p("Esta heterogeneidad de umbrales, lejos de ser una incoherencia del sistema, refleja una ponderación legislativa deliberada del distinto grado de control que el asegurado puede razonablemente ejercer sobre cada tipo de riesgo: mayor tolerancia a la negligencia propia en el incendio (donde el origen accidental es estadísticamente más frecuente) y mayor exigencia de diligencia en el robo (donde las medidas de precaución del propio asegurado inciden más directamente en la probabilidad de siniestro)."),
+    B.h2("13.4. La prueba del conocimiento del siniestro por otro medio"),
+    B.p("El propio art. 16 LCS neutraliza la consecuencia indemnizatoria del retraso cuando se acredita que el asegurador tuvo conocimiento del siniestro «por otro medio», previsión de notable relevancia práctica en el ramo de hogar cuando, por ejemplo, el mismo siniestro de agua o de incendio ha sido ya comunicado por un vecino afectado, por la comunidad de propietarios, o por el propio perito designado por otra póliza concurrente (capítulo 8): en tales casos, el asegurado que comunicó tardíamente su propio siniestro puede oponer válidamente que la aseguradora ya conocía los hechos por esa vía alternativa."),
 
-    B.h2("17.5. Proyección sobre las distintas coberturas del hogar"),
-    B.p("La sistemática expuesta en este capítulo debe proyectarse, en cada caso concreto, sobre el régimen específico de la cobertura afectada: el capítulo 5 desarrolla su aplicación al incendio (con la doctrina de la «malquerencia de extraños»), el capítulo 7 su aplicación al robo, y el capítulo 9 su proyección —de especial complejidad— sobre la garantía de responsabilidad civil, donde la inoponibilidad de las excepciones personales del asegurador al tercero perjudicado (art. 76 LCS) determina que ni siquiera el dolo probado del asegurado sea oponible a quien reclama como perjudicado ajeno a la relación contractual."),
-
-    B.h2("17.6. Ficha para el profesional"),
-    B.fichaBox("Puntos de control ante una imputación de dolo o culpa grave", B.AZUL, [
-      "Identificar el precepto exacto aplicable (art. 19, 48, 52, 10 u 11-12 LCS) y el umbral subjetivo específico que exige (solo dolo, o dolo y culpa grave).",
-      "Exigir a la aseguradora prueba cumplida, no meramente indiciaria o ambigua, tanto de la conducta reprochable como de su nexo causal específico con el siniestro (STS 5990/2012, ROJ: STS 5990/2012).",
-      "Descomponer la cadena causal del siniestro cuando exista un acto inicial voluntario, para determinar si el dolo alcanza también al resultado dañoso finalmente producido.",
-      "En coberturas de responsabilidad civil, recordar la inoponibilidad al tercero perjudicado del dolo del asegurado (art. 76 LCS, capítulo 9), con independencia de su eventual prueba en la relación interna asegurador-asegurado.",
+    B.h2("13.5. Ficha para el profesional"),
+    B.fichaBox("Puntos de control ante una denegación por comunicación tardía", B.AZUL, [
+      "Exigir a la aseguradora que concrete y acredite el daño y perjuicio efectivamente causado por el retraso en la comunicación, no una alegación genérica de incumplimiento del plazo.",
+      "Verificar si el plazo aplicable es el legal de siete días o un plazo ampliado pactado en las condiciones particulares o generales.",
+      "Explorar si existe prueba de que la aseguradora tuvo conocimiento del siniestro por otro medio (comunidad de propietarios, otro asegurado, actuación policial o de bomberos).",
+      "Distinguir con precisión el incumplimiento del deber de comunicación (régimen de resarcimiento de daños concretos) del incumplimiento del deber de información sobre las circunstancias del siniestro (régimen de dolo o culpa grave).",
     ]),
 
-    B.h2("17.7. Ficha para el asegurado"),
-    B.fichaBox("Qué debe saber si le imputan dolo o mala fe", "8A5A00", [
-      "No basta con que la aseguradora sospeche o alegue que usted provocó el siniestro: debe probarlo con certeza, no con meras conjeturas.",
-      "Si existió algún acto voluntario suyo relacionado con el siniestro, pero no quiso ni pudo prever razonablemente el resultado dañoso final, eso no equivale automáticamente a dolo respecto de ese resultado.",
-      "Consulte a un profesional antes de aceptar una denegación de cobertura basada en dolo o culpa grave: es una de las causas de exoneración más exigentes de probar para la aseguradora.",
+    B.h2("13.6. Ficha para el asegurado"),
+    B.fichaBox("Cómo y cuándo comunicar un siniestro", "8A5A00", [
+      "Comunique el siniestro a su aseguradora lo antes posible, idealmente el mismo día en que lo detecte, aunque el plazo legal sea de siete días: cuanto antes actúe, más fácil será probar la causa y el alcance del daño.",
+      "Conserve el justificante de la comunicación (número de expediente, correo electrónico, grabación telefónica).",
+      "Colabore con el perito y facilite toda la información y documentación que le soliciten sobre las circunstancias del siniestro: negarse u ocultar información deliberadamente sí puede hacerle perder el derecho a la indemnización.",
+      "Si se ha retrasado en la comunicación por causa justificada (por ejemplo, ausencia prolongada), explíquelo y aporte prueba: la ley solo permite a la aseguradora reclamar el perjuicio concreto causado, no denegar la cobertura sin más.",
     ]),
 
-    B.h2("17.8. Checklist: análisis de una imputación de dolo o culpa grave"),
-    B.bullet("1. ¿Qué precepto invoca la aseguradora (art. 19, 48, 52, 10 u 11-12 LCS) y qué umbral exige?"),
-    B.bullet("2. ¿Qué prueba concreta aporta la aseguradora de la conducta reprochable?"),
-    B.bullet("3. ¿Prueba también el nexo causal específico entre esa conducta y el siniestro finalmente producido?"),
-    B.bullet("4. ¿Existe un acto inicial voluntario distinto del resultado dañoso final?"),
-    B.bullet("5. ¿Se trata de una cobertura de daños propios o de responsabilidad civil frente a terceros (con la consiguiente inoponibilidad del art. 76 LCS)?"),
+    B.h2("13.7. Checklist: comunicación de un siniestro de hogar"),
+    B.bullet("1. ¿Cuándo tuvo conocimiento el asegurado del siniestro y cuándo lo comunicó?"),
+    B.bullet("2. ¿Qué plazo de comunicación establece la póliza concreta (legal o ampliado)?"),
+    B.bullet("3. Si hubo retraso, ¿qué daño o perjuicio concreto alega la aseguradora, y lo acredita?"),
+    B.bullet("4. ¿Existe prueba de que la aseguradora conocía el siniestro por otro medio?"),
+    B.bullet("5. ¿Se ha cumplido el deber de información sobre las circunstancias del siniestro (documentación, acceso a la vivienda, colaboración con el perito)?"),
 
     B.h2("Bibliografía citada"),
     B.p("SÁNCHEZ CALERO, F. (dir.), Ley de Contrato de Seguro. Comentarios a la Ley 50/1980, de 8 de octubre, y a sus modificaciones, Aranzadi-Thomson Reuters, Cizur Menor."),
-    B.p("TIRADO SUÁREZ, F. J., en URÍA, R.; MENÉNDEZ, A.; OLIVENCIA, M. (dirs.), Comentarios al Código de Comercio y legislación mercantil especial, tomo XXIV, vol. 1.º, Edersa/Civitas, Madrid."),
   ];
 }
 

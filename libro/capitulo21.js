@@ -2,73 +2,76 @@ const B = require("./build");
 
 function capitulo21() {
   return [
-    B.chapterHeading(21, "Cláusulas abusivas y protección de los consumidores"),
+    B.chapterHeading(21, "Dolo y culpa grave: causas de exoneración del asegurador"),
 
     B.sumario([
-      "21.1. El tomador del seguro de hogar como consumidor",
-      "21.2. El triple control de las condiciones generales: incorporación, transparencia y contenido",
-      "21.3. El concepto legal de cláusula abusiva y su relación con el art. 3 LCS",
-      "21.4. Consecuencias de la abusividad: nulidad y subsistencia del contrato",
-      "21.5. Ficha para el profesional",
-      "21.6. Ficha para el asegurado",
-      "21.7. Checklist: análisis de una cláusula desde la perspectiva de consumo",
+      "17.1. Sistemática general: dolo, mala fe y culpa grave en la LCS",
+      "17.2. El estándar probatorio: la carga de la prueba corresponde al asegurador",
+      "17.3. La exigencia de nexo causal entre el dolo y el siniestro",
+      "17.4. El umbral de la culpa grave frente a la negligencia simple",
+      "17.5. Proyección sobre las distintas coberturas del hogar",
+      "17.6. Ficha para el profesional",
+      "17.7. Ficha para el asegurado",
+      "17.8. Checklist: análisis de una imputación de dolo o culpa grave",
     ]),
     B.spacer(160),
     B.abstractBlock(
-      "El capítulo cierra el estudio de las condiciones generales del seguro de hogar iniciado en los capítulos 1 y 4, añadiendo el tercer y último nivel de control aplicable cuando el tomador ostenta la condición de consumidor: el control de contenido o de abusividad del Texto Refundido de la Ley General para la Defensa de los Consumidores y Usuarios, que la jurisprudencia mantiene cuidadosamente diferenciado tanto del control de incorporación —aplicable a todo adherente— como del propio régimen del art. 3 LCS.",
-      "cláusulas abusivas, TRLGDCU, control de transparencia cualificado, consumidor, nulidad",
-      "This chapter closes the study of homeowners' insurance general terms begun in Chapters 1 and 4, adding the third and final layer of control applicable when the policyholder qualifies as a consumer: the content or unfairness control under the Consumer Protection Act, which case law keeps carefully distinct both from the incorporation control —applicable to any adherent— and from the specific regime of Article 3 of the Insurance Contract Act.",
-      "unfair contract terms, consumer protection, qualified transparency control, nullity"
+      "El capítulo sistematiza el tratamiento del dolo y la culpa grave como causas de exoneración del asegurador a lo largo de la LCS —arts. 19, 48 y 52, entre otros—, con atención especial a dos reglas jurisprudenciales de aplicación transversal: la carga de la prueba del dolo o la culpa grave corresponde siempre a quien los invoca, es decir, al asegurador, y dicha prueba debe extenderse tanto a la conducta subjetivamente reprochable como a su nexo causal específico con el siniestro finalmente producido.",
+      "dolo, mala fe, culpa grave, art. 19 LCS, carga de la prueba, nexo causal",
+      "This chapter systematises the treatment of wilful misconduct and gross negligence as grounds for insurer exoneration throughout the Insurance Contract Act — Articles 19, 48 and 52, among others — focusing on two cross-cutting case-law rules: the burden of proving wilful misconduct or gross negligence always falls on the party invoking it, namely the insurer, and that proof must extend both to the subjectively reprehensible conduct and to its specific causal link with the loss that actually occurred.",
+      "wilful misconduct, bad faith, gross negligence, burden of proof, causation"
     ),
     B.spacer(200),
 
-    B.h2("21.1. El tomador del seguro de hogar como consumidor"),
-    B.p(["La inmensa mayoría de los tomadores de un seguro de hogar contratan la póliza para la protección de su vivienda habitual o segunda residencia al margen de cualquier actividad empresarial o profesional, lo que les atribuye la condición de consumidor o usuario a efectos del Texto Refundido de la Ley General para la Defensa de los Consumidores y Usuarios (TRLGDCU), aprobado por Real Decreto Legislativo 1/2007", B.fn("La condición de consumidor puede, no obstante, decaer cuando la vivienda asegurada se afecta significativamente a una actividad económica del tomador (por ejemplo, alquiler turístico profesionalizado o local con actividad económica dentro de la propia vivienda, cuestión ya apuntada en el capítulo 11 a propósito de los nuevos riesgos del hogar), lo que exige un análisis casuístico de cada contratación concreta."), "."]),
-    B.p("Esta condición activa, además de las protecciones ya estudiadas del art. 3 LCS —aplicable a todo asegurado, sea o no consumidor—, un nivel adicional y más intenso de control, con su propio fundamento normativo, metodología y consecuencias, objeto de este capítulo."),
+    B.h2("17.1. Sistemática general: dolo, mala fe y culpa grave en la LCS"),
+    B.p(["La LCS emplea, a lo largo de su articulado, una terminología que conviene sistematizar antes de entrar en el análisis probatorio: «mala fe» (art. 19 LCS, regla general del seguro de daños), «dolo o culpa grave» (arts. 10, 11, 12, 48 y 52 LCS, entre otros, en contextos más específicos), términos que la doctrina y la jurisprudencia consideran, en lo sustancial, equivalentes a efectos de exoneración del asegurador, aunque con matices de umbral según el precepto y la cobertura concreta de que se trate", B.fn("La aparente disparidad terminológica entre «mala fe» y «dolo» a lo largo de la LCS ha sido objeto de estudio doctrinal detenido, concluyéndose mayoritariamente que ambas expresiones designan, en el contexto del art. 19 LCS, la provocación consciente y deliberada del siniestro por el propio asegurado, sin que quepa identificar la «mala fe» del art. 19 con la mera falta de lealtad contractual de menor intensidad; cfr. SÁNCHEZ CALERO, F. (dir.), op. cit., ad art. 19; TIRADO SUÁREZ, F. J., en URÍA, MENÉNDEZ y OLIVENCIA (dirs.), op. cit., epígrafe sobre causas de exclusión del riesgo."), ":"]),
+    B.legalBox("Art. 19 LCS", "El asegurador estará obligado al pago de la prestación, salvo en el supuesto de que el siniestro haya sido causado por mala fe del asegurado."),
+    B.p("Se trata de la norma más severa de todo el sistema: exige la provocación intencionada del propio siniestro por el asegurado, sin que la negligencia, por grave que sea, baste por sí sola para exonerar al asegurador bajo este precepto general (a diferencia de lo que ocurre en el régimen específico del seguro de incendio y del seguro de robo, según se expone en el epígrafe 17.4)."),
 
-    B.h2("21.2. El triple control de las condiciones generales: incorporación, transparencia y contenido"),
-    B.p(["La jurisprudencia de la Sala Primera ha sistematizado con precisión los tres niveles de control a los que puede someterse una condición general, precisando —de forma especialmente relevante para el profesional que representa a una aseguradora frente a un tomador que no es consumidor— cuáles de ellos son de aplicación universal y cuáles quedan reservados en exclusiva a la contratación con consumidores"]),
-    B.jurisBox("STS, Sala de lo Civil, de 3 de junio de 2016 (ROJ: STS 2550/2016; ECLI:ES:TS:2016:2550; MP: Vela Torres)", "«El concepto de transparencia, configurado como control de fondo o de comprensibilidad real, constituye directamente un control de abusividad y, por tanto, distinto del control de incorporación que es el que podría ser aplicado, en todo caso, de forma extensiva, por lo que al quedar reservado el control de abusividad a la esfera estricta de los consumidores, no puede ser aplicado el control de transparencia/abusividad a la contratación entre empresarios.»"),
-    B.p("De esta doctrina se extrae la arquitectura completa de controles aplicable a cualquier cláusula de una póliza de hogar, que el profesional debe recorrer en el siguiente orden lógico:"),
-    B.bullet([B.bold("Control de incorporación (arts. 5 y 7 LCGC, capítulo 4): "), B.run("aplicable a todo adherente, sea o no consumidor. Verifica si la cláusula llegó a formar parte del contrato (oportunidad real de conocerla, legibilidad).")]),
-    B.bullet([B.bold("Control específico del art. 3 LCS (capítulos 1 y 4): "), B.run("aplicable a todo asegurado, sea o no consumidor, en su condición de destinatario específico de la protección de la LCS. Exige el destacado formal y la aceptación específica de las cláusulas limitativas.")]),
-    B.bullet([B.bold("Control de transparencia material o cualificado (este capítulo): "), B.run("reservado a los consumidores. Examina si la cláusula, aunque gramaticalmente comprensible, permite al adherente medio conocer la carga económica y jurídica real que le impone, sin alterar de forma inadvertida el equilibrio del contrato.")]),
-    B.bullet([B.bold("Control de contenido o de abusividad en sentido estricto (arts. 82 y siguientes TRLGDCU): "), B.run("igualmente reservado a los consumidores. Examina si la cláusula, con independencia de su transparencia, genera un desequilibrio importante e injustificado en perjuicio del consumidor.")]),
+    B.h2("17.2. El estándar probatorio: la carga de la prueba corresponde al asegurador"),
+    B.p(["La regla probatoria aplicable a toda invocación de dolo o culpa grave por la aseguradora es de una claridad meridiana en la jurisprudencia reciente, y constituye, junto con la doctrina sobre cláusulas limitativas del capítulo 1, uno de los pilares de protección del asegurado en todo el sistema de la LCS"]),
+    B.jurisBox("STS, Sala de lo Civil, de 17 de julio de 2012 (ROJ: STS 5990/2012; ECLI:ES:TS:2012:5990; MP: Arroyo Fiestas)", "«El propio art. 48 LCS [...] solo exime al asegurador de su obligación de indemnizar los daños cuando el incendio ‘se origine por dolo o culpa grave del asegurado’, lo que exige probar no solo el dolo o la culpa grave del asegurado sino también su relación causal con el origen del incendio, incumbiendo al asegurador, según la doctrina científica y la jurisprudencia, la carga de esta prueba. [...] Si no consta probado que el incendio haya sido provocado, directa ni indirectamente, por el asegurado no se da el supuesto contemplado en la norma [...], y huelga discurrir acerca del dolo o culpa grave del asegurado y del nexo causal.»"),
+    B.p("De esta doctrina se extrae una regla de aplicación general a cualquier cobertura del hogar: no basta con que existan indicios de que el siniestro pudo ser provocado —por ejemplo, la presencia de trazas de un acelerante en un incendio—; es necesario que la aseguradora acredite, con la certeza exigible en el proceso civil, tanto la conducta dolosa o gravemente negligente como su autoría por el asegurado. Indicios débiles, ambiguos o que «abren el campo más a las dudas y a las hipótesis» que a la certeza —en los términos empleados por la propia sentencia— no son suficientes para exonerar al asegurador de su obligación de indemnizar."),
 
-    B.h2("21.3. El concepto legal de cláusula abusiva y su relación con el art. 3 LCS"),
-    B.legalBox("Art. 82.1 TRLGDCU", "Se considerarán cláusulas abusivas todas aquellas estipulaciones no negociadas individualmente y todas aquéllas prácticas no consentidas expresamente que, en contra de las exigencias de la buena fe causen, en perjuicio del consumidor y usuario, un desequilibrio importante de los derechos y obligaciones de las partes que se deriven del contrato."),
-    B.p("La superposición conceptual con la categoría de las cláusulas lesivas del art. 3 LCS, ya estudiada en el capítulo 1, es evidente y no casual: ambas normas protegen, desde perspectivas complementarias, frente al mismo fenómeno de desequilibrio contractual injustificado. La diferencia práctica relevante es de origen y de alcance: la cláusula lesiva del art. 3 LCS protege a todo asegurado, consumidor o no, mientras que la cláusula abusiva del TRLGDCU exige específicamente la condición de consumidor del tomador, pero ofrece a cambio un catálogo mucho más detallado y casuístico de supuestos de abusividad (arts. 85 a 90 TRLGDCU) que puede resultar de aplicación directa a cláusulas concretas del seguro de hogar —por ejemplo, las que atribuyen a la aseguradora la facultad unilateral de interpretar el contrato, o las que imponen al consumidor cargas probatorias desproporcionadas—, con independencia de que superen o no, individualmente, el test de lesividad del art. 3 LCS."),
-    B.p("El artículo 80 TRLGDCU añade, además, exigencias formales de concreción, claridad, accesibilidad y legibilidad —incluyendo, desde la reforma de 2022, un umbral mínimo de tamaño de letra y de interlineado— que complementan, sin sustituir, las exigencias específicas del art. 3 LCS sobre destacado de las cláusulas limitativas."),
+    B.h2("17.3. La exigencia de nexo causal entre el dolo y el siniestro"),
+    B.p("Como se anticipó en el capítulo 13 a propósito de la STS 1544/2023 (ROJ: STS 1544/2023), la exigencia de nexo causal no se limita a la autoría material del hecho inicial, sino que debe extenderse específicamente al resultado dañoso finalmente producido. La distinción es sutil pero decisiva: un acto inicial voluntario o incluso doloso (por ejemplo, sustraer combustible) no determina automáticamente la calificación dolosa del siniestro final (el incendio subsiguiente) si este último no fue querido ni siquiera aceptado como consecuencia altamente probable de aquel. El profesional debe, por ello, descomponer analíticamente la cadena causal completa del siniestro antes de aceptar o rechazar una imputación de dolo formulada por la aseguradora."),
 
-    B.h2("21.4. Consecuencias de la abusividad: nulidad y subsistencia del contrato"),
-    B.legalBox("Art. 83 TRLGDCU", "Las cláusulas abusivas serán nulas de pleno derecho y se tendrán por no puestas. A estos efectos, el Juez, previa audiencia de las partes, declarará la nulidad de las cláusulas abusivas incluidas en el contrato, el cual, no obstante, seguirá siendo obligatorio para las partes en los mismos términos, siempre que pueda subsistir sin dichas cláusulas. Las condiciones incorporadas de modo no transparente en los contratos en perjuicio de los consumidores serán nulas de pleno derecho."),
-    B.p("La consecuencia de la abusividad —nulidad de pleno derecho y tenerla por no puesta, con subsistencia del resto del contrato— es más severa que la de la mera inoponibilidad de las cláusulas limitativas mal incorporadas conforme al art. 3 LCS: mientras que estas últimas simplemente no vinculan al asegurado (que puede, en la práctica, beneficiarse de la cobertura sin la restricción indebidamente impuesta), la cláusula declarada abusiva desaparece del contrato con efecto retroactivo y sin posibilidad de moderación o integración judicial que perjudique al consumidor, conforme a la reiterada jurisprudencia del Tribunal de Justicia de la Unión Europea sobre la Directiva 93/13/CEE, cuya transposición constituye el TRLGDCU."),
+    B.h2("17.4. El umbral de la culpa grave frente a la negligencia simple"),
+    B.p("Como se estudió en los capítulos 7 y 9, el umbral de imputación subjetiva varía según la cobertura y el precepto aplicable, lo que exige al profesional identificar con precisión cuál es el estándar exigible en cada caso concreto:"),
+    B.bullet([B.bold("Régimen general del art. 19 LCS: "), B.run("solo la mala fe (dolo) exonera; la negligencia, incluso grave, no exonera bajo este precepto en su formulación general.")]),
+    B.bullet([B.bold("Seguro de incendio (art. 48 LCS): "), B.run("el dolo o la culpa grave exoneran; la negligencia leve o simple, incluso propia del asegurado, está expresamente cubierta.")]),
+    B.bullet([B.bold("Seguro de robo (art. 52.1.ª LCS): "), B.run("la negligencia grave, no solo el dolo, exonera al asegurador, umbral más exigente para el asegurado que en el régimen del incendio.")]),
+    B.bullet([B.bold("Deber de declaración del riesgo (art. 10 LCS) y agravación (art. 11-12 LCS): "), B.run("el dolo o la culpa grave determinan la liberación total; la reserva o inexactitud sin dolo ni culpa grave da lugar únicamente a reducción proporcional (capítulo 4).")]),
+    B.p("Esta heterogeneidad de umbrales, lejos de ser una incoherencia del sistema, refleja una ponderación legislativa deliberada del distinto grado de control que el asegurado puede razonablemente ejercer sobre cada tipo de riesgo: mayor tolerancia a la negligencia propia en el incendio (donde el origen accidental es estadísticamente más frecuente) y mayor exigencia de diligencia en el robo (donde las medidas de precaución del propio asegurado inciden más directamente en la probabilidad de siniestro)."),
 
-    B.h2("21.5. Ficha para el profesional"),
-    B.fichaBox("Metodología de control de una cláusula cuando el tomador es consumidor", B.AZUL, [
-      "Verificar en primer lugar la condición de consumidor del tomador concreto, sin darla por supuesta automáticamente.",
-      "Recorrer los cuatro niveles de control en el orden lógico expuesto: incorporación, art. 3 LCS, transparencia material y contenido/abusividad, conforme a la STS 2550/2016 (ROJ: STS 2550/2016).",
-      "Cotejar la cláusula controvertida con el catálogo casuístico de los arts. 85 a 90 TRLGDCU, que puede fundar su abusividad con independencia del resultado del test de lesividad del art. 3 LCS.",
-      "Recordar que la declaración de abusividad no admite integración judicial en perjuicio del consumidor: la cláusula desaparece sin más, no se sustituye por una versión moderada.",
+    B.h2("17.5. Proyección sobre las distintas coberturas del hogar"),
+    B.p("La sistemática expuesta en este capítulo debe proyectarse, en cada caso concreto, sobre el régimen específico de la cobertura afectada: el capítulo 7 desarrolla su aplicación al incendio (con la doctrina de la «malquerencia de extraños»), el capítulo 9 su aplicación al robo, y el capítulo 13 su proyección —de especial complejidad— sobre la garantía de responsabilidad civil, donde la inoponibilidad de las excepciones personales del asegurador al tercero perjudicado (art. 76 LCS) determina que ni siquiera el dolo probado del asegurado sea oponible a quien reclama como perjudicado ajeno a la relación contractual."),
+
+    B.h2("17.6. Ficha para el profesional"),
+    B.fichaBox("Puntos de control ante una imputación de dolo o culpa grave", B.AZUL, [
+      "Identificar el precepto exacto aplicable (art. 19, 48, 52, 10 u 11-12 LCS) y el umbral subjetivo específico que exige (solo dolo, o dolo y culpa grave).",
+      "Exigir a la aseguradora prueba cumplida, no meramente indiciaria o ambigua, tanto de la conducta reprochable como de su nexo causal específico con el siniestro (STS 5990/2012, ROJ: STS 5990/2012).",
+      "Descomponer la cadena causal del siniestro cuando exista un acto inicial voluntario, para determinar si el dolo alcanza también al resultado dañoso finalmente producido.",
+      "En coberturas de responsabilidad civil, recordar la inoponibilidad al tercero perjudicado del dolo del asegurado (art. 76 LCS, capítulo 13), con independencia de su eventual prueba en la relación interna asegurador-asegurado.",
     ]),
 
-    B.h2("21.6. Ficha para el asegurado"),
-    B.fichaBox("Qué protección adicional tiene como consumidor", "8A5A00", [
-      "Si contrató su seguro de hogar como particular, para su vivienda, es usted consumidor a efectos legales y tiene una protección reforzada frente a cláusulas abusivas, además de la protección general de la Ley de Contrato de Seguro.",
-      "Una cláusula puede ser válida conforme al art. 3 LCS y, aun así, ser abusiva y nula si le genera un desequilibrio injustificado como consumidor.",
-      "Si una cláusula se declara abusiva, desaparece del contrato, pero el resto de su póliza sigue siendo válido.",
+    B.h2("17.7. Ficha para el asegurado"),
+    B.fichaBox("Qué debe saber si le imputan dolo o mala fe", "8A5A00", [
+      "No basta con que la aseguradora sospeche o alegue que usted provocó el siniestro: debe probarlo con certeza, no con meras conjeturas.",
+      "Si existió algún acto voluntario suyo relacionado con el siniestro, pero no quiso ni pudo prever razonablemente el resultado dañoso final, eso no equivale automáticamente a dolo respecto de ese resultado.",
+      "Consulte a un profesional antes de aceptar una denegación de cobertura basada en dolo o culpa grave: es una de las causas de exoneración más exigentes de probar para la aseguradora.",
     ]),
 
-    B.h2("21.7. Checklist: análisis de una cláusula desde la perspectiva de consumo"),
-    B.bullet("1. ¿Ostenta el tomador la condición de consumidor en esta contratación concreta?"),
-    B.bullet("2. ¿Ha superado la cláusula el control de incorporación y el específico del art. 3 LCS?"),
-    B.bullet("3. ¿Permite la cláusula al consumidor medio conocer la carga económica y jurídica real que le impone (control de transparencia material)?"),
-    B.bullet("4. ¿Genera la cláusula un desequilibrio importante e injustificado en perjuicio del consumidor (art. 82 TRLGDCU)?"),
-    B.bullet("5. ¿Encaja la cláusula en alguno de los supuestos del catálogo de los arts. 85 a 90 TRLGDCU?"),
-    B.bullet("6. ¿Puede el contrato subsistir sin la cláusula declarada abusiva?"),
+    B.h2("17.8. Checklist: análisis de una imputación de dolo o culpa grave"),
+    B.bullet("1. ¿Qué precepto invoca la aseguradora (art. 19, 48, 52, 10 u 11-12 LCS) y qué umbral exige?"),
+    B.bullet("2. ¿Qué prueba concreta aporta la aseguradora de la conducta reprochable?"),
+    B.bullet("3. ¿Prueba también el nexo causal específico entre esa conducta y el siniestro finalmente producido?"),
+    B.bullet("4. ¿Existe un acto inicial voluntario distinto del resultado dañoso final?"),
+    B.bullet("5. ¿Se trata de una cobertura de daños propios o de responsabilidad civil frente a terceros (con la consiguiente inoponibilidad del art. 76 LCS)?"),
 
     B.h2("Bibliografía citada"),
-    B.p("VEIGA COPO, A. B., Condiciones generales y particulares en el contrato de seguro, Civitas-Thomson Reuters, Cizur Menor."),
+    B.p("SÁNCHEZ CALERO, F. (dir.), Ley de Contrato de Seguro. Comentarios a la Ley 50/1980, de 8 de octubre, y a sus modificaciones, Aranzadi-Thomson Reuters, Cizur Menor."),
+    B.p("TIRADO SUÁREZ, F. J., en URÍA, R.; MENÉNDEZ, A.; OLIVENCIA, M. (dirs.), Comentarios al Código de Comercio y legislación mercantil especial, tomo XXIV, vol. 1.º, Edersa/Civitas, Madrid."),
   ];
 }
 
