@@ -133,9 +133,25 @@ function anexoII() {
       ["Art. 8", "Presupuestos y límites de la obligación indemnizatoria del Consorcio.", 10],
     ]),
 
+    ...norma("Real Decreto 300/2004, Reglamento del seguro de riesgos extraordinarios", [
+      ["Art. 1", "Riesgos cubiertos y delimitación de los riesgos situados en España.", 10],
+      ["Art. 2.1.c)", "Definición de inundación extraordinaria y exclusión de la lluvia recogida por cubierta, azotea, red de desagüe o patios: frontera con el seguro privado.", 10],
+      ["Art. 2.1.e)", "Definición de tempestad ciclónica atípica y umbrales de intensidad (40 litros por metro cuadrado y hora; velocidades de viento).", 10],
+    ]),
+
+    ...norma("Real Decreto-ley 3/2020, en materia de distribución de seguros privados", [
+      ["Art. 172", "Principio general de actuación honesta, equitativa y profesional en beneficio del cliente.", 19],
+      ["Art. 175.1", "Deber del distribuidor de determinar las exigencias y necesidades del cliente; todo contrato propuesto debe respetarlas.", 19],
+      ["Art. 176", "Documento de información previa sobre el producto de seguro.", 19],
+    ]),
+
     ...norma("Ley Orgánica 1/2025, de medidas en materia de eficiencia del Servicio Público de Justicia", [
       ["Disposición general", "Introduce los medios adecuados de solución de controversias (MASC) como requisito de procedibilidad, modificando los arts. 264 y 403 LEC.", 23],
     ]),
+
+    B.spacer(240),
+    B.h2("Normativa extranjera y de la Unión Europea"),
+    B.p("El capítulo 28, dedicado al Derecho comparado, maneja además normativa extranjera y de la Unión Europea que no se recoge en este índice por no formar parte del ordenamiento aplicable al contrato: Code des assurances francés, Bürgerliches Gesetzbuch y Versicherungsvertragsgesetz alemanes, Insurance Act 2015, CIDRA 2012, Consumer Rights Act 2015 y Water Act 2014 británicas, Codice civile y Ley 213/2023 italianas, Decreto-Lei 72/2008 portugués, y las Directivas 93/13/CEE y (UE) 2016/97. Su relación completa figura al final de dicho capítulo, con la advertencia de que deben verificarse en su versión vigente antes de citarlas en un escrito."),
   ];
 }
 

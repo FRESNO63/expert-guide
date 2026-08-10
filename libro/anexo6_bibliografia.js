@@ -24,6 +24,9 @@ function anexoVI() {
 
     B.h2("Tratados, manuales y comentarios"),
     entrada("BATALLER GRAU, J.; BOQUERA MATARREDONA, J.; OLAVARRÍA IGLESIA, J. (coords.), Comentarios a la Ley de Contrato de Seguro, Tirant lo Blanch, Valencia."),
+    entrada("GARRIGUES, J., Contrato de seguro terrestre, Marcial Pons, Madrid, 1973 (2.ª ed., 1983)."),
+    entrada("GIRGADO PERANDONES, P., El principio indemnizatorio en los seguros de daños: una aproximación a su significado, Comares, Granada, 2005."),
+    entrada("GUISASOLA PAREDES, A., Cláusulas limitativas de derechos y delimitadoras del riesgo en el contrato de seguro, Editoriales de Derecho Reunidas, Madrid, 2000."),
     entrada("OLMOS PILDÁIN, A., El seguro de defensa jurídica, Aranzadi, Cizur Menor, 1997."),
     entrada("SÁNCHEZ CALERO, F. (dir.), Ley de Contrato de Seguro. Comentarios a la Ley 50/1980, de 8 de octubre, y a sus modificaciones, Aranzadi-Thomson Reuters, Cizur Menor."),
     entrada("SÁNCHEZ CALERO, F.; SÁNCHEZ-CALERO GUILARTE, J., Instituciones de Derecho Mercantil, vol. II, Aranzadi-Thomson Reuters, Cizur Menor."),
@@ -46,6 +49,11 @@ function anexoVI() {
     entrada("MIRANDA SERRANO, L. M., «Cláusulas limitativas y sorprendentes en contratos de seguro: protección de las expectativas y el consentimiento de los asegurados», Revista Crítica de Derecho Inmobiliario, núm. 761, 2017."),
     entrada("MIRANDA SERRANO, L. M., «La protección del asegurado en la ley de contrato de seguro: el art. 3 LCS cuarenta años después», Revista Española de Seguros, núm. 189-190, 2022 (ejemplar monográfico del IV Congreso Nacional de SEAIDA, «El contrato de seguro: digitalización, transparencia y protección del asegurado»)."),
     entrada("TAPIA HERMIDA, A. J., «Los seguros de daños de las comunidades de propietarios y las acciones subrogatorias de las aseguradoras: jurisprudencia reciente», Revista de Responsabilidad Civil y Seguro, núm. 84, INESE, 2022."),
+    entrada("«Contrato de seguro: la doctrina del TS en materia de cláusulas delimitadoras del riesgo», Revista Crítica de Derecho Inmobiliario, núm. 807, 2025, pp. 475-496 (sección de reseña jurisprudencial de obligaciones y contratos; DOI 10.36151/rcdi.2025.807.11)."),
+
+    B.spacer(160),
+    B.h2("Referencias identificadas y no incorporadas"),
+    B.p("Se dejan constancia, para una eventual edición ampliada, de las siguientes referencias localizadas durante la preparación de esta edición pero no incorporadas al texto por no haberse podido verificar con el mismo grado de detalle que las anteriores (autoría, número de revista o paginación exacta): BALLESTER GARRIDO, J. A., sobre cláusulas lesivas, limitativas y delimitadoras y expectativas razonables del asegurado, Revista de Derecho Mercantil; LA CASA GARCÍA, R., sobre cláusulas limitativas y delimitadoras y mora del asegurador en el seguro de responsabilidad civil, Revista de Derecho Mercantil; SÁENZ DE JUBERA HIGUERO, B., sobre cláusulas limitativas y cláusulas claim made, Revista Crítica de Derecho Inmobiliario, núm. 770, 2018; ORTIZ DEL VALLE, M. C., sobre la distinción entre cláusulas limitativas y delimitadoras, Revista Lex Mercatoria; OTAZU SERRANO, M. J., sobre doble transparencia y protección de consumidores, Revista Española de Seguros, núm. 171-172, 2017; MANCHÓN GONZÁLEZ-ESTÉFANI, R., sobre duplicidad y solapamiento de coberturas en seguros multirriesgo, Actuarios, núm. 36, 2015; BECH SERRAT, J. M., comentario a la STS de 26 de junio de 2003, Cuadernos Civitas de Jurisprudencia Civil, núm. 66, 2004; VEIGA COPO, A. B. (dir.), La protección del cliente en el mercado asegurador, obra colectiva; y los estudios sobre riesgos extraordinarios publicados en la Revista Consorseguros a raíz de la DANA de octubre de 2024."),
 
     B.spacer(160),
     B.h2("Publicaciones periódicas"),

@@ -33,6 +33,7 @@ const { capitulo24 } = require("./capitulo24");
 const { capitulo25 } = require("./capitulo25");
 const { capitulo26 } = require("./capitulo26");
 const { capitulo27 } = require("./capitulo27");
+const { capitulo28 } = require("./capitulo28");
 const { anexoI } = require("./anexo1_glosario");
 const { anexoII } = require("./anexo2_legislacion");
 const { anexoIII } = require("./anexo3_jurisprudencia");
@@ -135,6 +136,7 @@ const indiceEntries = [
   ["Capítulo 25. Cláusulas abusivas y protección de los consumidores", 25],
   ["Capítulo 26. Jurisprudencia sistematizada: líneas jurisprudenciales por materia", 26],
   ["Capítulo 27. Casos prácticos resueltos", 27],
+  ["Capítulo 28. El seguro de hogar en perspectiva comparada", 28],
   ["PARTE V. ANEXOS PRÁCTICOS", "part"],
   ["Anexo I. Glosario de términos", "A"],
   ["Anexo II. Índice de legislación citada", "A"],
@@ -246,6 +248,7 @@ const doc = new Document({
         ...capitulo25(),
         ...capitulo26(),
         ...capitulo27(),
+        ...capitulo28(),
         ...B.partTitle("V", "Anexos prácticos"),
         ...anexoI(),
         ...anexoII(),
