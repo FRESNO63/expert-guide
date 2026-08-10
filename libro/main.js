@@ -24,6 +24,10 @@ const { capitulo15 } = require("./capitulo15");
 const { capitulo16 } = require("./capitulo16");
 const { capitulo17 } = require("./capitulo17");
 const { capitulo18 } = require("./capitulo18");
+const { capitulo19 } = require("./capitulo19");
+const { capitulo20 } = require("./capitulo20");
+const { capitulo21 } = require("./capitulo21");
+const { capitulo22 } = require("./capitulo22");
 const FN = require("./footnotes");
 
 const FECHA = "Agosto de 2026";
@@ -215,6 +219,11 @@ const doc = new Document({
         ...capitulo16(),
         ...capitulo17(),
         ...capitulo18(),
+        ...B.partTitle("IV", "Conflictos y vías de reclamación"),
+        ...capitulo19(),
+        ...capitulo20(),
+        ...capitulo21(),
+        ...capitulo22(),
       ],
     },
   ],
