@@ -14,6 +14,10 @@ const { capitulo05 } = require("./capitulo05");
 const { capitulo06 } = require("./capitulo06");
 const { capitulo07 } = require("./capitulo07");
 const { capitulo08 } = require("./capitulo08");
+const { capitulo09 } = require("./capitulo09");
+const { capitulo10 } = require("./capitulo10");
+const { capitulo11 } = require("./capitulo11");
+const { capitulo12 } = require("./capitulo12");
 const FN = require("./footnotes");
 
 const FECHA = "Agosto de 2026";
@@ -194,6 +198,10 @@ const doc = new Document({
         ...capitulo06(),
         ...capitulo07(),
         ...capitulo08(),
+        ...capitulo09(),
+        ...capitulo10(),
+        ...capitulo11(),
+        ...capitulo12(),
       ],
     },
   ],

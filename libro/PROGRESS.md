@@ -20,10 +20,10 @@ Para regenerar tras editar contenido: `cd libro && node main.js`.
 | II | 6. Daños por agua | ✅ redactado |
 | II | 7. Robo, expoliación y hurto | ✅ redactado |
 | II | 8. Fenómenos atmosféricos y riesgos extraordinarios (CCS) | ✅ redactado |
-| II | 9. Responsabilidad civil de la vida privada / cabeza de familia | ⬜ pendiente |
-| II | 10. Defensa jurídica y asistencia en el hogar | ⬜ pendiente |
-| II | 11. Coberturas especiales (joyas, objetos de valor, comunidades) | ⬜ pendiente |
-| II | 12. Exclusiones generales y particulares | ⬜ pendiente |
+| II | 9. Responsabilidad civil de la vida privada / cabeza de familia | ✅ redactado |
+| II | 10. Defensa jurídica y asistencia en el hogar | ✅ redactado |
+| II | 11. Coberturas especiales (joyas, objetos de valor, comunidades) | ✅ redactado |
+| II | 12. Exclusiones generales y particulares | ✅ redactado — Parte II completa |
 | III | 13. Declaración y comunicación del siniestro (art. 16 LCS) | ⬜ pendiente |
 | III | 14. Peritación (art. 38 LCS) | ⬜ pendiente |
 | III | 15. Infraseguro, sobreseguro y regla proporcional (arts. 26 y 30 LCS) | ⬜ pendiente |
