@@ -18,6 +18,12 @@ const { capitulo09 } = require("./capitulo09");
 const { capitulo10 } = require("./capitulo10");
 const { capitulo11 } = require("./capitulo11");
 const { capitulo12 } = require("./capitulo12");
+const { capitulo13 } = require("./capitulo13");
+const { capitulo14 } = require("./capitulo14");
+const { capitulo15 } = require("./capitulo15");
+const { capitulo16 } = require("./capitulo16");
+const { capitulo17 } = require("./capitulo17");
+const { capitulo18 } = require("./capitulo18");
 const FN = require("./footnotes");
 
 const FECHA = "Agosto de 2026";
@@ -202,6 +208,13 @@ const doc = new Document({
         ...capitulo10(),
         ...capitulo11(),
         ...capitulo12(),
+        ...B.partTitle("III", "La gestión del siniestro"),
+        ...capitulo13(),
+        ...capitulo14(),
+        ...capitulo15(),
+        ...capitulo16(),
+        ...capitulo17(),
+        ...capitulo18(),
       ],
     },
   ],

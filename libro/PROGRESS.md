@@ -24,12 +24,12 @@ Para regenerar tras editar contenido: `cd libro && node main.js`.
 | II | 10. Defensa jurídica y asistencia en el hogar | ✅ redactado |
 | II | 11. Coberturas especiales (joyas, objetos de valor, comunidades) | ✅ redactado |
 | II | 12. Exclusiones generales y particulares | ✅ redactado — Parte II completa |
-| III | 13. Declaración y comunicación del siniestro (art. 16 LCS) | ⬜ pendiente |
-| III | 14. Peritación (art. 38 LCS) | ⬜ pendiente |
-| III | 15. Infraseguro, sobreseguro y regla proporcional (arts. 26 y 30 LCS) | ⬜ pendiente |
-| III | 16. Mora del asegurador e intereses (art. 20 LCS) | ⬜ pendiente |
-| III | 17. Dolo y culpa grave | ⬜ pendiente |
-| III | 18. Prescripción de acciones (art. 23 LCS) | ⬜ pendiente |
+| III | 13. Declaración y comunicación del siniestro (art. 16 LCS) | ✅ redactado |
+| III | 14. Peritación (art. 38 LCS) | ✅ redactado |
+| III | 15. Infraseguro, sobreseguro y regla proporcional (arts. 26 y 30 LCS) | ✅ redactado |
+| III | 16. Mora del asegurador e intereses (art. 20 LCS) | ✅ redactado |
+| III | 17. Dolo y culpa grave | ✅ redactado |
+| III | 18. Prescripción de acciones (art. 23 LCS) | ✅ redactado — Parte III completa |
 | IV | 19. Reclamación extrajudicial (SAC, Defensor del Asegurado, DGSFP) | ⬜ pendiente |
 | IV | 20. Vía judicial | ⬜ pendiente |
 | IV | 21. Cláusulas abusivas y protección de consumidores | ⬜ pendiente |
