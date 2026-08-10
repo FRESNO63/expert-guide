@@ -16,10 +16,10 @@ Para regenerar tras editar contenido: `cd libro && node main.js`.
 | I | 2. Sujetos y objeto del contrato | ✅ redactado |
 | I | 3. Formación del contrato y deber de declaración del riesgo (art. 10 LCS) | ✅ redactado |
 | I | 4. Condiciones generales, particulares y especiales (profundización) | ✅ redactado |
-| II | 5. Incendio, explosión y fenómenos eléctricos | ⬜ pendiente |
-| II | 6. Daños por agua | ⬜ pendiente |
-| II | 7. Robo, expoliación y hurto | ⬜ pendiente |
-| II | 8. Fenómenos atmosféricos y riesgos extraordinarios (CCS) | ⬜ pendiente |
+| II | 5. Incendio, explosión y fenómenos eléctricos | ✅ redactado |
+| II | 6. Daños por agua | ✅ redactado |
+| II | 7. Robo, expoliación y hurto | ✅ redactado |
+| II | 8. Fenómenos atmosféricos y riesgos extraordinarios (CCS) | ✅ redactado |
 | II | 9. Responsabilidad civil de la vida privada / cabeza de familia | ⬜ pendiente |
 | II | 10. Defensa jurídica y asistencia en el hogar | ⬜ pendiente |
 | II | 11. Coberturas especiales (joyas, objetos de valor, comunidades) | ⬜ pendiente |

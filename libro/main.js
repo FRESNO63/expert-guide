@@ -10,6 +10,10 @@ const { capitulo01 } = require("./capitulo01");
 const { capitulo02 } = require("./capitulo02");
 const { capitulo03 } = require("./capitulo03");
 const { capitulo04 } = require("./capitulo04");
+const { capitulo05 } = require("./capitulo05");
+const { capitulo06 } = require("./capitulo06");
+const { capitulo07 } = require("./capitulo07");
+const { capitulo08 } = require("./capitulo08");
 const FN = require("./footnotes");
 
 const FECHA = "Agosto de 2026";
@@ -185,6 +189,11 @@ const doc = new Document({
         ...capitulo02(),
         ...capitulo03(),
         ...capitulo04(),
+        ...B.partTitle("II", "Las coberturas del seguro multirriesgo de hogar"),
+        ...capitulo05(),
+        ...capitulo06(),
+        ...capitulo07(),
+        ...capitulo08(),
       ],
     },
   ],

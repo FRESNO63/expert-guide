@@ -1,0 +1,87 @@
+const B = require("./build");
+
+function capitulo06() {
+  return [
+    B.chapterHeading(6, "Daños por agua"),
+
+    B.sumario([
+      "6.1. Una cobertura sin régimen legal propio: la remisión al clausulado",
+      "6.2. Tipología de siniestros de agua en el seguro de hogar",
+      "6.3. La causa del daño como campo de batalla: vicio, desgaste y falta de mantenimiento",
+      "6.4. Daños entre vecinos y comunidades de propietarios: elementos privativos y comunes",
+      "6.5. Concurrencia de seguros en el ámbito del arrendamiento y la propiedad horizontal",
+      "6.6. Daños continuados y determinación del dies a quo",
+      "6.7. Ficha para el profesional",
+      "6.8. Ficha para el asegurado",
+      "6.9. Checklist: gestión de un siniestro de daños por agua",
+    ]),
+    B.spacer(160),
+    B.abstractBlock(
+      "Los daños por agua constituyen, en volumen de siniestros, la primera causa de reclamación en el seguro de hogar español, pese a carecer de régimen legal propio en la LCS: su tratamiento jurídico se construye enteramente sobre el clausulado contractual, el régimen general del seguro de daños y la jurisprudencia sobre concurrencia de seguros y responsabilidad civil en la propiedad horizontal. El capítulo sistematiza los criterios aplicados por la Sala Primera del Tribunal Supremo a la atribución de causas, a la concurrencia de pólizas entre propietario y arrendatario, y a la determinación del dies a quo en los daños de producción continuada.",
+      "daños por agua, propiedad horizontal, concurrencia de seguros, art. 32 LCS, daño continuado, prescripción",
+      "Water damage claims are, by volume, the leading cause of homeowners' insurance claims in Spain, despite lacking a dedicated statutory regime under the Insurance Contract Act: their legal treatment rests entirely on policy wording, the general rules on indemnity insurance, and case law on concurrent insurance and condominium liability. This chapter systematises the criteria applied by the Supreme Court to causation disputes, to the concurrence of landlord and tenant policies, and to the starting point for limitation in cases of continuing damage.",
+      "water damage, condominium liability, concurrent insurance, continuing damage, limitation period"
+    ),
+    B.spacer(200),
+
+    B.h2("6.1. Una cobertura sin régimen legal propio: la remisión al clausulado"),
+    B.p(["A diferencia del incendio y del robo, la LCS no dedica un régimen específico a los daños por agua: se trata de una garantía de creación puramente contractual, nacida de la práctica aseguradora y hoy universalmente incorporada a las pólizas de hogar como una de sus coberturas troncales", B.fn("La ausencia de régimen legal específico obliga a proyectar sobre esta garantía, con mayor intensidad que sobre otras, el régimen general de los arts. 1 a 44 LCS (disposiciones generales del seguro contra daños) y, muy especialmente, el art. 3 LCS sobre condiciones generales y limitativas, estudiado en los capítulos 1 y 4; cfr. BATALLER GRAU, J. et al., op. cit., epígrafe introductorio al comentario de las coberturas atípicas del seguro multirriesgo."), ". Esta circunstancia tiene una consecuencia metodológica de primer orden: el alcance exacto de la cobertura de daños por agua debe reconstruirse, en cada caso, a partir de las condiciones generales y particulares de la póliza concreta, sometidas al régimen general de los arts. 1 a 44 LCS y, en particular, a la distinción entre cláusulas delimitadoras y limitativas estudiada en los capítulos 1 y 4."]),
+    B.p("La práctica aseguradora española distingue, dentro de esta garantía genérica, varias submodalidades que conviene identificar al leer una póliza: daños por agua propiamente dichos (rotura, fuga o desbordamiento de instalaciones fijas de suministro, calefacción o evacuación), daños estéticos derivados de humedades, búsqueda y reparación de la avería causante (garantía frecuentemente sujeta a sublímite propio) y responsabilidad civil frente a terceros por daños de agua causados desde la vivienda asegurada."),
+
+    B.h2("6.2. Tipología de siniestros de agua en el seguro de hogar"),
+    B.bullet([B.bold("Rotura de tuberías y accesorios: "), B.run("la causa más frecuente; puede afectar a instalaciones propias (privativas) o comunes, con las consecuencias sobre legitimación pasiva que se estudian en el epígrafe 6.4.")]),
+    B.bullet([B.bold("Filtraciones por cubierta o fachada: "), B.run("frecuentemente calificadas contractualmente como «humedades» y sometidas a exclusiones específicas, distintas de la rotura súbita y accidental de una instalación (capítulo 12).")]),
+    B.bullet([B.bold("Desbordamiento de electrodomésticos: "), B.run("lavadoras, lavavajillas y calentadores, generalmente cubiertos como supuesto asimilado al daño por agua propiamente dicho.")]),
+    B.bullet([B.bold("Daños causados a terceros (a la vivienda inferior o colindante): "), B.run("activan, simultáneamente, la cobertura de daños propios del causante (si la tiene) y su cobertura de responsabilidad civil de cabeza de familia (capítulo 9), lo que exige coordinar dos garantías de la misma póliza.")]),
+
+    B.h2("6.3. La causa del daño como campo de batalla: vicio, desgaste y falta de mantenimiento"),
+    B.p("La práctica totalidad de la litigiosidad en materia de daños por agua gira en torno a la causa del siniestro, porque las condiciones generales excluyen de forma prácticamente universal los daños derivados del simple desgaste, la falta de mantenimiento o el vicio propio de las instalaciones, reservando la cobertura a la rotura súbita y accidental. La correcta calificación de esta exclusión —delimitadora en su formulación típica, potencialmente limitativa si se aplica de forma extensiva y sorpresiva— exige aplicar sistemáticamente la metodología fijada en el capítulo 4: verificar si la cláusula de exclusión fue destacada y, en caso de duda razonable sobre si el daño obedece a una rotura súbita o a un desgaste progresivo, proyectar la regla contra proferentem del art. 1288 CC a favor del asegurado."),
+    B.p("En la práctica pericial, esta distinción exige normalmente un informe técnico que determine si la causa generadora fue un evento puntual (por ejemplo, la rotura de una junta o de un latiguillo de conexión) o un proceso de deterioro prolongado (por ejemplo, la corrosión generalizada de una red de fontanería envejecida), correspondiendo a la aseguradora, cuando invoca la exclusión, acreditar cumplidamente que el segundo supuesto es el que concurre."),
+
+    B.h2("6.4. Daños entre vecinos y comunidades de propietarios: elementos privativos y comunes"),
+    B.p(["Cuando el daño por agua se origina en un elemento común del edificio (bajantes, columnas generales, cubierta) y afecta a una vivienda privativa, se plantea la cuestión de la responsabilidad de la comunidad de propietarios, regida por el art. 10 LPH (deber de conservación de elementos comunes) en conexión con el art. 1902 CC. La jurisprudencia reconoce en estos supuestos la posibilidad de daños de producción continuada, cuya trascendencia sobre el cómputo de la prescripción es notable", B.fn("Sobre la distinción entre daño continuado (que no cierra el plazo de prescripción hasta la consolidación del resultado definitivo) y daño permanente de producción instantánea (cuyo plazo corre desde el conocimiento inicial), con abundante cita de precedentes, vid. la reseña doctrinal de esta distinción en Revista Española de Seguros, op. cit."), ", como ilustra la STS, Sala de lo Civil, de 20 de febrero de 2019 (ROJ: STS 511/2019; ECLI:ES:TS:2019:511; MP: Salas Carceller), referida a filtraciones desde elementos comunes de un edificio a una vivienda privativa:"]),
+    B.jurisBox("STS, Sala de lo Civil, de 20 de febrero de 2019 (ROJ: STS 511/2019; ECLI:ES:TS:2019:511; MP: Salas Carceller)", "«En los casos de daños continuados o de producción sucesiva no se inicia el cómputo del plazo de prescripción hasta la consolidación del definitivo resultado [...]. El artículo 1969 CC establece que el comienzo del plazo de la prescripción coincide con el momento en que la acción ‘pudo ejercitarse’, para lo que no basta el conocimiento del daño sino que es necesario, además, que se conozca la identidad del responsable del mismo a efectos de poder ejercer adecuadamente la acción.»"),
+    B.p("Aunque esta sentencia resuelve una acción de responsabilidad civil contra la comunidad —no una reclamación frente a la aseguradora—, su doctrina es directamente relevante para el profesional del seguro de hogar por una doble vía: de un lado, orienta el ejercicio de la acción de subrogación que la aseguradora del propietario afectado puede dirigir contra la comunidad o contra el propietario del elemento causante tras indemnizar a su asegurado (art. 43 LCS); de otro, ilustra la importancia de fijar con precisión, mediante prueba pericial, el momento de consolidación del daño cuando este se prolonga en el tiempo, cuestión que se retoma en el capítulo 18 al tratar la prescripción de la acción derivada del propio contrato de seguro."),
+
+    B.h2("6.5. Concurrencia de seguros en el ámbito del arrendamiento y la propiedad horizontal"),
+    B.p(["Es habitual que sobre un mismo inmueble arrendado concurran dos pólizas de daños: la del propietario-arrendador (que asegura el continente) y la del arrendatario (que asegura el contenido y, en ocasiones, su responsabilidad civil como ocupante). Un supuesto similar se produce entre el seguro individual del propietario y el seguro de la comunidad en régimen de propiedad horizontal. El artículo 32 LCS, que regula la concurrencia de seguros, exige identidad de tomador, lo que en rigor excluiría su aplicación literal a estos casos; sin embargo, el Tribunal Supremo ha extendido el principio indemnizatorio subyacente —la prohibición de enriquecimiento mediante el seguro— a estos supuestos de pluralidad de aseguradores con distintos tomadores"]),
+    B.legalBox("Art. 32 LCS (extracto)", "Cuando en dos o más contratos estipulados por el mismo tomador con distintos aseguradores se cubran los efectos que un mismo riesgo puede producir sobre el mismo interés y durante idéntico período de tiempo [...] los aseguradores contribuirán al abono de la indemnización en proporción a la propia suma asegurada, sin que pueda superarse la cuantía del daño."),
+    B.p("La STS, Sala de lo Civil, de 25 de marzo de 2025 (ROJ: STS 1227/2025; ECLI:ES:TS:2025:1227; MP: Vela Torres), referida precisamente a la concurrencia entre el seguro del propietario-arrendador y el del arrendatario sobre un mismo inmueble, fija un criterio de gran utilidad práctica: la mera coincidencia física del bien asegurado no basta para apreciar concurrencia de seguros; es necesario, además, que exista coincidencia de riesgo y de interés asegurado:"),
+    B.jurisBox("STS, Sala de lo Civil, de 25 de marzo de 2025 (ROJ: STS 1227/2025; ECLI:ES:TS:2025:1227; MP: Vela Torres)", "«Identidad o unicidad de tomador que, de por sí, excluye situaciones como la presente en la que sobre un mismo inmueble arrendado se conciertan dos pólizas de seguros de daños, una por parte del propietario arrendador y otra por el arrendatario [...]. Habrá que ver en cada caso qué es lo que estaba asegurado para determinar si existía tal coincidencia de riesgo, interés y simultaneidad temporal [...]. En determinados casos, generalmente coberturas concurrentes de elementos privativos de inmuebles en propiedad horizontal [...], es más fácil apreciar la identidad del riesgo y del interés asegurado. Pero en los casos de arrendamiento de inmuebles [...] el interés asegurado puede ser distinto [...]. Por ello, no cabe la distribución de la indemnización entre las dos compañías por no existir coincidencia de intereses asegurados.»"),
+    B.p("La regla práctica que se extrae es clara: ante un siniestro de agua que afecta a un inmueble con dos pólizas potencialmente concurrentes, el profesional debe comparar el objeto exacto de cada cobertura —qué asegura cada póliza y sobre qué interés— antes de asumir, sin más, que existe concurrencia de seguros y la consiguiente distribución proporcional del art. 32 LCS; en el caso de las coberturas de elementos privativos en régimen de propiedad horizontal, por el contrario, la identidad de riesgo e interés es normalmente más fácil de apreciar, con la consiguiente aplicación de la regla de contribución proporcional."),
+
+    B.h2("6.6. Daños continuados y determinación del dies a quo"),
+    B.p("La distinción entre daño permanente (de producción instantánea, aunque sus efectos se proyecten en el tiempo) y daño continuado (de producción sucesiva, sin consolidación hasta que cesa la causa generadora) resulta decisiva no solo para la prescripción de la acción de responsabilidad civil frente a terceros, sino también, de forma indirecta, para la correcta fijación de la fecha del siniestro a efectos del propio contrato de seguro: la determinación de qué póliza estaba en vigor cuando el daño se «produjo» —a efectos del art. 1 LCS— exige, en los siniestros de filtración lenta o de humedad progresiva, la misma prueba pericial sobre el momento de consolidación del resultado que exige la jurisprudencia sobre prescripción, por lo que ambas cuestiones deben abordarse conjuntamente desde el inicio del expediente."),
+
+    B.h2("6.7. Ficha para el profesional"),
+    B.fichaBox("Puntos de control en un siniestro de daños por agua", B.AZUL, [
+      "Determinar, mediante prueba pericial, si la causa es una rotura súbita y accidental (cubierta) o un desgaste/falta de mantenimiento (frecuentemente excluido), y exigir a la aseguradora la acreditación cumplida de la exclusión que invoque.",
+      "Identificar si el origen está en un elemento privativo o común, para dirigir correctamente la reclamación (aseguradora propia, aseguradora de la comunidad, o ambas mediante subrogación posterior).",
+      "Ante una posible concurrencia de seguros (propietario/arrendatario o propietario/comunidad), verificar la identidad de riesgo e interés asegurado conforme a la doctrina de la STS 1227/2025 (ROJ: STS 1227/2025) antes de aplicar automáticamente la regla de contribución proporcional del art. 32 LCS.",
+      "En daños de filtración lenta o humedad progresiva, fijar con prueba pericial el momento de consolidación del resultado dañoso, relevante tanto para la vigencia de la póliza aplicable como para el cómputo de plazos de prescripción (capítulo 18).",
+    ]),
+
+    B.h2("6.8. Ficha para el asegurado"),
+    B.fichaBox("Qué hacer ante una gotera o filtración en su vivienda", "8A5A00", [
+      "Corte el suministro de agua en la zona afectada si es posible, para minimizar el daño, y fotografíe el estado inicial antes de cualquier reparación.",
+      "Comunique el siniestro a su aseguradora y, si sospecha que el origen está en la vivienda de un vecino o en un elemento común, comuníqueselo también a la comunidad de propietarios.",
+      "No repare de forma definitiva la avería antes de que el perito de la aseguradora la examine, salvo urgencia para evitar daños mayores, en cuyo caso documente todo con fotografías y, si es posible, informe técnico previo.",
+      "Si le indican que el daño no está cubierto por «falta de mantenimiento», pida que se lo motiven por escrito y con base en un informe pericial: usted tiene derecho a conocer los motivos concretos de la denegación.",
+    ]),
+
+    B.h2("6.9. Checklist: gestión de un siniestro de daños por agua"),
+    B.bullet("1. ¿Cuál es la causa técnica identificada por el perito: rotura súbita o desgaste/falta de mantenimiento?"),
+    B.bullet("2. ¿El origen está en un elemento privativo o en un elemento común del edificio?"),
+    B.bullet("3. ¿Existen otras pólizas potencialmente concurrentes (arrendatario, comunidad)?"),
+    B.bullet("4. En caso de concurrencia, ¿existe identidad de riesgo e interés asegurado entre las pólizas?"),
+    B.bullet("5. ¿Se trata de un daño instantáneo o de un proceso de filtración/humedad progresiva?"),
+    B.bullet("6. ¿Está cubierta la garantía de localización y reparación de la avería, y con qué sublímite?"),
+    B.bullet("7. ¿Se ha comunicado el siniestro tanto a la propia aseguradora como, en su caso, a la comunidad de propietarios?"),
+
+    B.h2("Bibliografía citada"),
+    B.p("BATALLER GRAU, J.; BOQUERA MATARREDONA, J.; OLAVARRÍA IGLESIA, J. (coords.), Comentarios a la Ley de Contrato de Seguro, Tirant lo Blanch, Valencia."),
+    B.p("Revista Española de Seguros (RES), Sección Española de la Asociación Internacional de Derecho de Seguros (SEAIDA), Madrid."),
+  ];
+}
+
+module.exports = { capitulo06 };
