@@ -1,984 +1,1531 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abogados de Derecho de Seguros | Fresno Abogados</title>
-<meta name="description" content="Despacho especializado en Derecho de Seguros: accidentes de tráfico, responsabilidad civil, hogar, vida, salud e impago de indemnizaciones. Más de 30 años de experiencia.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fresno Abogados | Derecho de Seguros y Responsabilidad Civil</title>
+<meta name="description" content="Fresno Abogados: análisis de póliza y reclamación de siniestros — circulación, daños por agua, incendio, robo, invalidez y responsabilidad civil. Primera valoración sin coste. Respuesta en 24 horas.">
+
+<!-- =====================================================================
+     PERSONALIZACIÓN — FRESNO ABOGADOS
+     · Marca ya aplicada ("Fresno Abogados"), reutilizando el logotipo de
+       escudo del estilo original.
+     · Teléfono y correo ya sustituidos: +34 609 07 93 91 / mail@fresnoabogados.com
+     · Pendiente (buscar con Ctrl+F los textos entre corchetes [ ]):
+         - Horario de atención y dirección del despacho
+         - Nombre del letrado responsable y Colegio de Abogados (ICA)
+         - Ejemplos de resoluciones judiciales (sustituir por casos reales anonimizados)
+         - Enlaces de aviso legal, privacidad y cookies (href="#")
+     ===================================================================== -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --navy:#0b2545;
-    --navy-dark:#071a33;
-    --navy-light:#13355e;
-    --gold:#b8902f;
-    --gold-light:#d4af5a;
-    --paper:#f7f5f0;
-    --ink:#1b2430;
-    --ink-soft:#4a5568;
-    --line:#e2e0d8;
-    --white:#ffffff;
-    --danger:#8a2c1f;
-    --radius:10px;
-    --shadow:0 10px 30px rgba(11,37,69,0.12);
-    --maxw:1120px;
-  }
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    margin:0;
-    font-family:"Segoe UI", Arial, Helvetica, sans-serif;
-    color:var(--ink);
-    background:var(--paper);
-    line-height:1.55;
-    padding-bottom:64px;
-  }
-  h1,h2,h3,h4{
-    font-family:Georgia,"Times New Roman",serif;
-    color:var(--navy);
-    margin:0 0 .5em;
-    line-height:1.2;
-  }
-  p{margin:0 0 1em;}
-  a{color:inherit;}
-  img{max-width:100%;display:block;}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
-  .btn{
-    display:inline-flex;align-items:center;justify-content:center;gap:8px;
-    padding:14px 26px;
-    border-radius:6px;
-    font-weight:700;
-    font-size:15px;
-    text-decoration:none;
-    border:2px solid transparent;
-    cursor:pointer;
-    transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
-  }
-  .btn-primary{background:var(--gold);color:var(--navy-dark);}
-  .btn-primary:hover{background:var(--gold-light);transform:translateY(-1px);}
-  .btn-outline{background:transparent;border-color:var(--white);color:var(--white);}
-  .btn-outline:hover{background:rgba(255,255,255,0.1);}
-  .btn-navy{background:var(--navy);color:var(--white);}
-  .btn-navy:hover{background:var(--navy-light);}
-  .btn-block{width:100%;}
-  section{padding:72px 0;}
-  .eyebrow{
-    display:inline-block;
-    text-transform:uppercase;
-    letter-spacing:.12em;
-    font-size:12px;
-    font-weight:700;
-    color:var(--gold);
-    margin-bottom:10px;
-  }
-  .section-head{max-width:680px;margin:0 auto 44px;text-align:center;}
-  .section-head p{color:var(--ink-soft);font-size:17px;}
+:root{
+  --navy:#0A2540; --azul:#1B6DF0; --azul-osc:#12457F; --azul-cla:#7FAEF5;
+  --g100:#F4F6F9; --g200:#E4E9F0; --g300:#CBD5E1; --g500:#6B7A8F;
+  --blanco:#FFFFFF;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --cuerpo:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"Courier New",monospace;
+  --max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--cuerpo);color:var(--navy);background:var(--blanco);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+svg{display:block}
+::selection{background:var(--azul);color:#fff}
 
-  /* HEADER */
-  header{
-    position:sticky;top:0;z-index:50;
-    background:var(--navy-dark);
-    color:var(--white);
-    box-shadow:0 2px 10px rgba(0,0,0,0.15);
-  }
-  .nav{
-    display:flex;align-items:center;justify-content:space-between;
-    padding:14px 24px;
-    max-width:var(--maxw);margin:0 auto;
-  }
-  .brand{
-    font-family:Georgia,serif;
-    font-size:20px;font-weight:700;color:var(--white);
-    text-decoration:none;letter-spacing:.02em;
-  }
-  .brand span{color:var(--gold-light);}
-  .nav-links{display:flex;align-items:center;gap:28px;}
-  .nav-links a{color:#dbe3ee;text-decoration:none;font-size:14.5px;}
-  .nav-links a:hover{color:var(--gold-light);}
-  .nav-phone{
-    display:flex;align-items:center;gap:8px;
-    color:var(--white);text-decoration:none;font-weight:700;font-size:15px;
-  }
-  .nav-cta{margin-left:6px;}
-  .nav-toggle{display:none;background:none;border:none;color:var(--white);font-size:26px;cursor:pointer;}
+.contenedor{width:100%;max-width:var(--max);margin:0 auto;padding:0 24px}
+.seccion{padding:96px 0}
+.seccion--corta{padding:68px 0}
+.seccion--gris{background:var(--g100)}
+.seccion--navy{background:var(--navy);color:#fff}
 
-  /* HERO */
-  .hero{
-    background:linear-gradient(160deg,var(--navy-dark) 0%, var(--navy) 55%, var(--navy-light) 100%);
-    color:var(--white);
-    padding:64px 0 84px;
-  }
-  .hero-grid{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:40px;
-    align-items:start;
-  }
-  .hero-intro{max-width:760px;margin:0 auto;text-align:center;}
-  .hero h1{color:var(--white);font-size:38px;}
-  .hero h1 em{color:var(--gold-light);font-style:normal;}
-  .hero-sub{color:#c9d3e0;font-size:18px;max-width:620px;margin:0 auto 8px;}
-  .hero-stats{
-    display:flex;gap:28px;justify-content:center;flex-wrap:wrap;
-    margin-top:26px;padding-top:22px;border-top:1px solid rgba(255,255,255,0.15);
-  }
-  .hero-stat b{display:block;font-size:26px;color:var(--gold-light);font-family:Georgia,serif;}
-  .hero-stat span{font-size:13px;color:#c9d3e0;}
+.etiqueta{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--azul);display:flex;align-items:center;gap:12px;margin-bottom:20px;font-weight:500}
+.etiqueta::before{content:"";width:26px;height:3px;background:var(--azul);flex:none}
+h2{font-family:var(--display);font-weight:700;font-size:clamp(30px,4.2vw,48px);line-height:1.06;letter-spacing:-.025em;max-width:20ch}
+.seccion--navy h2{color:#fff}
+.entradilla{margin-top:18px;max-width:62ch;color:var(--g500);font-size:18px}
+.seccion--navy .entradilla{color:#9FB3C8}
 
-  /* PARTE DE SINIESTRO WIDGET */
-  .siniestro{
-    background:var(--white);
-    color:var(--ink);
-    border-radius:var(--radius);
-    box-shadow:var(--shadow);
-    max-width:820px;
-    margin:44px auto 0;
-    overflow:hidden;
-    border:1px solid var(--line);
-  }
-  .siniestro-head{
-    background:var(--navy);
-    color:var(--white);
-    padding:20px 28px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:12px;
-  }
-  .siniestro-head .tag{
-    background:rgba(255,255,255,0.12);
-    border:1px solid rgba(255,255,255,0.25);
-    padding:4px 10px;
-    border-radius:20px;
-    font-size:11.5px;
-    letter-spacing:.05em;
-    text-transform:uppercase;
-    color:var(--gold-light);
-  }
-  .siniestro-head h3{color:var(--white);margin:6px 0 0;font-size:20px;}
-  .siniestro-body{padding:28px;}
-  .siniestro-step{display:none;}
-  .siniestro-step.active{display:block;animation:fadeIn .25s ease;}
-  @keyframes fadeIn{from{opacity:0;transform:translateY(4px);}to{opacity:1;transform:translateY(0);}}
-  .siniestro-label{
-    font-weight:700;font-size:15px;color:var(--navy);margin-bottom:14px;
-    display:flex;align-items:center;gap:8px;
-  }
-  .siniestro-label .num{
-    background:var(--gold);color:var(--navy-dark);
-    width:24px;height:24px;border-radius:50%;
-    display:inline-flex;align-items:center;justify-content:center;
-    font-size:13px;font-weight:800;
-  }
-  .option-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:10px;
-  }
-  .option-btn{
-    text-align:left;
-    background:var(--paper);
-    border:1.5px solid var(--line);
-    border-radius:8px;
-    padding:13px 14px;
-    font-size:14.5px;
-    color:var(--ink);
-    cursor:pointer;
-    transition:border-color .15s ease, background .15s ease;
-  }
-  .option-btn:hover{border-color:var(--gold);}
-  .option-btn.selected{
-    border-color:var(--gold);
-    background:#fbf3e3;
-    font-weight:700;
-  }
-  .siniestro-nav{
-    display:flex;justify-content:space-between;align-items:center;
-    margin-top:22px;
-  }
-  .link-back{
-    background:none;border:none;color:var(--ink-soft);
-    font-size:14px;cursor:pointer;text-decoration:underline;
-    padding:8px 0;
-  }
-  .link-back[hidden]{visibility:hidden;}
+/* aviso superior */
+.tira{background:var(--azul);color:#fff;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;text-align:center;padding:9px 16px}
+.tira b{font-weight:500}
 
-  .resultado{
-    background:var(--paper);
-    border:1px solid var(--line);
-    border-left:5px solid var(--gold);
-    border-radius:8px;
-    padding:20px 22px;
-    margin-bottom:18px;
-  }
-  .resultado .r-area{
-    font-size:12px;text-transform:uppercase;letter-spacing:.06em;
-    color:var(--gold);font-weight:700;margin-bottom:6px;
-  }
-  .resultado h4{margin:0 0 10px;font-size:19px;}
-  .resultado .r-norma{
-    display:inline-block;
-    background:var(--navy);color:var(--white);
-    padding:5px 12px;border-radius:20px;
-    font-size:12.5px;font-weight:700;margin-bottom:12px;
-  }
-  .resultado p{color:var(--ink-soft);font-size:15px;margin-bottom:0;}
-  .resultado .r-inicio{
-    margin-top:12px;padding-top:12px;border-top:1px dashed var(--line);
-    font-size:14.5px;color:var(--ink);
-  }
-  .resultado .r-inicio b{color:var(--navy);}
+/* cabecera */
+.barra{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdrop-filter:saturate(160%) blur(10px);border-bottom:1px solid var(--g200)}
+.barra__int{display:flex;align-items:center;justify-content:space-between;height:74px;gap:16px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo svg{width:34px;height:34px;flex:none}
+.logo__t{line-height:1}
+.logo__n{font-family:var(--display);font-size:21px;font-weight:700;letter-spacing:-.02em;color:var(--navy)}
+.logo__s{font-family:var(--mono);font-size:9px;letter-spacing:.24em;text-transform:uppercase;color:var(--azul-osc);margin-top:4px}
+.nav{display:flex;align-items:center;gap:26px}
+.nav a{color:#dbe3ee;text-decoration:none;font-size:14.5px;color:var(--navy)}
+.nav a:hover{color:var(--azul)}
 
-  /* AREAS */
-  .areas-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:22px;
-  }
-  .area-card{
-    background:var(--white);
-    border:1px solid var(--line);
-    border-radius:var(--radius);
-    padding:26px;
-    box-shadow:0 4px 14px rgba(11,37,69,0.05);
-  }
-  .area-card .icon{
-    width:44px;height:44px;border-radius:10px;
-    background:var(--navy);color:var(--gold-light);
-    display:flex;align-items:center;justify-content:center;
-    font-size:20px;margin-bottom:14px;font-weight:800;font-family:Georgia,serif;
-  }
-  .area-card h3{font-size:18px;margin-bottom:8px;}
-  .area-card p{font-size:14.5px;color:var(--ink-soft);margin-bottom:12px;}
-  .area-card .base-legal{
-    font-size:12.5px;font-weight:700;color:var(--navy);
-    background:#eef2f7;display:inline-block;padding:5px 10px;border-radius:6px;
-  }
+/* botones */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--cuerpo);font-weight:700;font-size:15.5px;padding:16px 28px;border:2px solid transparent;cursor:pointer;text-decoration:none;letter-spacing:.01em;transition:transform .14s,background .14s,color .14s,border-color .14s}
+.btn:active{transform:translateY(1px)}
+.btn--azul{background:var(--azul);color:#fff;border-color:var(--azul)}
+.btn--azul:hover{background:var(--azul-osc);border-color:var(--azul-osc)}
+.btn--borde{background:transparent;color:var(--navy);border-color:var(--g300)}
+.btn--borde:hover{border-color:var(--navy)}
+.btn--blanco{background:#fff;color:var(--navy);border-color:#fff}
+.btn--blanco:hover{background:var(--g200);border-color:var(--g200)}
+.btn--fantasma{background:transparent;color:#fff;border-color:rgba(255,255,255,.4)}
+.btn--fantasma:hover{border-color:#fff}
+.btn--ancho{width:100%}
+.btn--sm{padding:11px 20px;font-size:14.5px}
+.btn[disabled]{opacity:.4;cursor:not-allowed}
 
-  /* PROCESO */
-  .proceso-wrap{background:var(--navy-dark);color:var(--white);border-radius:16px;padding:52px 40px;}
-  .proceso-wrap .section-head p{color:#c9d3e0;}
-  .proceso-wrap .eyebrow{color:var(--gold-light);}
-  .proceso-wrap h2{color:var(--white);}
-  .pasos{
-    display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-bottom:34px;
-  }
-  .paso{
-    background:rgba(255,255,255,0.05);
-    border:1px solid rgba(255,255,255,0.12);
-    border-radius:10px;
-    padding:22px 18px;
-    position:relative;
-  }
-  .paso .p-num{
-    font-family:Georgia,serif;font-size:32px;color:var(--gold-light);
-    margin-bottom:8px;
-  }
-  .paso h4{color:var(--white);font-size:16px;margin-bottom:8px;}
-  .paso p{color:#c9d3e0;font-size:13.5px;margin:0;}
-  .proceso-why{
-    background:rgba(255,255,255,0.06);
-    border-left:4px solid var(--gold);
-    border-radius:8px;
-    padding:20px 24px;
-  }
-  .proceso-why h4{color:var(--gold-light);font-size:15px;margin-bottom:8px;}
-  .proceso-why p{color:#dbe3ee;font-size:14.5px;margin:0;}
+/* hero */
+.hero{padding:70px 0 90px;background:
+  radial-gradient(90% 120% at 88% -10%, #E9F0FD 0%, rgba(233,240,253,0) 60%), var(--blanco);
+  border-bottom:1px solid var(--g200)}
+.hero__int{display:grid;grid-template-columns:1.08fr .92fr;gap:60px;align-items:start}
+.hero h1{font-family:var(--display);font-weight:700;font-size:clamp(38px,6vw,72px);line-height:.98;letter-spacing:-.035em;max-width:13ch}
+.hero h1 em{font-style:normal;color:var(--azul)}
+.hero__sub{margin-top:24px;font-size:19px;color:var(--g500);max-width:46ch}
+.hero__cta{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap}
+.marcas{margin-top:44px;padding-top:26px;border-top:2px solid var(--navy);display:grid;grid-template-columns:repeat(3,auto);gap:34px;justify-content:start}
+.marca__n{font-family:var(--display);font-size:30px;font-weight:700;line-height:1;letter-spacing:-.02em}
+.marca__t{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--g500);margin-top:8px}
 
-  /* PLAZOS */
-  .plazos-grid{
-    display:grid;grid-template-columns:repeat(3,1fr);gap:22px;
-  }
-  .plazo-card{
-    background:var(--white);
-    border:1px solid var(--line);
-    border-top:5px solid var(--gold);
-    border-radius:var(--radius);
-    padding:28px;text-align:center;
-    box-shadow:0 4px 14px rgba(11,37,69,0.05);
-  }
-  .plazo-card .years{
-    font-family:Georgia,serif;font-size:46px;color:var(--navy);font-weight:700;
-  }
-  .plazo-card .years span{font-size:16px;color:var(--ink-soft);font-family:inherit;}
-  .plazo-card h4{font-size:16px;margin:6px 0 10px;}
-  .plazo-card p{font-size:13.5px;color:var(--ink-soft);margin:0;}
-  .plazos-note{
-    text-align:center;margin-top:26px;font-size:14px;color:var(--ink-soft);
-  }
+/* ficha */
+.ficha{background:#fff;border:1px solid var(--g200);box-shadow:0 30px 70px -34px rgba(10,37,64,.35)}
+.ficha__cab{background:var(--navy);color:#fff;padding:18px 22px;display:flex;justify-content:space-between;align-items:baseline}
+.ficha__tit{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase}
+.ficha__ref{font-family:var(--mono);font-size:11px;color:var(--azul-cla)}
+.ficha__cuerpo{padding:24px 22px}
+.bloque + .bloque{margin-top:24px;padding-top:24px;border-top:1px solid var(--g200)}
+.bloque__cab{display:flex;gap:11px;align-items:center;margin-bottom:14px}
+.bloque__num{width:24px;height:24px;flex:none;background:var(--azul);color:#fff;font-family:var(--mono);font-size:12px;display:grid;place-items:center;font-weight:500}
+.bloque__lab{font-family:var(--mono);font-size:11.5px;letter-spacing:.11em;text-transform:uppercase}
+.opciones{display:grid;gap:1px;background:var(--g200);border:1px solid var(--g200)}
+.opcion{display:flex;align-items:center;gap:12px;background:#fff;padding:12px 13px;cursor:pointer;font-size:15px;transition:background .13s}
+.opcion:hover{background:var(--g100)}
+.opcion input{position:absolute;opacity:0;width:0;height:0}
+.casilla{width:18px;height:18px;flex:none;border:2px solid var(--navy);display:grid;place-items:center}
+.casilla::after{content:"";width:10px;height:10px;background:var(--azul);transform:scale(0);transition:transform .16s cubic-bezier(.3,1.5,.6,1)}
+.opcion input:checked ~ .casilla{border-color:var(--azul)}
+.opcion input:checked ~ .casilla::after{transform:scale(1)}
+.opcion input:checked ~ .opcion__t{font-weight:600}
+.opcion input:focus-visible ~ .casilla{outline:2px solid var(--azul);outline-offset:3px}
+.ficha__salida{margin-top:22px;background:var(--g100);border-left:4px solid var(--azul);padding:16px}
+.salida__lab{font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--g500)}
+.salida__txt{margin-top:9px;font-size:14.8px;line-height:1.5;min-height:46px}
+.ficha__pie{padding:0 22px 24px}
 
-  /* DESPACHO */
-  .despacho{
-    display:grid;grid-template-columns:1fr 1.4fr;gap:44px;align-items:center;
-  }
-  .despacho-photo{
-    background:linear-gradient(160deg,var(--navy),var(--navy-light));
-    border-radius:var(--radius);
-    aspect-ratio:4/5;
-    display:flex;align-items:center;justify-content:center;
-    color:var(--gold-light);
-    font-family:Georgia,serif;font-size:15px;text-align:center;padding:24px;
-  }
-  .despacho-stats{
-    display:flex;gap:20px;margin:20px 0 24px;flex-wrap:wrap;
-  }
-  .d-stat{
-    background:var(--white);border:1px solid var(--line);border-radius:8px;
-    padding:14px 18px;min-width:140px;
-  }
-  .d-stat b{display:block;font-family:Georgia,serif;font-size:24px;color:var(--navy);}
-  .d-stat span{font-size:12.5px;color:var(--ink-soft);}
-  .despacho ul{padding-left:20px;color:var(--ink-soft);font-size:15px;}
-  .despacho ul li{margin-bottom:8px;}
+/* tarjetas de área */
+.rejilla{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
+.area{background:#fff;border:1px solid var(--g200);overflow:hidden;transition:border-color .16s,transform .16s}
+.area:hover{border-color:var(--azul);transform:translateY(-3px)}
+.area img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--g100)}
+.area__c{padding:24px 22px 26px}
+.area__t{font-family:var(--display);font-size:21px;font-weight:700;letter-spacing:-.015em;margin-bottom:9px;line-height:1.15}
+.area__d{font-size:15.3px;color:var(--g500);line-height:1.55}
+.area__n{margin-top:16px;padding-top:13px;border-top:1px solid var(--g200);font-family:var(--mono);font-size:11.5px;color:var(--azul-osc)}
 
-  /* FAQ */
-  .faq-item{
-    border-bottom:1px solid var(--line);
-  }
-  .faq-q{
-    width:100%;text-align:left;background:none;border:none;
-    padding:20px 4px;font-size:16.5px;font-weight:700;color:var(--navy);
-    display:flex;justify-content:space-between;align-items:center;
-    cursor:pointer;font-family:Georgia,serif;
-  }
-  .faq-q .plus{font-size:22px;color:var(--gold);transition:transform .2s ease;}
-  .faq-item.open .faq-q .plus{transform:rotate(45deg);}
-  .faq-a{
-    max-height:0;overflow:hidden;transition:max-height .25s ease;
-  }
-  .faq-a-inner{padding:0 4px 20px;color:var(--ink-soft);font-size:15px;}
-  .faq-item.open .faq-a{max-height:400px;}
+/* cifras */
+.datos{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:48px}
+.dato{border-top:4px solid var(--azul);padding-top:20px}
+.dato__n{font-family:var(--display);font-size:clamp(32px,4.4vw,46px);font-weight:700;line-height:1;letter-spacing:-.03em;color:#fff}
+.dato__t{font-size:14.8px;color:#9FB3C8;margin-top:12px;line-height:1.45}
+.dato__f{font-family:var(--mono);font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:#5E748F;color:#64809E;margin-top:14px}
+.grafico{margin-top:48px;border:1px solid rgba(255,255,255,.18);padding:30px 28px}
+.grafico__t{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--azul-cla)}
+.barras{margin-top:26px;display:grid;gap:18px}
+.fila{display:grid;grid-template-columns:210px 1fr 96px;gap:18px;align-items:center}
+.fila__l{font-size:15px;color:#fff;font-weight:500}
+.fila__p{height:16px;background:rgba(255,255,255,.1);position:relative;overflow:hidden}
+.fila__p i{position:absolute;inset:0 auto 0 0;background:var(--azul);width:0;transition:width 1.1s cubic-bezier(.2,.7,.3,1)}
+.fila__v{font-family:var(--mono);font-size:13.5px;color:#9FB3C8;text-align:right}
+.grafico__f{font-family:var(--mono);font-size:10.5px;color:#64809E;margin-top:24px;line-height:1.6}
 
-  /* CONTACTO */
-  .contacto-wrap{
-    display:grid;grid-template-columns:1fr 1fr;gap:44px;
-  }
-  .contacto-info h3{font-size:20px;margin-bottom:18px;}
-  .info-row{
-    display:flex;gap:14px;margin-bottom:20px;align-items:flex-start;
-  }
-  .info-row .ic{
-    width:38px;height:38px;border-radius:8px;background:var(--navy);color:var(--gold-light);
-    display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:17px;
-  }
-  .info-row a{color:var(--navy);text-decoration:none;font-weight:700;}
-  .info-row a:hover{text-decoration:underline;}
-  .info-row span{display:block;font-size:13px;color:var(--ink-soft);margin-bottom:2px;}
-  .whatsapp-btn{
-    background:#25D366;color:var(--white);margin-top:6px;
-  }
-  .whatsapp-btn:hover{background:#1ebe5b;}
+/* norma */
+.norma{background:var(--navy);color:#fff;padding:44px;margin-top:44px;max-width:82ch;border-left:6px solid var(--azul)}
+.norma__l{font-family:var(--mono);font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--azul-cla)}
+.norma__t{font-family:var(--display);font-size:clamp(21px,2.6vw,29px);line-height:1.32;margin-top:16px;font-weight:600}
+.norma__f{font-family:var(--mono);font-size:12px;color:#9FB3C8;margin-top:20px;line-height:1.7}
 
-  form{
-    background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
-    padding:28px;box-shadow:var(--shadow);
-  }
-  .form-row{margin-bottom:16px;}
-  .form-row label{display:block;font-size:13.5px;font-weight:700;color:var(--navy);margin-bottom:6px;}
-  .form-row input, .form-row textarea{
-    width:100%;padding:11px 12px;border:1.5px solid var(--line);border-radius:6px;
-    font-size:14.5px;font-family:inherit;background:var(--paper);
-  }
-  .form-row input:focus, .form-row textarea:focus{outline:none;border-color:var(--gold);}
-  .form-resumen{
-    display:none;
-    background:#fbf3e3;border:1px dashed var(--gold);border-radius:8px;
-    padding:12px 14px;margin-bottom:16px;font-size:13.5px;color:var(--navy);
-  }
-  .form-resumen.visible{display:block;}
-  .form-note{font-size:12px;color:var(--ink-soft);margin-top:10px;}
+/* pasos */
+.pasos{margin-top:48px;display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.paso{border-top:4px solid var(--g300);padding-top:22px}
+.paso--on{border-top-color:var(--azul)}
+.paso__n{font-family:var(--mono);font-size:11.5px;letter-spacing:.15em;color:var(--azul)}
+.paso__t{font-family:var(--display);font-size:21px;font-weight:700;margin:12px 0 10px;line-height:1.15;letter-spacing:-.015em}
+.paso__d{font-size:15.2px;color:var(--g500);line-height:1.55}
 
-  footer{
-    background:var(--navy-dark);color:#c9d3e0;padding:48px 0 24px;font-size:14px;
-  }
-  .footer-grid{
-    display:grid;grid-template-columns:2fr 1fr 1fr;gap:36px;margin-bottom:34px;
-  }
-  footer h5{color:var(--white);font-size:14px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:14px;}
-  footer .brand{margin-bottom:10px;}
-  footer p{color:#9fb0c8;font-size:13.5px;}
-  footer ul{list-style:none;padding:0;margin:0;}
-  footer ul li{margin-bottom:9px;}
-  footer a{color:#c9d3e0;text-decoration:none;}
-  footer a:hover{color:var(--gold-light);}
-  .footer-bottom{
-    border-top:1px solid rgba(255,255,255,0.1);padding-top:20px;
-    display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
-    font-size:12.5px;color:#8195b0;
-  }
-  .footer-bottom a{color:#8195b0;text-decoration:underline;}
+/* noticias */
+.noticias{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:48px}
+.noticia{background:#fff;border:1px solid var(--g200);padding:26px 24px;text-decoration:none;display:block;transition:border-color .16s,transform .16s}
+.noticia:hover{border-color:var(--azul);transform:translateY(-3px)}
+.noticia__m{display:flex;gap:14px;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--azul)}
+.noticia__m span:last-child{color:var(--g500)}
+.noticia__t{font-family:var(--display);font-size:21px;font-weight:700;margin:14px 0 10px;line-height:1.2;letter-spacing:-.015em}
+.noticia__d{font-size:15.3px;color:var(--g500);line-height:1.55}
+.noticia__e{margin-top:16px;font-family:var(--mono);font-size:11.5px;color:var(--navy)}
+.noticia__e::after{content:" →";color:var(--azul)}
 
-  /* MOBILE BOTTOM BAR */
-  .mobile-bar{
-    display:none;
-    position:fixed;bottom:0;left:0;right:0;z-index:60;
-    background:var(--navy-dark);
-    border-top:1px solid rgba(255,255,255,0.1);
-    padding:10px 14px;
-    gap:10px;
-  }
-  .mobile-bar a{flex:1;text-align:center;padding:13px 10px;font-size:14px;}
+/* plazos */
+.plazos{margin-top:44px;border-top:2px solid var(--navy)}
+.plazo{display:grid;grid-template-columns:130px 1fr 1fr;gap:24px;padding:22px 0;align-items:baseline;border-bottom:1px solid var(--g200)}
+.plazo__t{font-family:var(--display);font-size:34px;font-weight:700;line-height:1;color:var(--azul);letter-spacing:-.03em}
+.plazo__t span{font-family:var(--cuerpo);font-size:13px;font-weight:500;color:var(--g500);display:block;margin-top:6px;letter-spacing:0}
+.plazo__q{font-weight:600;font-size:16px}
+.plazo__n{font-family:var(--mono);font-size:12.5px;color:var(--g500);line-height:1.55}
+.aviso{margin-top:22px;font-size:14.6px;color:var(--g500);border-left:4px solid var(--azul);padding-left:16px;max-width:76ch}
 
-  @media (max-width:900px){
-    .nav-links{display:none;}
-    .nav-toggle{display:block;}
-    .areas-grid{grid-template-columns:1fr 1fr;}
-    .pasos{grid-template-columns:1fr 1fr;}
-    .plazos-grid{grid-template-columns:1fr;}
-    .despacho{grid-template-columns:1fr;}
-    .despacho-photo{aspect-ratio:16/9;}
-    .contacto-wrap{grid-template-columns:1fr;}
-    .footer-grid{grid-template-columns:1fr;gap:26px;}
-    .mobile-bar{display:flex;}
-    body{padding-bottom:78px;}
-    .hero h1{font-size:30px;}
-    section{padding:52px 0;}
-  }
-  @media (max-width:600px){
-    .option-grid{grid-template-columns:1fr;}
-    .areas-grid{grid-template-columns:1fr;}
-    .pasos{grid-template-columns:1fr;}
-    .siniestro-body{padding:20px;}
-    .proceso-wrap{padding:34px 20px;}
-  }
+/* gabinete */
+.gab{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.tarjeta{border:1px solid var(--g200);background:#fff;padding:32px}
+.tarjeta__l{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--g500)}
+.tarjeta__n{font-family:var(--display);font-size:25px;font-weight:700;margin:12px 0 8px;line-height:1.15}
+.tarjeta__d{font-size:15px;color:var(--g500);line-height:1.65}
+.tarjeta__d strong{color:var(--navy);font-weight:600}
+.lista{margin-top:28px;display:grid;gap:14px}
+.lista li{list-style:none;display:flex;gap:14px;font-size:16.5px;line-height:1.5}
+.lista li::before{content:"";width:10px;height:10px;background:var(--azul);flex:none;margin-top:9px}
+
+/* faq */
+.faq{margin-top:44px;border-top:2px solid var(--navy)}
+.faq details{border-bottom:1px solid var(--g200);background:#fff}
+.faq summary{cursor:pointer;list-style:none;padding:22px 4px;display:flex;gap:18px;align-items:flex-start;font-weight:600;font-size:17.5px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";margin-left:auto;font-family:var(--mono);color:var(--azul);font-size:22px;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq__r{padding:0 4px 24px 58px;color:var(--g500);font-size:15.9px;max-width:82ch}
+.faq__r em{font-style:normal;font-family:var(--mono);font-size:12.5px;color:var(--azul-osc);display:block;margin-top:12px}
+.faq__q{font-family:var(--mono);font-size:12px;color:var(--azul);flex:none;padding-top:4px}
+
+/* contacto */
+.cont__int{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:start;margin-top:48px}
+.canales{display:grid;gap:14px}
+.canal{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.16);padding:22px;text-decoration:none;display:block;transition:border-color .16s,background .16s}
+.canal:hover{border-color:var(--azul);background:rgba(27,109,240,.12)}
+.canal__l{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--azul-cla)}
+.canal__v{font-size:19px;color:#fff;margin-top:8px;font-weight:600}
+.canal__d{font-size:14px;color:#9FB3C8;margin-top:5px}
+.formulario{background:#fff;color:var(--navy);padding:30px;border-top:6px solid var(--azul)}
+.ff{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.fc{margin-bottom:16px}
+.fc label{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--g500);margin-bottom:8px}
+.fc input,.fc select,.fc textarea{width:100%;font-family:var(--cuerpo);font-size:15.5px;color:var(--navy);border:1px solid var(--g300);background:#fff;padding:13px;border-radius:0}
+.fc textarea{resize:vertical;min-height:100px}
+.fc input:focus,.fc select:focus,.fc textarea:focus{outline:none;border-color:var(--azul);box-shadow:0 0 0 3px rgba(27,109,240,.15)}
+.consent{display:flex;gap:12px;align-items:flex-start;font-size:13.2px;color:var(--g500);line-height:1.5;margin:6px 0 20px}
+.consent input{margin-top:3px;accent-color:var(--azul);width:17px;height:17px;flex:none}
+.fnota{font-family:var(--mono);font-size:11px;color:var(--g500);margin-top:16px;text-align:center;letter-spacing:.04em}
+
+/* pie */
+.pie{background:var(--navy);color:#9FB3C8;padding:56px 0 36px;font-size:14.5px;border-top:1px solid rgba(255,255,255,.1)}
+.pie__int{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px}
+.pie h4{font-family:var(--mono);font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:#fff;font-weight:500;margin-bottom:16px}
+.pie a{text-decoration:none}
+.pie a:hover{color:var(--azul-cla)}
+.pie__leg{margin-top:40px;padding-top:24px;border-top:1px solid rgba(255,255,255,.12);font-size:12.5px;line-height:1.75;color:#64809E}
+
+/* móvil */
+.movil{display:none;position:fixed;left:0;right:0;bottom:0;z-index:70;background:#fff;border-top:1px solid var(--g200);padding:10px 12px;gap:10px;box-shadow:0 -8px 24px -14px rgba(10,37,64,.5)}
+.movil .btn{flex:1;padding:14px 10px;font-size:14.5px}
+
+.rev{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
+.rev.visible{opacity:1;transform:none}
+
+@media(max-width:1000px){
+  .hero__int,.cont__int,.gab{grid-template-columns:1fr;gap:44px}
+  .rejilla,.datos,.noticias{grid-template-columns:repeat(2,1fr)}
+  .pasos{grid-template-columns:repeat(2,1fr)}
+  .pie__int{grid-template-columns:1fr 1fr}
+  .nav{display:none}
+  .fila{grid-template-columns:150px 1fr 86px;gap:14px}
+}
+@media(max-width:680px){
+  body{font-size:16px;padding-bottom:74px}
+  .seccion{padding:64px 0}
+  .hero{padding:48px 0 66px}
+  .rejilla,.datos,.noticias,.pasos{grid-template-columns:1fr}
+  .plazo{grid-template-columns:1fr;gap:10px}
+  .ff{grid-template-columns:1fr}
+  .pie__int{grid-template-columns:1fr}
+  .marcas{grid-template-columns:1fr 1fr;gap:22px}
+  .norma{padding:28px 22px}
+  .grafico{padding:24px 20px}
+  .fila{grid-template-columns:1fr;gap:8px}
+  .fila__v{text-align:left}
+  .movil{display:flex}
+  .faq__r{padding-left:4px}
+  .tira{font-size:10.5px;letter-spacing:.06em}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .rev{opacity:1;transform:none}
+}
+
+/* ============ ARTÍCULOS Y PÁGINAS INTERIORES ============ */
+.cintillo{background:var(--g100);border-bottom:1px solid var(--g200);padding:14px 0}
+.miga{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--g500)}
+.miga a{text-decoration:none}.miga a:hover{color:var(--azul)}
+.art{max-width:760px;margin:0 auto;padding:64px 24px 80px}
+.art__meta{display:flex;gap:16px;flex-wrap:wrap;font-family:var(--mono);font-size:11.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--azul)}
+.art__meta span:not(:first-child){color:var(--g500)}
+.art h1{font-family:var(--display);font-weight:700;font-size:clamp(31px,4.6vw,50px);line-height:1.04;letter-spacing:-.03em;margin:20px 0 22px}
+.art__lead{font-size:20px;color:var(--g500);line-height:1.55;padding-bottom:30px;border-bottom:2px solid var(--navy)}
+.art h2{font-family:var(--display);font-size:27px;font-weight:700;letter-spacing:-.02em;margin:44px 0 16px;max-width:none;line-height:1.15}
+.art h3{font-size:19px;font-weight:700;margin:30px 0 12px}
+.art p{margin-bottom:18px;font-size:17.5px;line-height:1.72}
+.art ul,.art ol{margin:0 0 22px 22px}
+.art li{margin-bottom:10px;font-size:17.5px;line-height:1.65}
+.art strong{font-weight:600}
+.art__cita{border-left:5px solid var(--azul);background:var(--g100);padding:24px 26px;margin:32px 0;font-family:var(--display);font-size:20px;line-height:1.45}
+.art__cita cite{display:block;font-family:var(--mono);font-size:11.5px;font-style:normal;letter-spacing:.12em;text-transform:uppercase;color:var(--azul-osc);margin-top:14px}
+.art__nota{border:1px solid var(--g300);padding:22px 24px;margin:32px 0;font-size:15.5px;color:var(--g500);line-height:1.6}
+.art__nota b{color:var(--navy);display:block;margin-bottom:8px;font-family:var(--mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase}
+.art__cierre{margin-top:52px;padding:32px;background:var(--navy);color:#fff}
+.art__cierre h3{font-family:var(--display);font-size:25px;font-weight:700;margin:0 0 12px;letter-spacing:-.02em}
+.art__cierre p{color:#9FB3C8;font-size:16.5px;margin-bottom:22px}
+.art__aviso{margin-top:36px;font-size:13.5px;color:var(--g500);line-height:1.6;border-top:1px solid var(--g200);padding-top:20px}
+
+.entradas{display:grid;gap:20px;margin-top:48px}
+.entrada{display:grid;grid-template-columns:190px 1fr;gap:26px;background:#fff;border:1px solid var(--g200);padding:26px;text-decoration:none;transition:border-color .16s,transform .16s}
+.entrada:hover{border-color:var(--azul);transform:translateY(-3px)}
+.entrada__m{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--azul);line-height:2}
+.entrada__m b{display:block;color:var(--g500);font-weight:400}
+.entrada__t{font-family:var(--display);font-size:23px;font-weight:700;letter-spacing:-.02em;line-height:1.18;margin-bottom:10px}
+.entrada__d{font-size:15.8px;color:var(--g500);line-height:1.55}
+
+.fallo{background:#fff;border:1px solid var(--g200);border-left:5px solid var(--azul);padding:26px;margin-bottom:20px}
+.fallo__m{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--azul);margin-bottom:12px}
+.fallo__t{font-family:var(--display);font-size:22px;font-weight:700;letter-spacing:-.02em;line-height:1.2;margin-bottom:12px}
+.fallo__d{font-size:16px;color:var(--g500);line-height:1.6;margin-bottom:14px}
+.fallo__k{display:flex;gap:26px;flex-wrap:wrap;border-top:1px solid var(--g200);padding-top:14px;font-family:var(--mono);font-size:12px}
+.fallo__k b{display:block;color:var(--g500);font-weight:400;font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;margin-bottom:4px}
+
+/* ============ AGENTE DE WHATSAPP ============ */
+.wa-btn{position:fixed;right:20px;bottom:20px;z-index:90;width:62px;height:62px;border-radius:50%;background:#25D366;border:none;cursor:pointer;box-shadow:0 10px 30px -8px rgba(0,0,0,.45);display:grid;place-items:center;transition:transform .18s}
+.wa-btn:hover{transform:scale(1.07)}
+.wa-btn svg{width:34px;height:34px;fill:#fff}
+.wa-btn::after{content:"";position:absolute;top:4px;right:4px;width:13px;height:13px;border-radius:50%;background:var(--azul);border:2px solid #fff}
+.wa-panel{position:fixed;right:20px;bottom:94px;z-index:91;width:370px;max-width:calc(100vw - 32px);background:#fff;border:1px solid var(--g200);box-shadow:0 26px 70px -20px rgba(10,37,64,.5);display:none;flex-direction:column;overflow:hidden}
+.wa-panel.abierto{display:flex;animation:waIn .22s ease}
+@keyframes waIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.wa-cab{background:var(--navy);color:#fff;padding:16px 18px;display:flex;align-items:center;gap:12px}
+.wa-cab svg{width:32px;height:32px;flex:none}
+.wa-cab__t{font-weight:700;font-size:15.5px;line-height:1.2}
+.wa-cab__s{font-family:var(--mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#7FAEF5;margin-top:4px}
+.wa-x{margin-left:auto;background:none;border:none;color:#fff;font-size:22px;cursor:pointer;line-height:1;opacity:.7}
+.wa-x:hover{opacity:1}
+.wa-hilo{padding:18px;max-height:52vh;overflow-y:auto;background:var(--g100);display:flex;flex-direction:column;gap:12px}
+.wa-msg{max-width:88%;padding:12px 14px;font-size:15px;line-height:1.5;background:#fff;border:1px solid var(--g200)}
+.wa-msg--yo{align-self:flex-end;background:var(--azul);color:#fff;border-color:var(--azul)}
+.wa-msg small{display:block;margin-top:8px;font-family:var(--mono);font-size:11px;color:var(--azul-osc);line-height:1.5}
+.wa-msg--alerta{border-left:4px solid #D92D20;background:#FEF3F2}
+.wa-op{padding:14px 18px;display:flex;flex-wrap:wrap;gap:8px;border-top:1px solid var(--g200);background:#fff}
+.wa-op button{font-family:var(--cuerpo);font-size:14px;padding:9px 14px;background:#fff;border:1px solid var(--g300);cursor:pointer;text-align:left;transition:.14s}
+.wa-op button:hover{border-color:var(--azul);color:var(--azul)}
+.wa-op input{flex:1;min-width:180px;font-family:var(--cuerpo);font-size:15px;padding:11px 12px;border:1px solid var(--g300)}
+.wa-op input:focus{outline:none;border-color:var(--azul)}
+.wa-op .wa-envia{background:#25D366;border-color:#25D366;color:#fff;font-weight:700;width:100%;text-align:center;padding:13px}
+.wa-op .wa-envia:hover{background:#1EBE5A;border-color:#1EBE5A;color:#fff}
+.wa-pie{padding:10px 18px;font-family:var(--mono);font-size:10px;letter-spacing:.06em;color:var(--g500);text-align:center;border-top:1px solid var(--g200);background:#fff}
+
+@media(max-width:680px){
+  .entrada{grid-template-columns:1fr;gap:14px}
+  .art{padding:44px 20px 64px}
+  .wa-panel{right:12px;left:12px;bottom:86px;width:auto}
+  .wa-btn{right:14px;bottom:82px;width:56px;height:56px}
+  .wa-btn svg{width:30px;height:30px}
+}
+
+
+.guia summary{font-size:17.5px}
+.guia__c{padding:0 4px 30px 58px;max-width:80ch}
+.guia__lead{font-size:18px;color:var(--g500);line-height:1.6;padding-bottom:20px;border-bottom:1px solid var(--g200);margin-bottom:22px}
+.guia__c p{margin-bottom:16px;font-size:16.5px;line-height:1.7;color:var(--navy)}
+.guia__h{font-family:var(--display);font-size:22px;font-weight:700;letter-spacing:-.02em;margin:30px 0 14px;line-height:1.18}
+.guia__c h4{font-size:17px;font-weight:700;margin:22px 0 10px}
+.guia__c ul,.guia__c ol{margin:0 0 20px 22px}
+.guia__c li{margin-bottom:9px;font-size:16.5px;line-height:1.6}
+.guia__c .art__cita{font-size:18px;padding:20px 22px;margin:26px 0}
+.guia__c .art__nota{margin:26px 0}
+@media(max-width:680px){.guia__c{padding-left:4px}}
+
+/* ============ LLAMADA DESTACADA ============ */
+.llamada{background:var(--azul);color:#fff;position:relative;overflow:hidden}
+.llamada::before{content:"";position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px);
+  background-size:38px 38px;
+  mask-image:radial-gradient(90% 140% at 88% 0%,#000 0%,transparent 70%);
+  -webkit-mask-image:radial-gradient(90% 140% at 88% 0%,#000 0%,transparent 70%)}
+.llamada__int{position:relative;display:flex;align-items:center;justify-content:space-between;
+  gap:36px;padding:34px 0}
+.llamada__t{font-family:var(--display);font-weight:700;font-size:clamp(27px,3.6vw,42px);
+  line-height:1.02;letter-spacing:-.03em;max-width:16ch}
+.llamada__s{margin-top:12px;font-size:17px;color:rgba(255,255,255,.86);max-width:46ch}
+.llamada__acc{display:flex;gap:12px;flex-wrap:wrap;flex:none}
+.llamada .btn--blanco{background:#fff;color:var(--azul);border-color:#fff}
+.llamada .btn--blanco:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+.llamada .btn--fantasma{border-color:rgba(255,255,255,.55)}
+@media(max-width:860px){
+  .llamada__int{flex-direction:column;align-items:flex-start;gap:22px;padding:30px 0}
+  .llamada__acc{width:100%}
+  .llamada__acc .btn{flex:1;justify-content:center}
+}
 </style>
+
+<!-- =====================================================================
+     SEGUIMIENTO Y ANTI-SPAM · descomente y sustituya los identificadores
+     ===================================================================== -->
+
+<!-- META PIXEL (Facebook / Instagram Ads) -->
+<!--
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', 'SU_ID_DE_PIXEL');
+fbq('track', 'PageView');
+</script>
+-->
+
+<!-- GOOGLE ANALYTICS 4 -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-XXXXXXXXXX');
+</script>
+-->
+
+<!-- reCAPTCHA v3 -->
+<!--
+<script src="https://www.google.com/recaptcha/api.js?render=SU_CLAVE_DE_SITIO"></script>
+-->
+
 </head>
 <body>
 
-<header>
-  <nav class="nav">
-    <a href="#top" class="brand">Fresno <span>Abogados</span></a>
-    <div class="nav-links" id="navLinks">
+
+
+<header class="barra">
+  <div class="contenedor barra__int">
+    <a href="#" class="logo">
+      <svg viewBox="0 0 100 100" aria-label="Fresno Abogados">
+        <path d="M50 8 L86 18 L86 63 C86 75.2 70.8 86.9 50 92 C29.2 86.9 14 75.2 14 63 L14 18 Z" fill="#1B6DF0"/>
+        <rect x="28" y="34" width="44" height="7.5" rx="3.7" fill="#fff"/>
+        <rect x="28" y="47" width="44" height="7.5" rx="3.7" fill="#fff"/>
+        <rect x="28" y="60" width="26" height="7.5" rx="3.7" fill="#fff"/>
+      </svg>
+      <span class="logo__t">
+        <span class="logo__n">FRESNO</span>
+        <span class="logo__s">A B O G A D O S</span>
+      </span>
+    </a>
+    <nav class="nav">
       <a href="#areas">Áreas</a>
-      <a href="#proceso">Proceso</a>
-      <a href="#plazos">Plazos</a>
-      <a href="#despacho">Despacho</a>
-      <a href="#faq">Preguntas</a>
-      <a class="nav-phone" href="tel:+34609079391">📞 +34 609 07 93 91</a>
-      <a href="#contacto" class="btn btn-primary nav-cta">Cuente su caso</a>
-    </div>
-    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
-  </nav>
+      <a href="#guias">Guías</a>
+      <a href="#resoluciones">Resoluciones</a>
+      <a href="#zona">España</a>
+      <a class="btn btn--azul btn--sm" href="#contacto">Consulta gratuita</a>
+    </nav>
+  </div>
 </header>
 
-<main id="top">
 
-  <!-- HERO + PARTE DE SINIESTRO -->
-  <section class="hero" style="padding-top:56px;">
-    <div class="wrap hero-grid">
-      <div class="hero-intro">
-        <span class="eyebrow">Derecho de Seguros</span>
-        <h1>Su aseguradora tiene 40 días para responder. <em>Nosotros, tres segundos para decirle por dónde empezar.</em></h1>
-        <p class="hero-sub">Rellene el parte de siniestro de abajo: le indicamos la norma exacta que ampara su caso y el primer paso a dar, antes incluso de escribirnos.</p>
-        <div class="hero-stats">
-          <div class="hero-stat"><b>+30 años</b><span>de ejercicio en Derecho de Seguros</span></div>
-          <div class="hero-stat"><b>Colegiado nº 2384</b><span>Ilustre Colegio de Abogados</span></div>
-          <div class="hero-stat"><b>1ª consulta</b><span>sin compromiso</span></div>
-        </div>
+<!-- ===================== LLAMADA DESTACADA ===================== -->
+<section class="llamada">
+  <div class="contenedor llamada__int">
+    <div>
+      <h2 class="llamada__t">¿Ha tenido un siniestro?</h2>
+      <p class="llamada__s">Envíenos la póliza y el parte. Le decimos qué cubre y qué margen hay,
+      sin coste y en menos de 24 horas laborables.</p>
+    </div>
+    <div class="llamada__acc">
+      <a class="btn btn--blanco" href="#contacto">Consulta gratuita</a>
+      <a class="btn btn--fantasma" href="tel:+34609079391">+34 609 07 93 91</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="contenedor hero__int">
+    <div>
+      <div class="etiqueta">Abogados de seguros y responsabilidad civil</div>
+      <h1>Un siniestro se gana <em>leyendo la póliza.</em></h1>
+      <p class="hero__sub">
+        Analizamos la cobertura contratada, documentamos el daño y llevamos la reclamación
+        hasta el final. Circulación, daños por agua, incendio, robo, invalidez y
+        responsabilidad civil. Sin coste hasta que sepa a qué atenerse.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--azul" href="#contacto">Enviar mi expediente</a>
+        <a class="btn btn--borde" href="tel:+34609079391">+34 609 07 93 91</a>
       </div>
-
-      <!-- WIDGET INTERACTIVO -->
-      <div class="siniestro" id="siniestro">
-        <div class="siniestro-head">
-          <div>
-            <span class="tag">Parte de siniestro</span>
-            <h3>¿Qué norma protege su caso?</h3>
-          </div>
-        </div>
-        <div class="siniestro-body">
-
-          <!-- Paso 1 -->
-          <div class="siniestro-step active" data-step="1">
-            <div class="siniestro-label"><span class="num">1</span> ¿Qué le ha pasado?</div>
-            <div class="option-grid" id="areaOptions"></div>
-          </div>
-
-          <!-- Paso 2 -->
-          <div class="siniestro-step" data-step="2">
-            <div class="siniestro-label"><span class="num">2</span> ¿En qué punto está ahora mismo?</div>
-            <div class="option-grid" id="stageOptions" style="grid-template-columns:1fr;"></div>
-            <div class="siniestro-nav">
-              <button class="link-back" data-back="1">&larr; Volver</button>
-            </div>
-          </div>
-
-          <!-- Paso 3: resultado -->
-          <div class="siniestro-step" data-step="3">
-            <div class="resultado" id="resultadoBox"></div>
-            <button class="btn btn-primary btn-block" id="continuarBtn">Continuar con este caso →</button>
-            <div class="siniestro-nav">
-              <button class="link-back" data-back="2">&larr; Cambiar respuestas</button>
-            </div>
-          </div>
-
-        </div>
+      <div class="marcas">
+        <div><div class="marca__n">+30</div><div class="marca__t">Años de ejercicio</div></div>
+        <div><div class="marca__n">24 h</div><div class="marca__t">Plazo de respuesta</div></div>
+        <div><div class="marca__n">0 €</div><div class="marca__t">Primera valoración</div></div>
       </div>
     </div>
-  </section>
 
-  <!-- AREAS -->
-  <section id="areas">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">Qué llevamos</span>
-        <h2>Seis áreas de siniestro, una base legal para cada una</h2>
-        <p>No es lo mismo un accidente de tráfico que la denegación de un seguro de salud: cambia la norma, el plazo y la estrategia.</p>
+    <form class="ficha" id="ficha" autocomplete="off">
+      <div class="ficha__cab">
+        <span class="ficha__tit">Consulta preliminar</span>
+        <span class="ficha__ref" id="ref">Ref. —</span>
       </div>
-      <div class="areas-grid" id="areasGrid"></div>
-    </div>
-  </section>
-
-  <!-- PROCESO -->
-  <section id="proceso">
-    <div class="wrap">
-      <div class="proceso-wrap">
-        <div class="section-head">
-          <span class="eyebrow">Cómo trabajamos</span>
-          <h2>El proceso en cuatro pasos — y por qué el orden importa</h2>
-          <p>Saltarse un paso, o hacerlo en el orden equivocado, es la forma más habitual de perder una reclamación que era ganable.</p>
-        </div>
-        <div class="pasos">
-          <div class="paso">
-            <div class="p-num">01</div>
-            <h4>Reclamación formal a la aseguradora</h4>
-            <p>Se deja constancia escrita del siniestro y se activa el plazo del art. 20 LCS. Sin esta fecha cierta, no hay intereses de demora que reclamar después.</p>
-          </div>
-          <div class="paso">
-            <div class="p-num">02</div>
-            <h4>Contrapericia independiente</h4>
-            <p>Antes de aceptar o rechazar la oferta de la aseguradora. Firmar de conformidad sin un informe propio suele cerrar la puerta a reclamar más tarde.</p>
-          </div>
-          <div class="paso">
-            <div class="p-num">03</div>
-            <h4>Vía extrajudicial y queja ante la DGSFP</h4>
-            <p>Agotar esta vía deja constancia de la mala fe o demora de la aseguradora, un elemento que el juzgado valora después a la hora de fijar intereses y costas.</p>
-          </div>
-          <div class="paso">
-            <div class="p-num">04</div>
-            <h4>Vía judicial</h4>
-            <p>Se acude a los tribunales con el expediente ya construido: pericial propia, requerimientos previos y plazos acreditados. Se litiga sobre lo que la aseguradora no puede ya discutir.</p>
+      <div class="ficha__cuerpo">
+        <div class="bloque">
+          <div class="bloque__cab"><span class="bloque__num">1</span><span class="bloque__lab">¿Qué póliza está implicada?</span></div>
+          <div class="opciones">
+            <label class="opcion"><input type="radio" name="tipo" value="auto"><span class="casilla"></span><span class="opcion__t">Auto o moto · accidente de circulación</span></label>
+            <label class="opcion"><input type="radio" name="tipo" value="hogar"><span class="casilla"></span><span class="opcion__t">Hogar · daños en vivienda o local</span></label>
+            <label class="opcion"><input type="radio" name="tipo" value="comunidad"><span class="casilla"></span><span class="opcion__t">Comunidad de propietarios</span></label>
+            <label class="opcion"><input type="radio" name="tipo" value="negocio"><span class="casilla"></span><span class="opcion__t">Comercio, autónomo o empresa</span></label>
+            <label class="opcion"><input type="radio" name="tipo" value="personas"><span class="casilla"></span><span class="opcion__t">Salud, vida, accidentes o invalidez</span></label>
+            <label class="opcion"><input type="radio" name="tipo" value="otro"><span class="casilla"></span><span class="opcion__t">Otra póliza / aún no lo sé</span></label>
           </div>
         </div>
-        <div class="proceso-why">
-          <h4>Por qué el orden no es un formalismo</h4>
-          <p>Cada paso genera la prueba que necesita el siguiente: la reclamación formal fija la fecha desde la que corren los intereses del art. 20 LCS; la contrapericia evita que el único informe en el expediente sea el de la aseguradora; y agotar la vía extrajudicial antes de demandar suele traducirse en mejores condiciones de acuerdo o, si se llega a juicio, en la imposición de costas e intereses punitivos a la aseguradora que se demoró sin causa justificada.</p>
+        <div class="bloque">
+          <div class="bloque__cab"><span class="bloque__num">2</span><span class="bloque__lab">¿En qué punto se encuentra?</span></div>
+          <div class="opciones">
+            <label class="opcion"><input type="radio" name="fase" value="sin"><span class="casilla"></span><span class="opcion__t">Acabo de dar el parte</span></label>
+            <label class="opcion"><input type="radio" name="fase" value="peritado"><span class="casilla"></span><span class="opcion__t">Ya ha pasado el perito</span></label>
+            <label class="opcion"><input type="radio" name="fase" value="oferta"><span class="casilla"></span><span class="opcion__t">Tengo una propuesta de indemnización</span></label>
+            <label class="opcion"><input type="radio" name="fase" value="parado"><span class="casilla"></span><span class="opcion__t">El expediente está parado o discutido</span></label>
+          </div>
+        </div>
+        <div class="ficha__salida">
+          <div class="salida__lab">Lo que revisaríamos</div>
+          <div class="salida__txt" id="salida">Marque las dos casillas y verá qué normativa entra en juego y qué documentación conviene reunir ya.</div>
         </div>
       </div>
-    </div>
-  </section>
+      <div class="ficha__pie">
+        <button type="button" class="btn btn--azul btn--ancho" id="seguir" disabled>Continuar con mi consulta</button>
+      </div>
+    </form>
+  </div>
+</section>
 
-  <!-- PLAZOS -->
-  <section id="plazos">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">No espere</span>
-        <h2>Cuánto tiempo tiene realmente para reclamar</h2>
-        <p>El plazo depende del tipo de siniestro. Superarlo, aunque sea por unos días, puede cerrar la vía judicial para siempre.</p>
-      </div>
-      <div class="plazos-grid">
-        <div class="plazo-card">
-          <div class="years">1 <span>año</span></div>
-          <h4>Responsabilidad civil extracontractual</h4>
-          <p>Art. 1968.2º del Código Civil. Aplica a la mayoría de accidentes de tráfico y daños a terceros por culpa o negligencia.</p>
-        </div>
-        <div class="plazo-card">
-          <div class="years">2 <span>años</span></div>
-          <h4>Seguros de daños</h4>
-          <p>Art. 23 de la Ley de Contrato de Seguro. Hogar, comunidades, robo, incendio y demás pólizas de daños patrimoniales.</p>
-        </div>
-        <div class="plazo-card">
-          <div class="years">5 <span>años</span></div>
-          <h4>Seguros de personas</h4>
-          <p>Art. 23 LCS. Vida, accidentes personales y, con matices según el caso, determinadas coberturas de salud.</p>
-        </div>
-      </div>
-      <p class="plazos-note">Estos son los plazos generales: la fecha exacta de inicio del cómputo (el "dies a quo") depende de cada expediente. Ante la duda, consulte antes de que el plazo corra.</p>
-    </div>
-  </section>
+<!-- ===================== ÁREAS ===================== -->
+<section class="seccion seccion--gris" id="areas">
+  <div class="contenedor">
+    <div class="etiqueta rev">Áreas de trabajo</div>
+    <h2 class="rev">Cualquier contingencia amparada por una póliza.</h2>
+    <p class="entradilla rev">
+      El punto de partida siempre es el mismo: qué dicen las condiciones generales y las
+      particulares. A partir de ahí, encajar los hechos en la cobertura y documentar el
+      daño con rigor técnico.
+    </p>
 
-  <!-- DESPACHO -->
-  <section id="despacho">
-    <div class="wrap despacho">
-      <div class="despacho-photo">Fresno Abogados<br>Derecho de Seguros</div>
-      <div>
-        <span class="eyebrow">El despacho</span>
-        <h2>Más de tres décadas discutiendo con aseguradoras</h2>
-        <p style="color:var(--ink-soft);font-size:16px;">Fresno Abogados es un despacho especializado en Derecho de Seguros. No llevamos de todo: llevamos reclamaciones frente a compañías aseguradoras, y eso se nota en la velocidad con la que identificamos la norma aplicable y el punto débil de cada oferta.</p>
-        <div class="despacho-stats">
-          <div class="d-stat"><b>+30</b><span>años de ejercicio</span></div>
-          <div class="d-stat"><b>Nº 2384</b><span>Colegiado en ejercicio</span></div>
-          <div class="d-stat"><b>100%</b><span>Derecho de Seguros</span></div>
-        </div>
-        <ul>
-          <li>Negociación directa con la aseguradora y sus peritos.</li>
-          <li>Contrapericias médicas y de daños con profesionales colegiados.</li>
-          <li>Reclamaciones ante la DGSFP y el Defensor del Asegurado.</li>
-          <li>Litigación cuando la vía extrajudicial se agota sin resultado justo.</li>
-        </ul>
+    <div class="rejilla rev" id="areasGrid"></div>
+  </div>
+</section>
+
+<!-- ===================== CIFRAS ===================== -->
+<section class="seccion seccion--navy" id="cifras">
+  <div class="contenedor">
+    <div class="etiqueta rev" style="color:var(--azul-cla)">El siniestro en cifras</div>
+    <h2 class="rev">Un siniestro no es una excepción. Es la rutina del sistema.</h2>
+    <p class="entradilla rev">Magnitudes públicas más recientes del mercado español.</p>
+
+    <div class="datos rev">
+      <div class="dato">
+        <div class="dato__n">10,6 M</div>
+        <div class="dato__t">Siniestros atendidos en inmuebles asegurados en un año</div>
+        <div class="dato__f">UNESPA · 2024</div>
+      </div>
+      <div class="dato">
+        <div class="dato__n">5.153 M€</div>
+        <div class="dato__t">Abonados por las aseguradoras en seguros patrimoniales</div>
+        <div class="dato__f">UNESPA · 2024</div>
+      </div>
+      <div class="dato">
+        <div class="dato__n">1.119</div>
+        <div class="dato__t">Fallecidos en siniestros de tráfico en vías interurbanas</div>
+        <div class="dato__f">DGT · balance 2025</div>
+      </div>
+      <div class="dato">
+        <div class="dato__n">4.936</div>
+        <div class="dato__t">Heridos que precisaron hospitalización en carretera</div>
+        <div class="dato__f">DGT · balance 2025</div>
       </div>
     </div>
-  </section>
 
-  <!-- FAQ -->
-  <section id="faq">
-    <div class="wrap" style="max-width:820px;">
-      <div class="section-head">
-        <span class="eyebrow">Dudas frecuentes</span>
-        <h2>Preguntas que nos hacen en la primera llamada</h2>
+    <div class="grafico rev">
+      <div class="grafico__t">Coste de la siniestralidad en seguros patrimoniales, por causa</div>
+      <div class="barras" id="barras">
+        <div class="fila"><div class="fila__l">Daños por agua</div><div class="fila__p"><i data-w="100"></i></div><div class="fila__v">2.035 M€</div></div>
+        <div class="fila"><div class="fila__l">Incendios</div><div class="fila__p"><i data-w="38"></i></div><div class="fila__v">770 M€</div></div>
+        <div class="fila"><div class="fila__l">Fenómenos atmosféricos</div><div class="fila__p"><i data-w="25"></i></div><div class="fila__v">518 M€</div></div>
       </div>
-      <div id="faqList"></div>
+      <p class="grafico__f">Fuente: UNESPA, nota de prensa sobre siniestros patrimoniales, datos de 2024.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- CONTACTO -->
-  <section id="contacto">
-    <div class="wrap contacto-wrap">
-      <div class="contacto-info">
-        <span class="eyebrow">Hablemos</span>
-        <h3>Cuéntenos su caso</h3>
-        <p style="color:var(--ink-soft);">La primera consulta es sin compromiso. Cuanto antes nos escriba, antes fijamos el plazo que le queda.</p>
+<!-- ===================== MARCO LEGAL ===================== -->
+<section class="seccion">
+  <div class="contenedor">
+    <div class="etiqueta rev">Marco normativo</div>
+    <h2 class="rev">Conviene saber qué dice la ley antes de discutir una cifra.</h2>
+    <p class="entradilla rev">
+      La Ley de Contrato de Seguro reconoce al asegurado facultades que en la práctica se
+      ejercen poco, simplemente porque no se conocen.
+    </p>
 
-        <div class="info-row">
-          <div class="ic">📞</div>
-          <div>
-            <span>Teléfono</span>
-            <a href="tel:+34609079391">+34 609 07 93 91</a>
-          </div>
-        </div>
-        <div class="info-row">
-          <div class="ic">✉️</div>
-          <div>
-            <span>Correo electrónico</span>
-            <a href="mailto:mail@fresnoabogados.com">mail@fresnoabogados.com</a>
-          </div>
-        </div>
-        <div class="info-row">
-          <div class="ic">🕘</div>
-          <div>
-            <span>Horario de atención</span>
-            <a href="#" style="font-weight:400;">[9:00 – 19:00]</a>
-          </div>
-        </div>
-        <div class="info-row">
-          <div class="ic">📍</div>
-          <div>
-            <span>Dirección</span>
-            <a href="#" style="font-weight:400;">[Dirección del despacho]</a>
-          </div>
-        </div>
-
-        <a href="https://wa.me/34609079391" target="_blank" rel="noopener" class="btn whatsapp-btn btn-block">💬 Escribir por WhatsApp</a>
+    <blockquote class="norma rev">
+      <div class="norma__l">Ley 50/1980, de Contrato de Seguro · art. 76 d)</div>
+      <p class="norma__t">«El asegurado tendrá derecho a elegir libremente el Procurador y Abogado que hayan de representarle y defenderle en cualquier clase de procedimiento.»</p>
+      <div class="norma__f">
+        La cobertura de defensa jurídica está presente en la mayoría de las pólizas de auto,
+        hogar, comunidad, comercio y responsabilidad civil. Conviene comprobar en las
+        condiciones particulares qué capital se destina a la libre elección de letrado y
+        comunicar la designación por escrito antes de iniciar el procedimiento.
       </div>
+    </blockquote>
 
-      <form id="contactForm" action="mailto:mail@fresnoabogados.com" method="post" enctype="text/plain">
-        <div class="form-resumen" id="formResumen"></div>
-        <div class="form-row">
-          <label for="nombre">Nombre y apellidos</label>
-          <input type="text" id="nombre" name="Nombre" required>
+    <div class="pasos rev" style="margin-top:44px">
+      <div class="paso paso--on">
+        <div class="paso__n">PASO 01</div>
+        <h3 class="paso__t">Análisis de la póliza</h3>
+        <p class="paso__d">Condiciones generales, particulares y suplementos. Qué cubre, qué límites y franquicias operan y qué garantías complementarias hay contratadas.</p>
+      </div>
+      <div class="paso">
+        <div class="paso__n">PASO 02</div>
+        <h3 class="paso__t">Documentación del daño</h3>
+        <p class="paso__d">Informe médico o pericial, presupuestos, atestado, fotografías y facturas. Sin una cifra fundada no hay conversación posible sobre indemnización.</p>
+      </div>
+      <div class="paso">
+        <div class="paso__n">PASO 03</div>
+        <h3 class="paso__t">Vía extrajudicial</h3>
+        <p class="paso__d">Reclamación formal, Servicio de Atención al Cliente y negociación. Interrumpe la prescripción y resuelve la mayoría de expedientes sin pleito.</p>
+      </div>
+      <div class="paso">
+        <div class="paso__n">PASO 04</div>
+        <h3 class="paso__t">Vía judicial</h3>
+        <p class="paso__d">Solo cuando el acuerdo no llega, y con criterio previo sobre viabilidad, coste y plazos, para que la decisión se tome con información.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ACTUALIDAD ===================== -->
+<section class="seccion seccion--gris" id="actualidad">
+  <div class="contenedor">
+    <div class="etiqueta rev">Actualidad del sector</div>
+    <h2 class="rev">Lo que se ha publicado últimamente.</h2>
+    <p class="entradilla rev">
+      Notas oficiales y datos sectoriales recientes. Actualice esta sección cada pocas
+      semanas: es lo que mantiene la página viva frente a los buscadores.
+    </p>
+
+    <div class="noticias rev">
+      <a class="noticia" href="https://www.dgt.es/comunicacion/notas-de-prensa/20260108-2025-finaliza-1119-fallecidos-en-siniestros-de-trafico-en-vias-interurbanas/" target="_blank" rel="noopener">
+        <div class="noticia__m"><span>Tráfico</span><span>Enero 2026</span></div>
+        <h3 class="noticia__t">La DGT cierra 2025 con 1.119 fallecidos en vías interurbanas</h3>
+        <p class="noticia__d">El balance provisional recoge 1.028 siniestros mortales y casi cinco mil heridos hospitalizados. Los usuarios vulnerables concentran cuatro de cada diez víctimas.</p>
+        <div class="noticia__e">dgt.es</div>
+      </a>
+      <a class="noticia" href="https://21noticias.com/2026/08/04/balance-de-siniestralidad-vial-julio-de-2026/" target="_blank" rel="noopener">
+        <div class="noticia__m"><span>Tráfico</span><span>Agosto 2026</span></div>
+        <h3 class="noticia__t">Julio de 2026: 107 fallecidos y 97 siniestros mortales</h3>
+        <p class="noticia__d">Segundo mejor julio de la serie histórica pese al aumento de desplazamientos. Las vías convencionales siguen concentrando cerca de siete de cada diez muertes.</p>
+        <div class="noticia__e">Balance mensual DGT</div>
+      </a>
+      <a class="noticia" href="https://www.unespa.es/notasdeprensa/siniestros-inmuebles-asegurados-datos-2024/" target="_blank" rel="noopener">
+        <div class="noticia__m"><span>Seguro patrimonial</span><span>Noviembre 2025</span></div>
+        <h3 class="noticia__t">El seguro atiende un percance en inmuebles cada dos segundos</h3>
+        <p class="noticia__d">Los daños por agua encabezan el ranking en frecuencia y en coste. El incendio es, en cambio, el siniestro con mayor coste medio en todos los ramos.</p>
+        <div class="noticia__e">unespa.es</div>
+      </a>
+      <a class="noticia" href="https://www.consorseguros.es/ambitos-de-actividad/seguros-de-riesgos-extraordinarios/solicitud-de-indemnizacion" target="_blank" rel="noopener">
+        <div class="noticia__m"><span>Riesgos extraordinarios</span><span>2026</span></div>
+        <h3 class="noticia__t">El Consorcio delimita la tempestad ciclónica atípica de comienzos de año</h3>
+        <p class="noticia__d">Cerrada la delimitación geográfica y temporal del episodio de enero y febrero de 2026, los daños que encajan en esa ventana se tramitan ante el Consorcio.</p>
+        <div class="noticia__e">consorseguros.es</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PLAZOS ===================== -->
+<section class="seccion seccion--corta">
+  <div class="contenedor">
+    <div class="etiqueta rev">Plazos de prescripción</div>
+    <h2 class="rev">El derecho existe mientras el plazo lo permita.</h2>
+    <div class="plazos rev">
+      <div class="plazo">
+        <div class="plazo__t">1 <span>AÑO</span></div>
+        <div class="plazo__q">Daños a personas por accidente de tráfico y responsabilidad civil extracontractual</div>
+        <div class="plazo__n">art. 1968.2 CC · el día inicial suele fijarse en el alta o en la estabilización de secuelas</div>
+      </div>
+      <div class="plazo">
+        <div class="plazo__t">2 <span>AÑOS</span></div>
+        <div class="plazo__q">Acciones derivadas del contrato cuando el seguro es de daños</div>
+        <div class="plazo__n">art. 23 LCS · hogar, comercio, comunidad, incendio, robo, vehículo</div>
+      </div>
+      <div class="plazo">
+        <div class="plazo__t">5 <span>AÑOS</span></div>
+        <div class="plazo__q">Acciones derivadas del contrato cuando el seguro es de personas</div>
+        <div class="plazo__n">art. 23 LCS · vida, accidentes, invalidez</div>
+      </div>
+    </div>
+    <p class="aviso rev">
+      Son los plazos generales. El día inicial depende de cómo se produjera el siniestro y
+      de las reclamaciones intermedias, y una reclamación en forma lo interrumpe. Si tiene
+      dudas sobre si sigue en plazo, consúltelo cuanto antes.
+    </p>
+  </div>
+</section>
+
+<!-- ===================== GABINETE ===================== -->
+<section class="seccion seccion--gris">
+  <div class="contenedor gab">
+    <div class="rev">
+      <div class="etiqueta">El gabinete</div>
+      <h2>Treinta años de expedientes. La mayoría no llegaron a juicio.</h2>
+      <ul class="lista">
+        <li>Práctica desarrollada en ambos lados del expediente, lo que permite anticipar con realismo cómo se va a tramitar y valorar cada siniestro.</li>
+        <li>Le atiende directamente el letrado responsable del asunto, sin intermediarios ni plataformas de tramitación.</li>
+        <li>Colaboración habitual con peritos médicos, de daños e ingeniería para sostener la valoración con criterio técnico.</li>
+        <li>Criterio claro desde la primera reunión sobre viabilidad, coste y plazos. Si el asunto no tiene recorrido, también se dice.</li>
+      </ul>
+    </div>
+    <aside class="tarjeta rev">
+      <div class="tarjeta__l">Dirección letrada</div>
+      <div class="tarjeta__n">[Nombre y apellidos]</div>
+      <p class="tarjeta__d">
+        Abogado · Colegiado nº 2384, Ilustre Colegio de Abogados de [Colegio].<br><br>
+        <strong>Fresno Abogados</strong><br>
+        [Dirección]<br>[Código postal y ciudad]<br><br>
+        <strong>Áreas:</strong> derecho de seguros, responsabilidad civil, accidentes de
+        circulación y litigación civil.
+      </p>
+    </aside>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="seccion seccion--corta" id="faq">
+  <div class="contenedor">
+    <div class="etiqueta rev">Preguntas frecuentes</div>
+    <h2 class="rev">Lo que suele plantearse en la primera consulta.</h2>
+    <div class="faq rev">
+      <details>
+        <summary><span class="faq__q">P.01</span> Acabo de dar el parte. ¿Qué debo hacer y qué no?</summary>
+        <div class="faq__r">Comunicar el siniestro en plazo, conservar todo lo dañado hasta que pase el perito, reunir facturas y fotografías y no realizar reparaciones definitivas antes de la peritación. Es también el momento de revisar las coberturas contratadas, porque de ellas depende todo lo demás.<em>arts. 16 y 17 LCS</em></div>
+      </details>
+      <details>
+        <summary><span class="faq__q">P.02</span> Me han hecho una propuesta de indemnización. ¿La acepto?</summary>
+        <div class="faq__r">Antes de firmar conviene contrastar la propuesta con la valoración del daño y con lo que la póliza cubre. El documento de finiquito cierra el expediente, de modo que una revisión previa suele ser el paso más rentable de todo el procedimiento.</div>
+      </details>
+      <details>
+        <summary><span class="faq__q">P.03</span> No estoy de acuerdo con el perito. ¿Qué opciones tengo?</summary>
+        <div class="faq__r">La ley prevé un mecanismo específico: cada parte designa su perito y, si no hay acuerdo, se nombra un tercero. El resultado vincula salvo impugnación en plazo. Es una vía técnica y relativamente rápida que evita judicializar la discrepancia.<em>art. 38 LCS</em></div>
+      </details>
+      <details>
+        <summary><span class="faq__q">P.04</span> ¿Quién elige al abogado si mi póliza tiene defensa jurídica?</summary>
+        <div class="faq__r">La Ley de Contrato de Seguro reconoce al asegurado la facultad de designar libremente abogado y procurador. Conviene revisar el capital previsto en las condiciones particulares y comunicar la designación por escrito antes de iniciar el procedimiento.<em>art. 76 d) LCS</em></div>
+      </details>
+      <details>
+        <summary><span class="faq__q">P.05</span> ¿Qué coste tiene la consulta?</summary>
+        <div class="faq__r">La primera valoración del expediente y de la póliza no tiene coste. El modelo de honorarios combina una provisión de fondos inicial moderada, cerrada de antemano, con un porcentaje sobre la indemnización finalmente obtenida; se detalla por escrito en la hoja de encargo antes de comenzar.</div>
+      </details>
+      <details>
+        <summary><span class="faq__q">P.06</span> ¿Cuánto suele tardar?</summary>
+        <div class="faq__r">Un acuerdo extrajudicial razonable puede cerrarse en semanas o pocos meses. La vía judicial civil se mueve en plazos considerablemente más largos, variables según el partido judicial. En la primera reunión se ofrece una previsión concreta, no una media estadística.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ===================== GUÍAS ===================== -->
+<section class="seccion seccion--corta" id="guias">
+  <div class="contenedor">
+    <div class="etiqueta rev">Guías prácticas</div>
+    <h2 class="rev">Cómo funciona un siniestro por dentro.</h2>
+    <p class="entradilla rev">Las cuatro cuestiones que más aparecen en las consultas, explicadas
+    con la norma a la vista. Despliegue la que le afecte.</p>
+    <div class="faq rev" style="margin-top:40px"><details class="guia"><summary><span class="faq__q">Plazos</span> ¿Cuánto tiempo tengo para reclamar a mi seguro?</summary><div class="guia__c"><p class="guia__lead">Es la primera pregunta de casi toda consulta y la que más expedientes buenos entierra. El plazo no es único: depende de qué se reclama y a quién, y el día en que empieza a contar casi nunca es el día del siniestro.</p><h3 class="guia__h">Tres plazos distintos, no uno</h3>
+<p>Conviene separar desde el principio dos cosas que se confunden: reclamar <strong>a su propia
+aseguradora</strong> en virtud del contrato, y reclamar <strong>al causante del daño</strong> o a su
+seguro por responsabilidad civil. No prescriben igual.</p>
+<ul>
+  <li><strong>Dos años</strong> para las acciones derivadas del contrato cuando el seguro es de daños:
+  hogar, comercio, comunidad, incendio, robo, el vehículo.</li>
+  <li><strong>Cinco años</strong> para las acciones derivadas del contrato cuando el seguro es de
+  personas: vida, accidentes, invalidez.</li>
+  <li><strong>Un año</strong> para la responsabilidad civil extracontractual, que es la vía habitual
+  cuando reclama a un tercero por los daños que le ha causado, incluidas las lesiones en accidente
+  de tráfico.</li>
+</ul>
+<div class="art__cita">Las acciones que se deriven del contrato de seguro prescribirán a los dos
+años si se trata de seguro de daños y a los cinco si el seguro es de personas.
+<cite>Art. 23 de la Ley 50/1980, de Contrato de Seguro</cite></div>
+<p>Ese año de la responsabilidad extracontractual procede del artículo 1968.2 del Código Civil y
+es, con diferencia, el plazo que más problemas causa: es corto y afecta precisamente a los casos
+con lesiones, que son los que más tardan en cerrarse.</p>
+
+<h3 class="guia__h">El día inicial: casi nunca es el del siniestro</h3>
+<p>Un plazo no empieza a correr hasta que el perjudicado puede efectivamente reclamar. En daños
+personales eso significa que no se cuenta desde el golpe, sino desde que se conoce el alcance
+definitivo del daño: normalmente <strong>el alta médica o la estabilización de las secuelas</strong>,
+y en muchos casos desde la resolución administrativa que fija un grado de incapacidad, porque
+hasta entonces no se sabe qué se está reclamando.</p>
+<p>En daños materiales el cómputo suele ser más sencillo, pero tampoco automático: en filtraciones
+y humedades, por ejemplo, el daño puede ser continuado, y mientras la causa persiste el plazo no
+arranca.</p>
+
+<h3 class="guia__h">Interrumpir el plazo: el detalle que lo cambia todo</h3>
+<p>La prescripción civil no caduca sin más: se interrumpe. Y cuando se interrumpe, el plazo vuelve
+a empezar entero desde cero. Sirven para ello la reclamación judicial, la reclamación
+extrajudicial fehaciente y el reconocimiento de deuda por el obligado.</p>
+<p>En la práctica esto significa dos cosas muy concretas:</p>
+<ol>
+  <li>Un burofax bien redactado y con acuse de recibo y certificación de contenido vale mucho más
+  que diez llamadas y tres correos. Solo lo primero se puede acreditar después.</li>
+  <li>Si la aseguradora ha realizado algún pago a cuenta, ha ofrecido una cantidad o ha reconocido
+  por escrito la cobertura, es probable que el plazo se haya reiniciado sin que usted lo sepa. Antes
+  de dar un asunto por perdido conviene revisar toda la correspondencia.</li>
+</ol>
+
+<div class="art__nota"><b>Advertencia práctica</b>
+Comunicar el siniestro a la compañía dentro de los siete días del artículo 16 LCS es una obligación
+distinta del plazo de prescripción. Haber avisado tarde no le hace perder el derecho: la
+consecuencia prevista es que la aseguradora pueda reclamar los daños que esa demora le haya
+causado, lo que en la mayoría de los casos es un perjuicio inexistente o mínimo.</div>
+
+<h3 class="guia__h">Qué hacer si duda de si sigue en plazo</h3>
+<p>No lo descarte usted solo. La combinación de día inicial y actos interruptivos hace que muchos
+asuntos que parecen prescritos no lo estén, y al revés. Revisar la carpeta completa —póliza,
+comunicaciones, informes y pagos— lleva poco tiempo y es lo primero que hacemos en cualquier
+consulta.</p></div></details><details class="guia"><summary><span class="faq__q">Peritación</span> No estoy de acuerdo con el perito: el tercer perito</summary><div class="guia__c"><p class="guia__lead">Cuando asegurado y compañía no coinciden en cuánto vale el daño, la ley no obliga a ir al juzgado. Prevé un mecanismo técnico, rápido y bastante desconocido: el procedimiento pericial del artículo 38.</p><h3 class="guia__h">Qué es exactamente</h3>
+<p>El artículo 38 de la Ley de Contrato de Seguro regula qué ocurre cuando las partes discrepan
+sobre el importe del daño en un seguro de daños. El esquema es sencillo: <strong>cada parte designa
+su propio perito</strong>. Si los dos coinciden, se levanta acta y esa valoración es la que rige.
+Si no coinciden, <strong>se nombra un tercer perito</strong> de común acuerdo o, en su defecto, por
+el juez, y el dictamen conjunto resuelve la discrepancia.</p>
+
+<h3 class="guia__h">Por qué interesa antes que un pleito</h3>
+<ul>
+  <li><strong>Es más rápido.</strong> Se mueve en semanas, no en años.</li>
+  <li><strong>Es técnico, no jurídico.</strong> Discute cifras y causas, que suele ser el verdadero
+  desacuerdo, en lugar de convertirlo en un debate procesal.</li>
+  <li><strong>Es más barato.</strong> Cada parte asume su perito y los honorarios del tercero se
+  reparten conforme a las reglas del propio artículo.</li>
+  <li><strong>No cierra la puerta judicial.</strong> El dictamen es impugnable en plazo.</li>
+</ul>
+
+<div class="art__cita">Si no hubiera acuerdo entre los peritos, ambas partes designarán un tercer
+perito de conformidad; de no haberla, la designación se hará por el juez.
+<cite>Art. 38 de la Ley 50/1980, de Contrato de Seguro</cite></div>
+
+<h3 class="guia__h">Los errores que se repiten</h3>
+<h4>Aceptar el perito de la compañía como si fuera neutral</h3>
+<p>El perito que acude a su casa después del siniestro está designado y retribuido por la
+aseguradora. Eso no lo convierte en parcial, pero sí en <strong>perito de parte</strong>. Usted tiene
+el mismo derecho a designar el suyo, y en siniestros de cierta entidad es lo razonable.</p>
+
+<h4>Firmar el acta sin leerla</h3>
+<p>El acta de peritación no es un trámite. Fija causas, partidas y cantidades, y condiciona todo lo
+que venga después. Si no está conforme con algo, hágalo constar en ese momento.</p>
+
+<h4>Dejar pasar el plazo de impugnación</h3>
+<p>El dictamen pericial conjunto vincula a las partes si no se impugna judicialmente dentro del
+plazo legalmente previsto. Pasado ese plazo, discutir la cifra se vuelve muy difícil.</p>
+
+<div class="art__nota"><b>Antes de que llegue el perito</b>
+Conserve lo dañado, fotografíe todo con fecha, guarde facturas de compra de lo destruido y no
+realice reparaciones definitivas: solo las urgentes para evitar que el daño siga creciendo, que son
+además las que la póliza suele cubrir expresamente. Una reparación hecha antes de la visita
+convierte un daño acreditable en un daño discutible.</div>
+
+<h3 class="guia__h">Cuándo no compensa</h3>
+<p>El procedimiento del artículo 38 resuelve discrepancias de <strong>importe</strong>. Si lo que se
+discute es si el siniestro está o no cubierto —una exclusión, una cláusula limitativa, la
+existencia misma del riesgo—, el debate es jurídico y la vía pericial no lo resolverá. Distinguir
+un supuesto del otro es lo primero que conviene aclarar.</p></div></details><details class="guia"><summary><span class="faq__q">Seguros de personas</span> El cuestionario de salud y las denegaciones en vida</summary><div class="guia__c"><p class="guia__lead">Es el motivo estrella de denegación en seguros de vida e invalidez: la compañía sostiene que el asegurado ocultó una dolencia previa. La cuestión, casi siempre, no está en lo que el asegurado calló, sino en lo que se le preguntó.</p><h3 class="guia__h">Un deber de respuesta, no de declaración espontánea</h3>
+<p>El artículo 10 de la Ley de Contrato de Seguro no impone al tomador el deber de contar su
+historial médico por iniciativa propia. Impone el deber de <strong>contestar al cuestionario que el
+asegurador le someta</strong>. La diferencia no es sutil: si no hubo cuestionario, o si el que hubo
+era tan genérico que no permitía identificar la dolencia relevante, difícilmente puede reprocharse
+una ocultación.</p>
+
+<div class="art__cita">El tomador tiene el deber de declarar al asegurador, de acuerdo con el
+cuestionario que éste le someta, todas las circunstancias por él conocidas que puedan influir en la
+valoración del riesgo.
+<cite>Art. 10 de la Ley 50/1980, de Contrato de Seguro</cite></div>
+
+<p>De ahí que el primer documento a examinar no sea el informe médico, sino el propio cuestionario:
+qué preguntas contenía, cómo estaban formuladas, quién lo rellenó materialmente y si el asegurado
+lo firmó después de leerlo o simplemente estampó la firma sobre un impreso ya cumplimentado por el
+empleado de la entidad.</p>
+
+<h3 class="guia__h">Los tres supuestos que se distinguen</h3>
+<h4>1. No hubo cuestionario</h3>
+<p>Si la entidad no sometió cuestionario alguno, o presentó uno de respuestas estereotipadas sin
+preguntas concretas sobre la patología después invocada, el reproche de ocultación pierde
+prácticamente todo su apoyo.</p>
+
+<h4>2. Hubo cuestionario y respuesta inexacta, pero sin dolo ni culpa grave</h3>
+<p>La consecuencia no es la pérdida de la indemnización, sino la <strong>reducción proporcional</strong>
+de la prestación en función de la diferencia entre la prima pactada y la que se habría aplicado de
+conocerse el riesgo real.</p>
+
+<h4>3. Hubo cuestionario y mediaron dolo o culpa grave</h3>
+<p>Este es el único escenario en el que el asegurador queda liberado del pago. Y la carga de
+acreditar ese dolo o esa culpa grave le corresponde a la entidad, no al beneficiario.</p>
+
+<div class="art__nota"><b>Documentación que conviene reunir</b>
+Póliza y condiciones particulares, el cuestionario de salud firmado, la carta de denegación con el
+motivo concreto invocado, el historial clínico del periodo anterior a la contratación y cualquier
+comunicación previa con la entidad o con el mediador que intervino en la venta.</div>
+
+<h3 class="guia__h">El factor tiempo</h3>
+<p>En seguros de personas el plazo de las acciones derivadas del contrato es de cinco años
+(art. 23 LCS), lo que da un margen razonable. Aun así, la prueba se degrada: las historias clínicas
+se archivan, los mediadores cambian de entidad y la memoria de quién rellenó qué se difumina. Lo
+razonable es reunir la documentación en cuanto llega la denegación.</p></div></details><details class="guia"><summary><span class="faq__q">Hogar y comunidad</span> Daños por agua entre vecinos: quién responde</summary><div class="guia__c"><p class="guia__lead">Es el siniestro más frecuente del seguro español y, paradójicamente, uno de los que peor se resuelven. El motivo casi siempre es el mismo: se discute quién paga antes de haber determinado de dónde viene el agua.</p><h3 class="guia__h">Primero el origen, después el responsable</h3>
+<p>Un daño por agua implica normalmente tres pólizas: la del piso donde se origina la fuga, la del
+piso que sufre el daño y la de la comunidad de propietarios. Cuál responde depende exclusivamente
+de dónde esté la avería, y esa es una cuestión técnica que se resuelve con una localización
+adecuada, no con correos entre vecinos.</p>
+<ul>
+  <li><strong>Elemento privativo</strong> (bajantes interiores, grifería, electrodomésticos, la
+  instalación propia de la vivienda): responde en principio el propietario de esa vivienda y su
+  seguro de hogar.</li>
+  <li><strong>Elemento común</strong> (bajantes generales, cubierta, fachada, red general de
+  saneamiento): responde la comunidad y su póliza multirriesgo.</li>
+  <li><strong>Elemento de uso privativo pero naturaleza común</strong>: es el terreno donde se
+  concentran casi todos los conflictos y donde el informe técnico decide.</li>
+</ul>
+
+<h3 class="guia__h">Continente, contenido y daños estéticos</h3>
+<p>Aunque haya cobertura, el importe depende de cómo esté distribuida la suma asegurada. El
+<strong>continente</strong> cubre la estructura y las instalaciones fijas; el <strong>contenido</strong>,
+los bienes muebles. Muchas pólizas de piso en propiedad horizontal se contratan con un continente
+simbólico, en la idea equivocada de que "eso lo cubre la comunidad", y en el siniestro aparece la
+regla proporcional del infraseguro.</p>
+<p>Cuestión aparte son los <strong>daños estéticos</strong>: la reparación deja una parte de la
+vivienda con acabado distinto al resto. Muchas pólizas los cubren con un porcentaje, y es una
+partida que se olvida sistemáticamente al valorar.</p>
+
+<div class="art__nota"><b>Qué hacer el primer día</b>
+Fotografíe el daño con fecha visible y repita las fotos cada pocos días si la humedad avanza.
+Comunique el siniestro a su compañía aunque crea que la culpa es del vecino: su póliza puede cubrir
+sus daños y repetir después. Y solicite por escrito al vecino o a la comunidad que localicen y
+reparen la fuga, porque si el daño sigue creciendo por su inacción, esa demora es relevante.</div>
+
+<h3 class="guia__h">La reclamación a la comunidad</h3>
+<p>Cuando el origen está en elemento común, la reclamación se dirige a la comunidad de propietarios,
+que suele tener contratada una póliza de responsabilidad civil. La convocatoria de junta, el acta
+donde se trató el problema y las comunicaciones con la administración de fincas se convierten en
+prueba de primer orden sobre el conocimiento del defecto y la fecha en que se conoció.</p>
+
+<h3 class="guia__h">El plazo</h3>
+<p>Frente a la propia aseguradora, dos años desde el siniestro (art. 23 LCS). Frente al vecino o
+tercero causante por vía extracontractual, un año (art. 1968.2 CC). En daños continuados, mientras
+la causa persiste el plazo no arranca, pero apoyarse en eso es arriesgado: lo prudente es reclamar
+formalmente cuanto antes e interrumpir la prescripción por escrito.</p></div></details></div>
+  </div>
+</section>
+
+<!-- ===================== RESOLUCIONES ===================== -->
+<section class="seccion seccion--corta seccion--gris" id="resoluciones">
+  <div class="contenedor">
+    <div class="etiqueta rev">Resoluciones de interés</div>
+    <h2 class="rev">Criterios que se repiten en los tribunales.</h2>
+    <p class="entradilla rev">Extracto de resoluciones relevantes, resumidas por su criterio
+    jurídico y publicadas sin dato alguno que permita identificar a las partes.</p>
+    <div class="rev" style="margin-top:40px"><article class="fallo">
+  <div class="fallo__m">Seguro de vida · [Audiencia Provincial de [Provincia] · [mes y año]]</div>
+  <h2 class="fallo__t">Cuestionario de salud genérico: se condena al pago del capital</h2>
+  <p class="fallo__d">La entidad denegó el capital alegando enfermedad previa no declarada. Acreditado que el cuestionario sometido al asegurado contenía preguntas estereotipadas que no permitían identificar la dolencia invocada, se descarta el dolo o la culpa grave del artículo 10 LCS.</p>
+  <div class="fallo__k"><div><b>Materia</b>Vida e invalidez</div><div><b>Importe</b>[00.000 €]</div><div><b>Preceptos</b>arts. 10 y 20 LCS</div></div>
+</article><article class="fallo">
+  <div class="fallo__m">Daños por agua · [Juzgado de Primera Instancia nº [0] de [Ciudad] · [mes y año]]</div>
+  <h2 class="fallo__t">Origen en elemento común: responde la comunidad</h2>
+  <p class="fallo__d">Filtraciones reiteradas en vivienda de planta baja. El informe pericial sitúa el origen en la red general de saneamiento, elemento común, lo que traslada la responsabilidad a la comunidad y a su póliza, incluidos los daños estéticos de la reparación.</p>
+  <div class="fallo__k"><div><b>Materia</b>Hogar y comunidad</div><div><b>Importe</b>[00.000 €]</div><div><b>Preceptos</b>art. 73 LCS · LPH</div></div>
+</article><article class="fallo">
+  <div class="fallo__m">Circulación · [Audiencia Provincial de [Provincia] · [mes y año]]</div>
+  <h2 class="fallo__t">Secuelas revisadas al alza sobre la oferta motivada</h2>
+  <p class="fallo__d">La oferta motivada de la entidad valoraba el perjuicio personal básico sin reconocer el perjuicio particular por pérdida de calidad de vida. El informe médico de parte sostiene la revisión conforme al baremo de la Ley 35/2015, con imposición de intereses del artículo 20 LCS.</p>
+  <div class="fallo__k"><div><b>Materia</b>Accidente de tráfico</div><div><b>Importe</b>[00.000 €]</div><div><b>Preceptos</b>Ley 35/2015 · art. 20 LCS</div></div>
+</article></div>
+    <div class="art__nota rev" style="max-width:80ch">
+      <b>Antes de publicar aquí</b>
+      Sustituya estas tres fichas por resoluciones propias, siempre anonimizadas: sin nombres, sin
+      número de procedimiento, sin datos que permitan reconstruir la identidad del cliente. El deber
+      de secreto profesional no decae porque el procedimiento haya terminado, y lo prudente es
+      recabar autorización escrita del cliente antes de difundir su asunto.
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ÁMBITO ===================== -->
+<section class="seccion seccion--corta" id="zona">
+  <div class="contenedor">
+    <div class="etiqueta rev">Ámbito de actuación</div>
+    <h2 class="rev">Toda España.</h2>
+    <p class="entradilla rev">
+      El derecho de seguros es normativa estatal: la Ley de Contrato de Seguro, el baremo de la Ley
+      35/2015 y el régimen del Consorcio se aplican por igual en todo el territorio. Eso permite
+      llevar el expediente desde cualquier punto del país, y en el juzgado que corresponda se actúa
+      con procurador del partido judicial.
+    </p>
+
+    <div class="datos rev" style="margin-top:44px">
+      <div class="dato" style="border-top-color:var(--azul)">
+        <div class="dato__n" style="color:var(--navy)">100%</div>
+        <div class="dato__t" style="color:var(--g500)">Tramitación documental y telemática, sin necesidad de desplazamientos</div>
+      </div>
+      <div class="dato" style="border-top-color:var(--azul)">
+        <div class="dato__n" style="color:var(--navy)">52</div>
+        <div class="dato__t" style="color:var(--g500)">Provincias: actuación con procurador en el partido judicial competente</div>
+      </div>
+      <div class="dato" style="border-top-color:var(--azul)">
+        <div class="dato__n" style="color:var(--navy)">24 h</div>
+        <div class="dato__t" style="color:var(--g500)">Plazo de respuesta a la consulta, esté donde esté</div>
+      </div>
+      <div class="dato" style="border-top-color:var(--azul)">
+        <div class="dato__n" style="color:var(--navy)">In situ</div>
+        <div class="dato__t" style="color:var(--g500)">Peritos médicos y de daños en la zona del siniestro, antes de que se repare</div>
+      </div>
+    </div>
+
+    <div class="art__nota rev" style="max-width:82ch">
+      <b>Cómo funciona a distancia</b>
+      Nos envía la póliza, el parte y los informes por correo o WhatsApp. El análisis, la
+      reclamación extrajudicial y la negociación con la entidad se hacen íntegramente en remoto.
+      Si el asunto llega a juicio, se designa procurador en el partido judicial que corresponda y
+      la vista se atiende presencialmente o por videoconferencia según admita el órgano.
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACTO ===================== -->
+<section class="seccion seccion--navy" id="contacto">
+  <div class="contenedor">
+    <div class="etiqueta" style="color:var(--azul-cla)">Contacto</div>
+    <h2>Envíe la póliza y el parte. Le decimos qué cubre, sin coste.</h2>
+    <p class="entradilla">
+      Respuesta en menos de 24 horas laborables. Si el asunto es urgente por plazo o porque
+      debe firmar documentación, indíquelo en el mensaje.
+    </p>
+
+    <div class="cont__int">
+      <form class="formulario" id="form" novalidate>
+        <div class="ff">
+          <div class="fc"><label for="nombre">Nombre y apellidos</label><input id="nombre" type="text"></div>
+          <div class="fc"><label for="telefono">Teléfono</label><input id="telefono" type="tel"></div>
         </div>
-        <div class="form-row">
-          <label for="telefono">Teléfono</label>
-          <input type="tel" id="telefono" name="Teléfono" required>
+        <div class="fc"><label for="email">Correo electrónico</label><input id="email" type="email"></div>
+        <div style="position:absolute;left:-9999px" aria-hidden="true">
+          <label for="empresa">No rellenar</label>
+          <input id="empresa" type="text" tabindex="-1" autocomplete="off">
         </div>
-        <div class="form-row">
-          <label for="email">Correo electrónico</label>
-          <input type="email" id="email" name="Email" required>
+        <div class="ff">
+          <div class="fc">
+            <label for="tipoSel">Póliza implicada</label>
+            <select id="tipoSel">
+              <option value="">Seleccione</option>
+              <option value="auto">Auto o moto</option>
+              <option value="hogar">Hogar</option>
+              <option value="comunidad">Comunidad de propietarios</option>
+              <option value="negocio">Comercio, autónomo o empresa</option>
+              <option value="personas">Salud, vida o accidentes</option>
+              <option value="otro">Otra / no lo sé</option>
+            </select>
+          </div>
+          <div class="fc"><label for="fecha">Fecha del siniestro</label><input id="fecha" type="date"></div>
         </div>
-        <div class="form-row">
-          <label for="mensaje">Cuéntenos brevemente qué ha pasado</label>
-          <textarea id="mensaje" name="Mensaje" rows="4"></textarea>
+        <div class="ff">
+          <div class="fc"><label for="cia">Entidad aseguradora</label><input id="cia" type="text" placeholder="Opcional"></div>
+          <div class="fc">
+            <label for="faseSel">Situación actual</label>
+            <select id="faseSel">
+              <option value="">Seleccione</option>
+              <option value="sin">Acabo de dar el parte</option>
+              <option value="peritado">Ya ha pasado el perito</option>
+              <option value="oferta">Tengo una propuesta de indemnización</option>
+              <option value="parado">El expediente está parado o discutido</option>
+            </select>
+          </div>
         </div>
-        <input type="hidden" id="caso" name="Resumen del caso" value="">
-        <button type="submit" class="btn btn-navy btn-block">Enviar mi caso</button>
-        <p class="form-note">Al enviar, se abrirá su gestor de correo con este mensaje ya redactado a mail@fresnoabogados.com. Si prefiere no usar el correo, llámenos o escríbanos por WhatsApp.</p>
+        <div class="fc"><label for="mensaje">Descripción del siniestro</label><textarea id="mensaje" placeholder="Fecha, lugar, daños producidos y estado actual del expediente."></textarea></div>
+        <label class="consent">
+          <input type="checkbox" id="rgpd">
+          <span>He leído y acepto la <a href="#" style="color:var(--azul);font-weight:600">política de privacidad</a>. Los datos se tratarán únicamente para atender la consulta, conforme al RGPD y a la LO 3/2018.</span>
+        </label>
+        <button type="submit" class="btn btn--azul btn--ancho" id="enviar">Enviar consulta</button>
+        <p class="fnota">Consulta confidencial · Amparada por el secreto profesional</p>
       </form>
-    </div>
-  </section>
 
-</main>
-
-<footer>
-  <div class="wrap">
-    <div class="footer-grid">
-      <div>
-        <a href="#top" class="brand" style="color:var(--white);">Fresno <span style="color:var(--gold-light);">Abogados</span></a>
-        <p>Despacho especializado en Derecho de Seguros. Más de 30 años defendiendo a asegurados frente a compañías aseguradoras.</p>
-        <p>Colegiado nº 2384 — Ilustre Colegio de Abogados</p>
-      </div>
-      <div>
-        <h5>Áreas</h5>
-        <ul>
-          <li><a href="#areas">Accidentes de tráfico</a></li>
-          <li><a href="#areas">Responsabilidad civil</a></li>
-          <li><a href="#areas">Hogar y comunidades</a></li>
-          <li><a href="#areas">Vida y accidentes</a></li>
-          <li><a href="#areas">Salud</a></li>
-          <li><a href="#areas">Impago de indemnización</a></li>
-        </ul>
-      </div>
-      <div>
-        <h5>Contacto</h5>
-        <ul>
-          <li><a href="tel:+34609079391">+34 609 07 93 91</a></li>
-          <li><a href="mailto:mail@fresnoabogados.com">mail@fresnoabogados.com</a></li>
-          <li><a href="https://wa.me/34609079391" target="_blank" rel="noopener">WhatsApp</a></li>
-          <li><a href="#">[Dirección del despacho]</a></li>
-        </ul>
+      <div class="canales">
+        <a class="canal" href="tel:+34609079391">
+          <div class="canal__l">Teléfono</div>
+          <div class="canal__v">+34 609 07 93 91</div>
+          <div class="canal__d">Lunes a viernes, [9:00 – 19:00]</div>
+        </a>
+        <a class="canal" href="https://wa.me/34609079391" target="_blank" rel="noopener">
+          <div class="canal__l">WhatsApp</div>
+          <div class="canal__v">Enviar póliza y parte</div>
+          <div class="canal__d">Documentación revisada normalmente el mismo día</div>
+        </a>
+        <a class="canal" href="mailto:mail@fresnoabogados.com">
+          <div class="canal__l">Correo</div>
+          <div class="canal__v">mail@fresnoabogados.com</div>
+          <div class="canal__d">Respuesta en 24 h laborables</div>
+        </a>
+        <div class="canal">
+          <div class="canal__l">Despacho</div>
+          <div class="canal__v">[Dirección]</div>
+          <div class="canal__d">[Ciudad] · Visitas con cita previa · Atendemos toda España</div>
+        </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>© <span id="year"></span> Fresno Abogados. Todos los derechos reservados.</span>
-      <span>
-        <a href="#">Aviso legal</a> ·
-        <a href="#">Política de privacidad</a> ·
-        <a href="#">Política de cookies</a>
-      </span>
+  </div>
+</section>
+
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie__int">
+      <div>
+        <a href="#" class="logo" style="margin-bottom:18px">
+          <svg viewBox="0 0 100 100" style="width:32px;height:32px">
+            <path d="M50 8 L86 18 L86 63 C86 75.2 70.8 86.9 50 92 C29.2 86.9 14 75.2 14 63 L14 18 Z" fill="#1B6DF0"/>
+            <rect x="28" y="34" width="44" height="7.5" rx="3.7" fill="#0A2540"/>
+            <rect x="28" y="47" width="44" height="7.5" rx="3.7" fill="#0A2540"/>
+            <rect x="28" y="60" width="26" height="7.5" rx="3.7" fill="#0A2540"/>
+          </svg>
+          <span class="logo__t">
+            <span class="logo__n" style="color:#fff">FRESNO</span>
+            <span class="logo__s" style="color:#7FAEF5">A B O G A D O S</span>
+          </span>
+        </a>
+        <p>Asesoramiento y litigación en derecho de seguros, responsabilidad civil y
+        accidentes de circulación.</p>
+        <p style="margin-top:14px">[Nombre del letrado] · Colegiado nº 2384, ICA [Colegio]</p>
+      </div>
+      <div>
+        <h4>Secciones</h4>
+        <p><a href="#areas">Áreas de trabajo</a><br>
+        <a href="#guias">Guías prácticas</a><br>
+        <a href="#resoluciones">Resoluciones</a><br>
+        <a href="#zona">Ámbito de actuación</a><br>
+        <a href="#contacto">Contacto</a></p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p><a href="tel:+34609079391">+34 609 07 93 91</a><br>
+        <a href="mailto:mail@fresnoabogados.com">mail@fresnoabogados.com</a><br>
+        [Dirección]<br>[Código postal y ciudad]</p>
+      </div>
+    </div>
+    <div class="pie__leg">
+      <a href="#">Aviso legal</a> · <a href="#">Política de privacidad</a> · <a href="#">Política de cookies</a><br>
+      La información de esta página tiene carácter divulgativo y general, no constituye
+      asesoramiento jurídico ni crea relación abogado-cliente. El alcance de cada cobertura
+      depende de la póliza concreta y de sus condiciones. Datos estadísticos: DGT, UNESPA y
+      Consorcio de Compensación de Seguros, con indicación del periodo en cada caso.
+      © <span id="anio"></span> Fresno Abogados. Todos los derechos reservados.
     </div>
   </div>
 </footer>
 
-<!-- BARRA FIJA MÓVIL -->
-<div class="mobile-bar">
-  <a href="tel:+34609079391" class="btn btn-outline">📞 Llamar</a>
-  <a href="#contacto" class="btn btn-primary">Cuente su caso</a>
+<div class="movil">
+  <a class="btn btn--borde" href="tel:+34609079391">Llamar</a>
+  <a class="btn btn--azul" href="#contacto">Consulta gratuita</a>
 </div>
 
 <script>
 (function(){
   "use strict";
+  document.getElementById("anio").textContent = new Date().getFullYear();
 
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  /* Menú móvil */
-  var navToggle = document.getElementById('navToggle');
-  var navLinks = document.getElementById('navLinks');
-  navToggle.addEventListener('click', function(){
-    var isOpen = navLinks.style.display === 'flex';
-    navLinks.style.display = isOpen ? 'none' : 'flex';
-    navLinks.style.flexDirection = 'column';
-    navLinks.style.position = 'absolute';
-    navLinks.style.top = '58px';
-    navLinks.style.left = '0';
-    navLinks.style.right = '0';
-    navLinks.style.background = 'var(--navy-dark)';
-    navLinks.style.padding = '18px 24px';
-    navLinks.style.gap = '16px';
-  });
-  navLinks.querySelectorAll('a').forEach(function(a){
-    a.addEventListener('click', function(){
-      if (window.innerWidth <= 900) navLinks.style.display = 'none';
-    });
-  });
-
-  /* ===== DATOS: seis áreas y su base legal ===== */
   var AREAS = [
-    {
-      id: 'trafico',
-      icon: '🚗',
-      label: 'Accidente de tráfico',
-      resumen: 'Colisiones, atropellos y siniestros de circulación con lesiones o daños materiales.',
-      norma: 'Baremo de la Ley 35/2015',
-      normaLarga: 'El baremo de la Ley 35/2015 sobre el sistema de valoración de daños y perjuicios causados a las personas en accidentes de circulación establece la indemnización por lesiones, secuelas y perjuicios patrimoniales.'
-    },
-    {
-      id: 'rc',
-      icon: '⚖️',
-      label: 'Responsabilidad Civil',
-      resumen: 'Daños causados a terceros cubiertos por una póliza de responsabilidad civil.',
-      norma: 'Art. 73 LCS',
-      normaLarga: 'El art. 73 de la Ley de Contrato de Seguro obliga a la aseguradora a cubrir el riesgo del nacimiento de la obligación de indemnizar a un tercero por hechos previstos en el contrato.'
-    },
-    {
-      id: 'hogar',
-      icon: '🏠',
-      label: 'Hogar y Comunidades',
-      resumen: 'Incendios, filtraciones, robos y daños en la vivienda o en elementos comunes.',
-      norma: 'Art. 3 y art. 100 LCS',
-      normaLarga: 'El art. 3 LCS exige que cualquier cláusula limitativa de derechos esté destacada y firmada expresamente; el art. 100 regula la cobertura de continente y contenido en el seguro de daños.'
-    },
-    {
-      id: 'vida',
-      icon: '🛡️',
-      label: 'Vida y Accidentes',
-      resumen: 'Fallecimiento, invalidez o incapacidad cubiertos por un seguro de vida o accidentes.',
-      norma: 'Arts. 83-99 LCS',
-      normaLarga: 'Los arts. 83 a 99 de la Ley de Contrato de Seguro regulan el seguro de personas: capital asegurado, beneficiarios y causas de exclusión, que deben interpretarse siempre de forma restrictiva.'
-    },
-    {
-      id: 'salud',
-      icon: '🩺',
-      label: 'Salud',
-      resumen: 'Denegación de una prueba, tratamiento o intervención por parte del seguro médico.',
-      norma: 'Art. 3 LCS',
-      normaLarga: 'El art. 3 LCS obliga a que cualquier exclusión o limitación de cobertura esté redactada de forma clara, destacada y aceptada expresamente por escrito; en caso contrario, no es oponible al asegurado.'
-    },
-    {
-      id: 'impago',
-      icon: '⏱️',
-      label: 'Retraso o impago',
-      resumen: 'La aseguradora reconoce el siniestro pero se demora o no paga la indemnización.',
-      norma: 'Art. 20 LCS',
-      normaLarga: 'El art. 20 de la Ley de Contrato de Seguro impone a la aseguradora que se demora sin causa justificada el pago de intereses de demora, que pueden llegar al 20% anual transcurridos dos años.'
-    }
+    { icon: "🚗", t: "Accidentes de circulación", d: "Lesiones y secuelas, perjuicio personal, lucro cesante y daños en el vehículo. También atropellos, motoristas y supuestos de vehículo sin seguro.", n: "Ley 35/2015 · art. 7 LRCSCVM" },
+    { icon: "💧", t: "Daños por agua y humedades", d: "Filtraciones entre viviendas, roturas de instalación, daños estéticos y delimitación de responsabilidad entre propietario, inquilino y comunidad.", n: "Ley 50/1980 · art. 38 LCS" },
+    { icon: "🔥", t: "Incendio y fenómenos atmosféricos", d: "Valoración de continente y contenido, infraseguro y regla proporcional, pérdida de beneficios y supuestos que corresponden al Consorcio.", n: "arts. 45 a 49 LCS · RDLeg. 7/2004" },
+    { icon: "🔍", t: "Peritación y valoración", d: "Contraste del informe pericial, designación de perito de parte y activación del mecanismo del tercer perito cuando la discrepancia es técnica.", n: "art. 38 LCS" },
+    { icon: "📄", t: "Alcance de la cobertura", d: "Distinción entre cláusulas delimitadoras y limitativas, sublímites, franquicias y garantías complementarias efectivamente contratadas.", n: "art. 3 LCS" },
+    { icon: "🩺", t: "Vida, accidentes e invalidez", d: "Grado de invalidez, capitales garantizados, alcance del cuestionario de salud y coordinación con el expediente administrativo de incapacidad.", n: "arts. 83 a 106 LCS · art. 10 LCS" }
   ];
-
-  /* ===== DATOS: en qué punto está el visitante ===== */
-  var STAGES = [
-    {
-      id: 'inicio',
-      label: 'Acaba de ocurrir y aún no lo he comunicado a la aseguradora',
-      inicio: 'Comunicar el siniestro de forma fehaciente (art. 16 LCS) y documentar daños y lesiones desde el primer día, antes de que la aseguradora envíe a su propio perito.'
-    },
-    {
-      id: 'esperando',
-      label: 'Ya lo he comunicado y estoy esperando respuesta',
-      inicio: 'Exigir por escrito la oferta motivada o el rechazo motivado que la aseguradora debe presentar en un plazo determinado; el silencio prolongado empieza a generar intereses de demora del art. 20 LCS.'
-    },
-    {
-      id: 'oferta_baja',
-      label: 'Me han ofrecido una indemnización que no me convence',
-      inicio: 'No firmar la conformidad todavía. El primer paso es encargar una contrapericia independiente antes de aceptar o rechazar nada por escrito.'
-    },
-    {
-      id: 'denegado',
-      label: 'La aseguradora ha denegado el siniestro o no contesta',
-      inicio: 'Presentar una reclamación formal y, si no hay respuesta satisfactoria, una queja ante el Servicio de Reclamaciones de la DGSFP, dejando preparado el expediente para la vía judicial.'
-    },
-    {
-      id: 'meses',
-      label: 'Llevan meses sin resolver mi expediente',
-      inicio: 'Revisar como primer paso si el plazo de prescripción sigue abierto y reclamar los intereses de demora acumulados del art. 20 LCS, que penalizan precisamente esta demora.'
-    }
-  ];
-
-  /* ===== Render tarjetas de áreas (sección "Áreas") ===== */
-  var areasGrid = document.getElementById('areasGrid');
+  var areasGrid = document.getElementById("areasGrid");
   AREAS.forEach(function(a){
-    var card = document.createElement('div');
-    card.className = 'area-card';
-    card.innerHTML =
-      '<div class="icon">' + a.icon + '</div>' +
-      '<h3>' + a.label + '</h3>' +
-      '<p>' + a.resumen + '</p>' +
-      '<span class="base-legal">' + a.norma + '</span>';
-    areasGrid.appendChild(card);
+    var art = document.createElement("article");
+    art.className = "area";
+    art.innerHTML =
+      '<div class="area__c" style="padding-top:26px">' +
+        '<div style="font-size:34px;margin-bottom:10px">' + a.icon + '</div>' +
+        '<h3 class="area__t">' + a.t + '</h3>' +
+        '<p class="area__d">' + a.d + '</p>' +
+        '<div class="area__n">' + a.n + '</div>' +
+      '</div>';
+    areasGrid.appendChild(art);
   });
 
-  /* ===== Render FAQ ===== */
-  var FAQS = [
-    {
-      q: '¿Cuánto cuesta la primera consulta?',
-      a: 'La primera consulta es gratuita y sin compromiso. Con la documentación del siniestro le decimos, en esa misma reunión, si hay caso y qué plazo tiene.'
-    },
-    {
-      q: '¿Cuánto tiempo tengo realmente para reclamar?',
-      a: 'Depende del tipo de siniestro: un año para responsabilidad civil extracontractual, dos años para seguros de daños y cinco para seguros de personas (arts. 1968.2º CC y 23 LCS). El plazo exacto depende de cuándo empezó a correr en su caso concreto.'
-    },
-    {
-      q: '¿Puedo reclamar si ya acepté y cobré una indemnización?',
-      a: 'En algunos casos sí, especialmente si firmó bajo presión, sin informe pericial propio, o si aparecieron secuelas o daños posteriores no valorados en el momento del acuerdo. Hay que revisar el documento de finiquito firmado.'
-    },
-    {
-      q: '¿Cómo cobra el despacho por llevar mi caso?',
-      a: 'Con una provisión de fondos inicial moderada, cerrada de antemano, más un porcentaje sobre la indemnización que finalmente consiga. Así el coste de iniciar el expediente es asumible y nuestro interés queda alineado con el suyo: cuanto mejor el resultado, mejor para ambos. Se lo detallamos por escrito en la primera consulta, antes de aceptar el encargo.'
-    },
-    {
-      q: '¿Es obligatorio llegar a juicio?',
-      a: 'No. La mayoría de los casos se resuelven en la fase extrajudicial, mediante negociación directa o reclamación ante la DGSFP. La vía judicial se reserva para cuando la aseguradora no ofrece una solución justa.'
-    },
-    {
-      q: '¿Puede la aseguradora tardar indefinidamente en pagar?',
-      a: 'No sin consecuencias. El art. 20 de la Ley de Contrato de Seguro sanciona la demora injustificada con intereses que pueden alcanzar el 20% anual a partir del segundo año, precisamente para evitar dilaciones sin causa.'
+  var TIPOS={
+    auto:{t:"Póliza de auto",n:"la indemnización por daños personales se calcula con el baremo de la Ley 35/2015 y la entidad debe emitir oferta motivada conforme al art. 7 LRCSCVM"},
+    hogar:{t:"Póliza de hogar",n:"se revisa la garantía de daños por agua, el capital de continente y contenido y la eventual aplicación de la regla proporcional"},
+    comunidad:{t:"Póliza de comunidad",n:"se delimita la responsabilidad entre comunidad y propietario y se comprueba la cobertura de responsabilidad civil del art. 73 LCS"},
+    negocio:{t:"Póliza de comercio o RC profesional",n:"se examinan sublímites, franquicias, pérdida de beneficios y la garantía de defensa jurídica incluida"},
+    personas:{t:"Seguro de personas",n:"se analiza el capital garantizado, el grado de invalidez acreditado y el alcance del cuestionario de salud del art. 10 LCS"},
+    otro:{t:"Póliza por determinar",n:"se parte de las condiciones generales y particulares para fijar exactamente qué garantías están contratadas"}
+  };
+  var FASES={
+    sin:"Al inicio del expediente conviene conservar lo dañado, reunir facturas y fotografías y no reparar en firme antes de la peritación.",
+    peritado:"Con el informe pericial ya emitido, el trabajo se centra en contrastar la valoración y, si procede, activar el mecanismo del art. 38 LCS.",
+    oferta:"Ante una propuesta de indemnización, lo prudente es contrastarla con la valoración del daño antes de firmar el finiquito.",
+    parado:"Cuando el expediente se detiene, la reclamación formal interrumpe la prescripción y sitúa el asunto en un marco de plazos verificable."
+  };
+
+  var ficha=document.getElementById("ficha"),salida=document.getElementById("salida"),
+      seguir=document.getElementById("seguir"),ref=document.getElementById("ref"),
+      tipoSel=document.getElementById("tipoSel"),faseSel=document.getElementById("faseSel");
+
+  function sel(n){var e=ficha.querySelector('input[name="'+n+'"]:checked');return e?e.value:null;}
+  ficha.addEventListener("change",function(){
+    var t=sel("tipo"),f=sel("fase");
+    if(!t&&!f)return;
+    var tr=[];
+    if(t)tr.push("<b>"+TIPOS[t].t+".</b> Aquí "+TIPOS[t].n+".");
+    if(f)tr.push(FASES[f]);
+    salida.innerHTML=tr.join(" ");
+    var ok=!!(t&&f);
+    seguir.disabled=!ok;
+    if(ok){
+      ref.textContent="Ref. "+t.slice(0,3).toUpperCase()+"-"+f.slice(0,3).toUpperCase()+"/"+new Date().getFullYear();
+      tipoSel.value=t;faseSel.value=f;
     }
-  ];
-  var faqList = document.getElementById('faqList');
-  FAQS.forEach(function(f, i){
-    var item = document.createElement('div');
-    item.className = 'faq-item';
-    item.innerHTML =
-      '<button class="faq-q" type="button">' +
-        '<span>P.0' + (i+1) + ' — ' + f.q + '</span>' +
-        '<span class="plus">+</span>' +
-      '</button>' +
-      '<div class="faq-a"><div class="faq-a-inner">' + f.a + '</div></div>';
-    faqList.appendChild(item);
-    item.querySelector('.faq-q').addEventListener('click', function(){
-      item.classList.toggle('open');
-    });
+  });
+  seguir.addEventListener("click",function(){
+    document.getElementById("contacto").scrollIntoView({behavior:"smooth",block:"start"});
+    setTimeout(function(){var n=document.getElementById("nombre");if(n)n.focus({preventScroll:true});},700);
   });
 
-  /* ===== Widget "Parte de siniestro" ===== */
-  var state = { area: null, stage: null };
-
-  var areaOptions = document.getElementById('areaOptions');
-  AREAS.forEach(function(a){
-    var b = document.createElement('button');
-    b.type = 'button';
-    b.className = 'option-btn';
-    b.textContent = a.icon + '  ' + a.label;
-    b.addEventListener('click', function(){
-      state.area = a;
-      goToStep(2);
-    });
-    areaOptions.appendChild(b);
+  var enviar=document.getElementById("enviar");
+  function aviso(t,ms){enviar.textContent=t;setTimeout(function(){enviar.textContent="Enviar consulta";},ms||2600);}
+  document.getElementById("form").addEventListener("submit",function(e){
+    e.preventDefault();
+    var nombre=document.getElementById("nombre").value.trim(),
+        tel=document.getElementById("telefono").value.trim();
+    if(!nombre||!tel){aviso("Indique nombre y teléfono de contacto");return;}
+    if(document.getElementById("empresa").value){return;}
+    if(!document.getElementById("rgpd").checked){aviso("Debe aceptar la política de privacidad");return;}
+    var t=tipoSel.value;
+    var cuerpo="Nombre: "+nombre+"\n"+
+      "Teléfono: "+tel+"\n"+
+      "Email: "+document.getElementById("email").value.trim()+"\n"+
+      "Póliza implicada: "+(t?TIPOS[t].t:"no indicada")+"\n"+
+      "Entidad: "+(document.getElementById("cia").value.trim()||"no indicada")+"\n"+
+      "Fecha del siniestro: "+(document.getElementById("fecha").value||"no indicada")+"\n"+
+      "Situación: "+(faseSel.selectedIndex>0?faseSel.options[faseSel.selectedIndex].text:"no indicada")+"\n\n"+
+      "Descripción:\n"+(document.getElementById("mensaje").value.trim()||"(sin detallar)");
+    /* Sustituir por el endpoint del formulario en producción. */
+    window.location.href="mailto:mail@fresnoabogados.com?subject="+
+      encodeURIComponent("Consulta de siniestro — "+nombre)+"&body="+encodeURIComponent(cuerpo);
+    aviso("Abriendo su correo…",3500);
   });
 
-  var stageOptions = document.getElementById('stageOptions');
-  STAGES.forEach(function(s){
-    var b = document.createElement('button');
-    b.type = 'button';
-    b.className = 'option-btn';
-    b.textContent = s.label;
-    b.addEventListener('click', function(){
-      state.stage = s;
-      renderResultado();
-      goToStep(3);
-    });
-    stageOptions.appendChild(b);
-  });
-
-  function goToStep(n){
-    document.querySelectorAll('.siniestro-step').forEach(function(el){
-      el.classList.toggle('active', el.getAttribute('data-step') == n);
-    });
+  var reducir=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var revs=document.querySelectorAll(".rev");
+  function barras(){document.querySelectorAll("#barras i").forEach(function(b){b.style.width=b.getAttribute("data-w")+"%";});}
+  if(reducir||!("IntersectionObserver" in window)){
+    revs.forEach(function(el){el.classList.add("visible");});barras();
+  }else{
+    var obs=new IntersectionObserver(function(en){
+      en.forEach(function(x){
+        if(x.isIntersecting){
+          x.target.classList.add("visible");
+          if(x.target.querySelector("#barras"))setTimeout(barras,250);
+          obs.unobserve(x.target);
+        }
+      });
+    },{threshold:.1,rootMargin:"0px 0px -40px 0px"});
+    revs.forEach(function(el){obs.observe(el);});
   }
-
-  document.querySelectorAll('[data-back]').forEach(function(btn){
-    btn.addEventListener('click', function(){
-      goToStep(btn.getAttribute('data-back'));
-    });
-  });
-
-  function renderResultado(){
-    var box = document.getElementById('resultadoBox');
-    var a = state.area, s = state.stage;
-    box.innerHTML =
-      '<div class="r-area">' + a.icon + ' ' + a.label + '</div>' +
-      '<h4>Su situación: ' + s.label.charAt(0).toLowerCase() + s.label.slice(1) + '</h4>' +
-      '<span class="r-norma">Norma aplicable: ' + a.norma + '</span>' +
-      '<p>' + a.normaLarga + '</p>' +
-      '<div class="r-inicio"><b>Por dónde empezar:</b> ' + s.inicio + '</div>';
-  }
-
-  document.getElementById('continuarBtn').addEventListener('click', function(){
-    var a = state.area, s = state.stage;
-    var resumen = 'Área: ' + a.label + ' (' + a.norma + ') — Situación: ' + s.label;
-
-    var resumenBox = document.getElementById('formResumen');
-    resumenBox.textContent = '📋 Caso trasladado desde el parte de siniestro: ' + resumen;
-    resumenBox.classList.add('visible');
-
-    document.getElementById('caso').value = resumen;
-    var mensaje = document.getElementById('mensaje');
-    if (!mensaje.value) {
-      mensaje.value = 'Mi caso: ' + a.label + '. Situación actual: ' + s.label + '. ';
-    }
-
-    document.getElementById('contacto').scrollIntoView({behavior:'smooth', block:'start'});
-    setTimeout(function(){ document.getElementById('nombre').focus(); }, 500);
-  });
-
 })();
 </script>
+<script>
+/* =====================================================================
+   AGENTE DE CONSULTAS · COBERTURA LEGAL
+   Conversación guiada que cualifica la consulta y la entrega en WhatsApp
+   ya redactada. No requiere servidor ni API.
 
+   CONFIGURACIÓN: cambie el número en TELEFONO (formato internacional,
+   sin signos: España = 34 + los nueve dígitos).
+   ===================================================================== */
+
+(function () {
+  "use strict";
+
+  var TELEFONO = "34609079391";          // <-- SU NÚMERO DE WHATSAPP
+  var DESPACHO = "Fresno Abogados";
+
+  /* --------------------------- contenido --------------------------- */
+  var SINIESTROS = {
+    auto:      { t: "Accidente de circulación",
+                 n: "Los daños personales se valoran con el baremo de la Ley 35/2015 y la entidad debe emitir oferta motivada (art. 7 LRCSCVM).",
+                 p: 1, pt: "un año desde el alta o la estabilización de las secuelas" },
+    hogar:     { t: "Daños en vivienda o local",
+                 n: "Se revisan la garantía de daños por agua, los capitales de continente y contenido y la eventual regla proporcional.",
+                 p: 2, pt: "dos años (seguro de daños, art. 23 LCS)" },
+    comunidad: { t: "Siniestro en comunidad de propietarios",
+                 n: "Hay que delimitar la responsabilidad entre comunidad y propietario y comprobar la cobertura de RC del art. 73 LCS.",
+                 p: 2, pt: "dos años (seguro de daños, art. 23 LCS)" },
+    incendio:  { t: "Incendio o fenómeno atmosférico",
+                 n: "Se valoran continente y contenido y se comprueba si el episodio corresponde al Consorcio de Compensación de Seguros.",
+                 p: 2, pt: "dos años (seguro de daños, art. 23 LCS)" },
+    robo:      { t: "Robo o expolio",
+                 n: "Se acredita la preexistencia de lo sustraído y se revisan sublímites de joyas y efectivo y las medidas de seguridad exigidas.",
+                 p: 2, pt: "dos años (seguro de daños, art. 23 LCS)" },
+    personas:  { t: "Vida, accidentes o invalidez",
+                 n: "Se analizan el capital garantizado, el grado de invalidez acreditado y el alcance del cuestionario de salud (art. 10 LCS).",
+                 p: 5, pt: "cinco años (seguro de personas, art. 23 LCS)" },
+    otro:      { t: "Otro siniestro",
+                 n: "Se parte de las condiciones generales y particulares para fijar qué garantías están realmente contratadas.",
+                 p: 2, pt: "variable según el tipo de póliza" }
+  };
+
+  var FASES = {
+    parte:    { t: "Acabo de dar el parte",
+                n: "Conserve lo dañado hasta la peritación, reúna facturas y fotografías y no repare en firme todavía." },
+    perito:   { t: "Ya ha pasado el perito",
+                n: "Conviene contrastar el informe y, si la discrepancia es técnica, activar el mecanismo del art. 38 LCS." },
+    oferta:   { t: "Tengo una propuesta de indemnización",
+                n: "Antes de firmar el finiquito conviene contrastar la propuesta con la valoración real del daño." },
+    denegado: { t: "Me han denegado la cobertura",
+                n: "Se estudia la cláusula invocada y si fue destacada y aceptada por escrito conforme al art. 3 LCS." },
+    parado:   { t: "El expediente está parado",
+                n: "Una reclamación formal interrumpe la prescripción y sitúa el asunto en un marco de plazos verificable." }
+  };
+
+  var ANTIGUEDAD = {
+    reciente: { t: "En los últimos 3 meses", meses: 1 },
+    medio:    { t: "Entre 3 meses y 1 año",  meses: 8 },
+    lejano:   { t: "Entre 1 y 2 años",       meses: 18 },
+    viejo:    { t: "Hace más de 2 años",     meses: 30 }
+  };
+
+  /* ------------------------------ estado --------------------------- */
+  var d = { siniestro: null, fase: null, antiguedad: null, nombre: "" };
+  var paso = 0;
+
+  /* ------------------------------- HTML ---------------------------- */
+  var ICONO_WA = '<svg viewBox="0 0 32 32"><path d="M16 3C8.8 3 3 8.8 3 16c0 2.3.6 4.5 1.7 6.4L3 29l6.8-1.8A13 13 0 1 0 16 3Zm0 23.6c-2 0-4-.5-5.7-1.6l-.4-.2-4 1 1.1-3.9-.3-.4A10.6 10.6 0 1 1 16 26.6Zm6-7.9c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.2s-.8 1-1 1.2c-.2.2-.4.2-.7 0a8.7 8.7 0 0 1-4.3-3.7c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.7 5.9 5.2 2.2.9 3 1 4.1.8.7-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4Z"/></svg>';
+
+  var boton = document.createElement("button");
+  boton.className = "wa-btn";
+  boton.setAttribute("aria-label", "Abrir asistente de consultas");
+  boton.innerHTML = ICONO_WA;
+
+  var panel = document.createElement("div");
+  panel.className = "wa-panel";
+  panel.setAttribute("role", "dialog");
+  panel.setAttribute("aria-label", "Asistente de consultas");
+  panel.innerHTML =
+    '<div class="wa-cab">' + ICONO_WA.replace("<svg", '<svg style="fill:#25D366"') +
+      '<div><div class="wa-cab__t">Asistente de consultas</div>' +
+      '<div class="wa-cab__s">Respuesta en 24 h laborables</div></div>' +
+      '<button class="wa-x" aria-label="Cerrar">&times;</button></div>' +
+    '<div class="wa-hilo" id="waHilo"></div>' +
+    '<div class="wa-op" id="waOp"></div>' +
+    '<div class="wa-pie">Sus datos solo se usan para atender la consulta · RGPD</div>';
+
+  document.body.appendChild(boton);
+  document.body.appendChild(panel);
+
+  var hilo = panel.querySelector("#waHilo");
+  var opciones = panel.querySelector("#waOp");
+
+  /* ---------------------------- utilidades ------------------------- */
+  function bot(texto, nota, alerta) {
+    var m = document.createElement("div");
+    m.className = "wa-msg" + (alerta ? " wa-msg--alerta" : "");
+    m.innerHTML = texto + (nota ? "<small>" + nota + "</small>" : "");
+    hilo.appendChild(m);
+    hilo.scrollTop = hilo.scrollHeight;
+  }
+  function yo(texto) {
+    var m = document.createElement("div");
+    m.className = "wa-msg wa-msg--yo";
+    m.textContent = texto;
+    hilo.appendChild(m);
+    hilo.scrollTop = hilo.scrollHeight;
+  }
+  function botones(lista) {
+    opciones.innerHTML = "";
+    lista.forEach(function (o) {
+      var b = document.createElement("button");
+      b.textContent = o.t;
+      b.addEventListener("click", function () { o.fn(o); });
+      opciones.appendChild(b);
+    });
+  }
+  function esperar(fn) { setTimeout(fn, 420); }
+
+  /* ------------------------------ guion ---------------------------- */
+  function inicio() {
+    hilo.innerHTML = "";
+    opciones.innerHTML = "";
+    d = { siniestro: null, fase: null, antiguedad: null, nombre: "" };
+    bot("Buenos días. Soy el asistente de <b>" + DESPACHO + "</b>. Le hago cuatro preguntas breves y preparo su consulta para enviarla por WhatsApp ya redactada.");
+    esperar(function () {
+      bot("<b>1 de 4.</b> ¿Qué tipo de siniestro ha tenido?");
+      botones(Object.keys(SINIESTROS).map(function (k) {
+        return { t: SINIESTROS[k].t, k: k, fn: elegirSiniestro };
+      }));
+    });
+  }
+
+  function elegirSiniestro(o) {
+    d.siniestro = o.k;
+    yo(o.t);
+    opciones.innerHTML = "";
+    esperar(function () {
+      bot(SINIESTROS[o.k].n);
+      esperar(function () {
+        bot("<b>2 de 4.</b> ¿En qué punto se encuentra el expediente?");
+        botones(Object.keys(FASES).map(function (k) {
+          return { t: FASES[k].t, k: k, fn: elegirFase };
+        }));
+      });
+    });
+  }
+
+  function elegirFase(o) {
+    d.fase = o.k;
+    yo(o.t);
+    opciones.innerHTML = "";
+    esperar(function () {
+      bot(FASES[o.k].n);
+      esperar(function () {
+        bot("<b>3 de 4.</b> ¿Cuándo ocurrió el siniestro?");
+        botones(Object.keys(ANTIGUEDAD).map(function (k) {
+          return { t: ANTIGUEDAD[k].t, k: k, fn: elegirAntiguedad };
+        }));
+      });
+    });
+  }
+
+  function elegirAntiguedad(o) {
+    d.antiguedad = o.k;
+    yo(o.t);
+    opciones.innerHTML = "";
+    esperar(function () {
+      var s = SINIESTROS[d.siniestro];
+      var meses = ANTIGUEDAD[o.k].meses;
+      var limite = s.p * 12;
+      if (meses >= limite) {
+        bot("Atención al plazo: en este tipo de siniestro el plazo general de prescripción es de <b>" +
+            s.pt + "</b>, y por las fechas podría estar agotado. Aun así, cualquier reclamación previa lo interrumpe, así que conviene revisarlo <b>hoy mismo</b> antes de descartar nada.", null, true);
+      } else if (meses >= limite * 0.6) {
+        bot("Conviene no demorarlo: el plazo general aquí es de <b>" + s.pt +
+            "</b> y usted ya ha consumido buena parte.", null, true);
+      } else {
+        bot("Está holgadamente en plazo: el general en este supuesto es de <b>" + s.pt + "</b>.");
+      }
+      esperar(function () {
+        bot("<b>4 de 4.</b> ¿Cómo se llama? Así el letrado sabe con quién habla.");
+        campoTexto();
+      });
+    });
+  }
+
+  function campoTexto() {
+    opciones.innerHTML = "";
+    var input = document.createElement("input");
+    input.type = "text";
+    input.placeholder = "Nombre y apellidos";
+    input.setAttribute("aria-label", "Nombre y apellidos");
+    var b = document.createElement("button");
+    b.textContent = "Continuar";
+    function ok() {
+      var v = input.value.trim();
+      if (v.length < 2) { input.focus(); return; }
+      d.nombre = v;
+      yo(v);
+      resumen();
+    }
+    b.addEventListener("click", ok);
+    input.addEventListener("keydown", function (e) { if (e.key === "Enter") ok(); });
+    opciones.appendChild(input);
+    opciones.appendChild(b);
+    input.focus();
+  }
+
+  function textoConsulta() {
+    return "Hola, quiero consultar un siniestro.\n\n" +
+      "Nombre: " + d.nombre + "\n" +
+      "Tipo de siniestro: " + SINIESTROS[d.siniestro].t + "\n" +
+      "Situación: " + FASES[d.fase].t + "\n" +
+      "Fecha aproximada: " + ANTIGUEDAD[d.antiguedad].t + "\n\n" +
+      "Punto a revisar: " + SINIESTROS[d.siniestro].n + "\n\n" +
+      "(Consulta generada desde la web de " + DESPACHO + ")";
+  }
+
+  function resumen() {
+    opciones.innerHTML = "";
+    esperar(function () {
+      bot("Gracias, " + d.nombre.split(" ")[0] + ". Esto es lo que le paso al letrado:<br><br>" +
+          "<b>· " + SINIESTROS[d.siniestro].t + "</b><br>" +
+          "<b>· " + FASES[d.fase].t + "</b><br>" +
+          "<b>· " + ANTIGUEDAD[d.antiguedad].t + "</b>",
+          "Pulse el botón y se abrirá WhatsApp con el mensaje ya escrito. Añada la póliza y el parte si los tiene a mano.");
+      var b = document.createElement("button");
+      b.className = "wa-envia";
+      b.textContent = "Abrir WhatsApp y enviar";
+      b.addEventListener("click", function () {
+        window.open("https://wa.me/" + TELEFONO + "?text=" +
+          encodeURIComponent(textoConsulta()), "_blank");
+      });
+      var r = document.createElement("button");
+      r.textContent = "Empezar de nuevo";
+      r.addEventListener("click", inicio);
+      opciones.appendChild(b);
+      opciones.appendChild(r);
+    });
+  }
+
+  /* ---------------------------- apertura --------------------------- */
+  var iniciado = false;
+  function abrir() {
+    panel.classList.add("abierto");
+    if (!iniciado) { iniciado = true; inicio(); }
+  }
+  function cerrar() { panel.classList.remove("abierto"); }
+
+  boton.addEventListener("click", function () {
+    panel.classList.contains("abierto") ? cerrar() : abrir();
+  });
+  panel.querySelector(".wa-x").addEventListener("click", cerrar);
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") cerrar(); });
+
+  /* Se abre solo la primera vez, a los 18 segundos */
+  try {
+    if (!sessionStorage.getItem("waVisto")) {
+      setTimeout(function () {
+        if (!panel.classList.contains("abierto")) { abrir(); }
+        sessionStorage.setItem("waVisto", "1");
+      }, 18000);
+    }
+  } catch (e) { /* sessionStorage no disponible */ }
+})();
+
+</script>
 </body>
 </html>
