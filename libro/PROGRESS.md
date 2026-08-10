@@ -13,9 +13,9 @@ Para regenerar tras editar contenido: `cd libro && node main.js`.
 | Parte | Capítulo | Estado |
 |---|---|---|
 | I | 1. El contrato de seguro de hogar: concepto, fuentes y principios | ✅ redactado |
-| I | 2. Sujetos y objeto del contrato | ⬜ pendiente |
-| I | 3. Formación del contrato y deber de declaración del riesgo (art. 10 LCS) | ⬜ pendiente |
-| I | 4. Condiciones generales, particulares y especiales (profundización) | ⬜ pendiente |
+| I | 2. Sujetos y objeto del contrato | ✅ redactado |
+| I | 3. Formación del contrato y deber de declaración del riesgo (art. 10 LCS) | ✅ redactado |
+| I | 4. Condiciones generales, particulares y especiales (profundización) | ✅ redactado |
 | II | 5. Incendio, explosión y fenómenos eléctricos | ⬜ pendiente |
 | II | 6. Daños por agua | ⬜ pendiente |
 | II | 7. Robo, expoliación y hurto | ⬜ pendiente |
@@ -34,11 +34,11 @@ Para regenerar tras editar contenido: `cd libro && node main.js`.
 | IV | 20. Vía judicial | ⬜ pendiente |
 | IV | 21. Cláusulas abusivas y protección de consumidores | ⬜ pendiente |
 | IV | 22. Casos prácticos resueltos | ⬜ pendiente |
-| V | Anexo I. Glosario | ⬜ pendiente |
-| V | Anexo II. Índice legislativo | ⬜ pendiente |
-| V | Anexo III. Índice de jurisprudencia citada | ⬜ pendiente |
-| V | **Anexo IV. Modelos y formularios (6 modelos)** | ✅ redactado (adelantado a petición del cliente) |
-| V | Anexo V. Tabla resumen de plazos | ⬜ pendiente |
+| V | Anexo I. Glosario | ⬜ pendiente — se redacta al final |
+| V | Anexo II. Índice legislativo | ⬜ pendiente — se redacta al final |
+| V | Anexo III. Índice de jurisprudencia citada | ⬜ pendiente — se redacta al final |
+| V | Anexo IV. Modelos y formularios | ⬜ borrador guardado en `anexo4_formularios.js` (**no incluido en el ensamblado actual**); se retoma al final para ampliarlo y elevar su nivel profesional (más modelos, variantes por cuantía/procedimiento, notas de cumplimentación) |
+| V | Anexo V. Tabla resumen de plazos | ⬜ pendiente — se redacta al final |
 
 ## Método de trabajo (pautas)
 

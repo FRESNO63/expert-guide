@@ -7,7 +7,9 @@ const {
   LevelFormat, Header, Footer, PageNumber, VerticalAlign,
 } = B;
 const { capitulo01 } = require("./capitulo01");
-const { anexoIV } = require("./anexo4_formularios");
+const { capitulo02 } = require("./capitulo02");
+const { capitulo03 } = require("./capitulo03");
+const { capitulo04 } = require("./capitulo04");
 const FN = require("./footnotes");
 
 const FECHA = "Agosto de 2026";
@@ -180,7 +182,9 @@ const doc = new Document({
         ...indice,
         ...B.partTitle("I", "Fundamentos del seguro de hogar"),
         ...capitulo01(),
-        ...anexoIV(),
+        ...capitulo02(),
+        ...capitulo03(),
+        ...capitulo04(),
       ],
     },
   ],
