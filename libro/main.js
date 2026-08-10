@@ -7,6 +7,8 @@ const {
   LevelFormat, Header, Footer, PageNumber, VerticalAlign,
 } = B;
 const { capitulo01 } = require("./capitulo01");
+const { anexoIV } = require("./anexo4_formularios");
+const FN = require("./footnotes");
 
 const FECHA = "Agosto de 2026";
 
@@ -178,9 +180,11 @@ const doc = new Document({
         ...indice,
         ...B.partTitle("I", "Fundamentos del seguro de hogar"),
         ...capitulo01(),
+        ...anexoIV(),
       ],
     },
   ],
+  footnotes: FN.getRegistry(),
 });
 
 Packer.toBuffer(doc).then((buf) => {

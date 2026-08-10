@@ -34,10 +34,17 @@ Para regenerar tras editar contenido: `cd libro && node main.js`.
 | IV | 20. Vía judicial | ⬜ pendiente |
 | IV | 21. Cláusulas abusivas y protección de consumidores | ⬜ pendiente |
 | IV | 22. Casos prácticos resueltos | ⬜ pendiente |
-| V | Anexos I–V (glosario, índices, formularios, tabla de plazos) | ⬜ pendiente |
+| V | Anexo I. Glosario | ⬜ pendiente |
+| V | Anexo II. Índice legislativo | ⬜ pendiente |
+| V | Anexo III. Índice de jurisprudencia citada | ⬜ pendiente |
+| V | **Anexo IV. Modelos y formularios (6 modelos)** | ✅ redactado (adelantado a petición del cliente) |
+| V | Anexo V. Tabla resumen de plazos | ⬜ pendiente |
 
 ## Método de trabajo (pautas)
 
 1. Cada capítulo se investiga primero con el MCP `jurisprudenciator` (texto BOE consolidado + sentencias reales del TS por ROJ/ECLI). No se inventan citas legales ni jurisprudenciales.
-2. Estructura fija por capítulo: epígrafes numerados → cajas de "Texto legal" → cajas de "Jurisprudencia" con cita completa (nº, fecha, ECLI, ponente) → "Ficha para el profesional" → "Ficha para el asegurado" (cuando aplique) → checklist o modelo.
+2. Estructura fija por capítulo: **Sumario** (estilo revista jurídica) → **Resumen/Abstract** con palabras clave (ES/EN) → epígrafes numerados con **notas al pie doctrinales** → cajas de "Texto legal" → cajas de "Jurisprudencia" con cita completa en formato académico (Sala, fecha, ROJ, ECLI, magistrado ponente) → "Ficha para el profesional" → "Ficha para el asegurado" → checklist → **Bibliografía citada**.
 3. Presupuesto orientativo de páginas por capítulo: 12–18 pp. en Partes II y III (mayor densidad práctica), 8–15 pp. en Partes I y IV, 2–8 pp. por anexo.
+4. **Citas doctrinales**: se citan tratados y comentarios reales y verificables por autor/título/editorial (Sánchez Calero, Veiga Copo, Bataller Grau et al., Tirado Suárez, Revista Española de Seguros), organizados como comentarios "ad artículo" — formato estándar en estas obras. No se inventan números de página, año de edición concreto ni referencias a números de revista que no se han podido verificar con una fuente oficial (a diferencia de la legislación y la jurisprudencia, para las que sí existe verificación oficial vía BOE/CENDOJ).
+5. **Citas jurisprudenciales**: formato "STS, Sala de lo Civil, de [fecha] (ROJ: STS NNNN/AAAA; ECLI:...; MP: [ponente])". Se evita atribuir un número de resolución oficial ("núm. NNN/AAAA") salvo que conste verificado en el propio texto de la sentencia, para no confundirlo con el número ROJ/CENDOJ (que es el que devuelve la fuente oficial consultada).
+6. **Modelos y formularios (Anexo IV)**: 6 modelos completos — burofax de reclamación previa, escrito ante el SAC/Defensor del Asegurado, designación e impugnación pericial (art. 38 LCS), demanda de juicio verbal, fundamentación específica de intereses del art. 20 LCS, y reclamación ante la DGSFP. Competencia y procedimiento verificados contra LEC vigente (arts. 52.2, 249.2, 250.2, 399, 394).
