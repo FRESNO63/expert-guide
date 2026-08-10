@@ -29,7 +29,7 @@ function capitulo20() {
     B.p("Esta obligación de pago del importe mínimo dentro de los cuarenta días —con independencia de que la liquidación definitiva del daño requiera más tiempo— es el primer umbral temporal relevante para el cómputo de los intereses de demora, según se desarrolla en el epígrafe siguiente."),
 
     B.h2("16.2. La mora del asegurador y su régimen especial"),
-    B.p(["El artículo 20 LCS, ya reproducido íntegramente en el capítulo 1, articula un régimen de intereses moratorios especial y más gravoso que el general de los arts. 1108 CC y 576 LEC, cuya aplicación excluye expresamente", B.fn("El carácter especial y excluyente del régimen de intereses del art. 20 LCS frente al régimen general de mora del Código Civil y de la Ley de Enjuiciamiento Civil responde a una opción deliberada del legislador de 1995, que quiso dotar al asegurado de un mecanismo disuasorio reforzado frente a la tentación de dilación sistemática por parte de las aseguradoras; cfr. SÁNCHEZ CALERO, F. (dir.), op. cit., ad art. 20, sobre los antecedentes de la reforma operada por la Ley 30/1995."), "."]),
+    B.p(["El artículo 20 LCS, ya reproducido íntegramente en el capítulo 1, articula un régimen de intereses moratorios especial y más gravoso que el general de los arts. 1108 CC y 576 LEC, cuya aplicación excluye expresamente", B.fn("El carácter especial y excluyente del régimen de intereses del art. 20 LCS frente al régimen general de mora del Código Civil y de la Ley de Enjuiciamiento Civil responde a una opción deliberada del legislador de 1995, que quiso dotar al asegurado de un mecanismo disuasorio reforzado frente a la tentación de dilación sistemática por parte de las aseguradoras; cfr. SÁNCHEZ CALERO, F. (dir.), op. cit., ad art. 20, sobre los antecedentes de la reforma operada por la Ley 30/1995, y, con mayor detalle monográfico, JIMÉNEZ BAUTISTA, S., «Los intereses de mora de las aseguradoras, artículo 20 de la Ley del Contrato de Seguro: examen especial de la consignación», Boletín del Ministerio de Justicia, vol. 57, núm. 1942, 2003, pp. 1773-1800."), "."]),
     B.p("Los elementos esenciales de este régimen, sistematizados a partir del art. 20 LCS, son:"),
     B.bullet([B.bold("Presupuesto de la mora: "), B.run("no satisfacer la prestación en tres meses desde el siniestro, o no pagar el importe mínimo en cuarenta días desde la declaración.")]),
     B.bullet([B.bold("Imposición de oficio: "), B.run("el juez debe imponer estos intereses de oficio, sin necesidad de que se soliciten expresamente ni de reclamación judicial previa para su devengo día a día.")]),
@@ -72,6 +72,7 @@ function capitulo20() {
     B.bullet("6. ¿Se han calculado correctamente los intereses por tramos temporales?"),
 
     B.h2("Bibliografía citada"),
+    B.p("JIMÉNEZ BAUTISTA, S., «Los intereses de mora de las aseguradoras, artículo 20 de la Ley del Contrato de Seguro: examen especial de la consignación», Boletín del Ministerio de Justicia, vol. 57, núm. 1942, 2003, pp. 1773-1800."),
     B.p("SÁNCHEZ CALERO, F. (dir.), Ley de Contrato de Seguro. Comentarios a la Ley 50/1980, de 8 de octubre, y a sus modificaciones, Aranzadi-Thomson Reuters, Cizur Menor."),
   ];
 }

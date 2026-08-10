@@ -33,6 +33,12 @@ const { capitulo24 } = require("./capitulo24");
 const { capitulo25 } = require("./capitulo25");
 const { capitulo26 } = require("./capitulo26");
 const { capitulo27 } = require("./capitulo27");
+const { anexoI } = require("./anexo1_glosario");
+const { anexoII } = require("./anexo2_legislacion");
+const { anexoIII } = require("./anexo3_jurisprudencia");
+const { anexoIV } = require("./anexo4_formularios");
+const { anexoV } = require("./anexo5_plazos");
+const { anexoVI } = require("./anexo6_bibliografia");
 const FN = require("./footnotes");
 
 const FECHA = "Agosto de 2026";
@@ -135,6 +141,7 @@ const indiceEntries = [
   ["Anexo III. Índice de jurisprudencia citada", "A"],
   ["Anexo IV. Modelos y formularios de reclamación", "A"],
   ["Anexo V. Tabla resumen de plazos", "A"],
+  ["Anexo VI. Bibliografía general", "A"],
 ];
 
 function indiceLine(texto, tipo) {
@@ -239,6 +246,13 @@ const doc = new Document({
         ...capitulo25(),
         ...capitulo26(),
         ...capitulo27(),
+        ...B.partTitle("V", "Anexos prácticos"),
+        ...anexoI(),
+        ...anexoII(),
+        ...anexoIII(),
+        ...anexoIV(),
+        ...anexoV(),
+        ...anexoVI(),
       ],
     },
   ],
