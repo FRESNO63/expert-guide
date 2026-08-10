@@ -323,6 +323,10 @@ h2{font-family:var(--display);font-weight:700;font-size:clamp(30px,4.2vw,48px);l
 .fallo__d{font-size:16px;color:var(--g500);line-height:1.6;margin-bottom:14px}
 .fallo__k{display:flex;gap:26px;flex-wrap:wrap;border-top:1px solid var(--g200);padding-top:14px;font-family:var(--mono);font-size:12px}
 .fallo__k b{display:block;color:var(--g500);font-weight:400;font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;margin-bottom:4px}
+.juris-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:40px}
+.juris-grid .fallo{margin-bottom:0}
+.juris-grid .fallo--ancha{grid-column:1 / -1}
+@media(max-width:860px){.juris-grid{grid-template-columns:1fr}.juris-grid .fallo--ancha{grid-column:auto}}
 
 /* ============ AGENTE DE WHATSAPP ============ */
 .wa-btn{position:fixed;right:20px;bottom:20px;z-index:90;width:62px;height:62px;border-radius:50%;background:#25D366;border:none;cursor:pointer;box-shadow:0 10px 30px -8px rgba(0,0,0,.45);display:grid;place-items:center;transition:transform .18s}
@@ -997,6 +1001,61 @@ formalmente cuanto antes e interrumpir la prescripción por escrito.</p></div></
   </div>
 </section>
 
+<!-- ===================== ÚLTIMA JURISPRUDENCIA ===================== -->
+<section class="seccion seccion--corta" id="jurisprudencia">
+  <div class="contenedor">
+    <div class="etiqueta rev">Última jurisprudencia</div>
+    <h2 class="rev">El Supremo también lee la letra pequeña.</h2>
+    <p class="entradilla rev">
+      Cinco sentencias recientes del Tribunal Supremo, una por cada frente habitual de
+      discusión con las aseguradoras. Selección y resumen a partir de la base de datos
+      oficial de jurisprudencia (CENDOJ), citadas por su ECLI para que pueda verificarlas.
+    </p>
+
+    <div class="juris-grid rev">
+      <article class="fallo">
+        <div class="fallo__m">Accidentes de circulación · Tribunal Supremo · 20/05/2026</div>
+        <h2 class="fallo__t">Reconocer tarde las secuelas no libra de los intereses</h2>
+        <p class="fallo__d">Un accidentado desarrolla secuelas neuropsiquiátricas años después del siniestro y es declarado gran inválido. El Supremo condena a la aseguradora a los intereses del art. 20 LCS: desde que conoció la existencia y gravedad de las nuevas secuelas, debió consignar una cantidad razonable en vez de mantenerse al margen hasta el pleito.</p>
+        <div class="fallo__k"><div><b>Materia</b>Circulación</div><div><b>Preceptos</b>Tabla IV Ley 35/2015 · art. 20.8 LCS</div><div><b>Cita</b>ECLI:ES:TS:2026:2199</div></div>
+      </article>
+
+      <article class="fallo">
+        <div class="fallo__m">Vida e invalidez · Tribunal Supremo · 02/12/2025</div>
+        <h2 class="fallo__t">Un cuestionario impreciso no sirve para denegar el capital</h2>
+        <p class="fallo__d">El Supremo recopila los seis requisitos que debe acreditar la aseguradora para alegar que hubo ocultación: el dato omitido tiene que haber sido preguntado de forma clara y expresa, ser conocido por el asegurado y resultar determinante del riesgo real. Sin un cuestionario concreto, no hay dolo ni culpa grave que oponer.</p>
+        <div class="fallo__k"><div><b>Materia</b>Vida e invalidez</div><div><b>Preceptos</b>art. 10 LCS</div><div><b>Cita</b>ECLI:ES:TS:2025:5430</div></div>
+      </article>
+
+      <article class="fallo">
+        <div class="fallo__m">Peritación · Tribunal Supremo · 30/01/2025</div>
+        <h2 class="fallo__t">Sin tercer perito, el informe de una sola parte no vincula</h2>
+        <p class="fallo__d">Aseguradora y asegurado discrepaban sobre la cobertura de un siniestro y el procedimiento del artículo 38 quedó a medias. El Supremo confirma que, sin la designación del tercer perito, ese dictamen incompleto carece del carácter vinculante que se pretendía imponer a la otra parte.</p>
+        <div class="fallo__k"><div><b>Materia</b>Peritación</div><div><b>Preceptos</b>art. 38 LCS</div><div><b>Cita</b>ECLI:ES:TS:2025:442</div></div>
+      </article>
+
+      <article class="fallo">
+        <div class="fallo__m">Alcance de la cobertura · Tribunal Supremo · 23/12/2025</div>
+        <h2 class="fallo__t">Poner una cláusula en mayúsculas no basta si todo lo está</h2>
+        <p class="fallo__d">Una cláusula limitativa de «debida vigilancia» aparecía en mayúsculas, negrita y subrayado, pero esa misma tipografía se repetía en el resto del clausulado. El Supremo concluye que así no cumple la exigencia de destacarse de modo especial y la declara inoponible al asegurado.</p>
+        <div class="fallo__k"><div><b>Materia</b>Cobertura</div><div><b>Preceptos</b>art. 3 LCS</div><div><b>Cita</b>ECLI:ES:TS:2025:5983</div></div>
+      </article>
+
+      <article class="fallo fallo--ancha">
+        <div class="fallo__m">Hogar y comunidad · Tribunal Supremo · 21/07/2021</div>
+        <h2 class="fallo__t">La aseguradora de la comunidad no puede reclamar contra su propio asegurado</h2>
+        <p class="fallo__d">Tras indemnizar un incendio en zonas comunes, la compañía intentó repetir contra el propietario del local donde se originó el fuego, también asegurado por la misma póliza comunitaria. El Supremo lo rechaza: la subrogación del art. 43 LCS exige que asegurado y causante del daño sean personas distintas.</p>
+        <div class="fallo__k"><div><b>Materia</b>Hogar y comunidad</div><div><b>Preceptos</b>arts. 43 y 45 LCS</div><div><b>Cita</b>ECLI:ES:TS:2021:3162</div></div>
+      </article>
+    </div>
+
+    <p class="aviso rev" style="margin-top:26px">
+      Resúmenes elaborados con fines divulgativos a partir del texto de cada sentencia; no
+      sustituyen su lectura íntegra ni constituyen asesoramiento sobre un caso concreto.
+    </p>
+  </div>
+</section>
+
 <!-- ===================== ÁMBITO ===================== -->
 <section class="seccion seccion--corta" id="zona">
   <div class="contenedor">
@@ -1147,6 +1206,7 @@ formalmente cuanto antes e interrumpir la prescripción por escrito.</p></div></
         <p><a href="#areas">Áreas de trabajo</a><br>
         <a href="#guias">Guías prácticas</a><br>
         <a href="#resoluciones">Resoluciones</a><br>
+        <a href="#jurisprudencia">Última jurisprudencia</a><br>
         <a href="#zona">Ámbito de actuación</a><br>
         <a href="#contacto">Contacto</a></p>
       </div>
