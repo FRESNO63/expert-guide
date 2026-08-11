@@ -104,9 +104,24 @@ El capítulo incorpora una advertencia metodológica expresa: el derecho extranj
 
 **Anexos**: Anexo II incorpora el RD 300/2004 y el RD-ley 3/2020, más una nota sobre normativa extranjera; el Anexo III pasa de 29 a 31 fichas verificadas.
 
+## Tercer documento del cliente: la Parte III de jurisprudencia (10/8/2026)
+
+El cliente aportó un tercer documento que refunde los dos anteriores y añade una Parte III con jurisprudencia española. Las Partes I y II ya estaban incorporadas; de la Parte III se verificó y añadió lo siguiente:
+
+- **Capítulo 18 (peritación)** — la aportación de mayor valor. **STS 442/2025** (ROJ: STS 442/2025, verificada) delimita el *presupuesto* del procedimiento del art. 38 LCS: solo es obligatorio si el asegurador aceptó el siniestro y la discrepancia se limita a la valoración; si niega la cobertura, cabe ir directamente a la vía declarativa. Sistematiza además los supuestos excluidos (seguros de RC, cuestiones jurídicas, existencia y causa del siniestro). **SAP Bizkaia 2048/2025** (verificada) extrae la consecuencia operativa: el perito carece de competencia para interpretar la cobertura, de modo que el dictamen que lo hace debe combatirse como **exceso de función pericial** —motivo más fuerte que el error de valoración, porque no exige demostrar que el perito se equivocó.
+- **Capítulo 10 (Consorcio)** — nuevo epígrafe 10.7.2 sobre carga de la prueba. **SAP Valencia 1777/2024** (verificada): la saturación de la red pública por volumen de lluvia es inundación cubierta, frente al mal estado de las conducciones propias, que está excluido; acreditados póliza, recargo y anegamiento, corresponde al Consorcio probar la exclusión que invoca; y el recargo es ingreso de derecho público no opcional (art. 18 RDL 7/2004). **SAP Barcelona 2713/2026** (verificada) muestra el reverso: absolución del Consorcio cuando la pericial atribuye la causa eficiente a obras urbanísticas y defectos constructivos. Conclusión estratégica: estos pleitos se deciden en el terreno pericial y conviene prueba propia desde el primer momento.
+- **Capítulo 28** — desarrollados los dos apartados que faltaban: **Italia** (arts. 1341-1342 CC, la doble firma como espejo del formalismo español: donde el control se agota en la forma, la aseguradora aprende a cumplirla y el fondo queda intacto) y **Portugal** (DL 72/2008, el control en fase precontractual, con el argumento de que la exclusión sobre la que nunca se informó no es solo limitativa sino cláusula sin consentimiento informado, trasladable a España vía art. 175.1 del RD-ley 3/2020). Matizado además el apartado español: el criterio existe y está consolidado desde el Pleno de 2006, pero es funcional y caso a caso, de modo que la incertidumbre se ha desplazado del plano dogmático al probatorio.
+- **Capítulo 1** — la STS 3943/2019 (STS 661/2019), que antes se citaba de segunda mano, se ha localizado y verificado, y se incorpora con un matiz importante: el criterio funcional **no opera automáticamente en favor del asegurado**, pues en ese caso la Sala concluyó que la cláusula era delimitadora. Sale de la lista de precedentes de segunda mano del Anexo III.
+
+**Dos inexactitudes del documento de partida, corregidas al verificar:**
+1. Atribuía a la STS 661/2019 la fijación del criterio "por el Pleno". La sentencia de Pleno es la 853/2006, de 11 de septiembre; la de 2019 la reitera y aplica, y no es de Pleno.
+2. Encuadraba la SAP Valencia 1777/2024 como jurisprudencia "tras la DANA" de Valencia. Es de **10 de julio de 2024**, anterior a la DANA de 29 de octubre de 2024, y resuelve un episodio distinto. Se ha incorporado sin esa vinculación.
+
+El Anexo III pasa de 31 a 36 fichas verificadas.
+
 ## Ideas del proyecto de referencia aún no incorporadas
 
-- Ampliación del Anexo III con más fichas jurisprudenciales si se desea acercar el número al de 40-60 fichas del proyecto de referencia (actualmente 31 fichas de resoluciones verificadas y citadas en el cuerpo del libro).
+- Ampliación del Anexo III con más fichas jurisprudenciales si se desea acercar el número al de 40-60 fichas del proyecto de referencia (actualmente 36 fichas de resoluciones verificadas y citadas en el cuerpo del libro).
 - Ampliación del Anexo VI con las referencias del apartado «Referencias identificadas y no incorporadas», si se logra verificar su autoría y paginación exactas.
 - Seguimiento de la jurisprudencia que vaya generando la DANA de octubre de 2024 sobre el deslinde Consorcio/aseguradora privada: a fecha de redacción no consta todavía doctrina de la Sala Primera específica sobre ese episodio, por lo que el capítulo 10 se apoya en la definición reglamentaria y en la jurisprudencia anterior.
 

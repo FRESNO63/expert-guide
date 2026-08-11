@@ -131,6 +131,7 @@ function anexoII() {
     ...norma("Real Decreto Legislativo 7/2004, Texto Refundido del Estatuto Legal del Consorcio de Compensación de Seguros", [
       ["Art. 6", "Ámbito de los acontecimientos extraordinarios cubiertos por el Consorcio.", 10],
       ["Art. 8", "Presupuestos y límites de la obligación indemnizatoria del Consorcio.", 10],
+      ["Art. 18", "Naturaleza de los recargos a favor del Consorcio como ingresos de derecho público: su pago no es opcional para el asegurado.", 10],
     ]),
 
     ...norma("Real Decreto 300/2004, Reglamento del seguro de riesgos extraordinarios", [
